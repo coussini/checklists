@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.min.js"></script>
+	<script>
+        $(document).ready( function() {
+            $( "#nav-placeholder" ).load( "navbar.html" );
+            console.log('Done');
+        });		
+	</script>	
 	<style type="text/css">
 		.jumbotron 
 		{
@@ -32,6 +38,10 @@
 	</style>
 </head>
 <body>
+	<!--Navigation bar-->
+	<div id="nav-placeholder">
+	</div>
+	<!--end of Navigation bar-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h1 class="display-3 text-center">Cessna <small class="text-muted">172SP</small></h1>
