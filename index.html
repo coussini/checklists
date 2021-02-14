@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	<style type="text/css">
+		.jumbotron 
+		{
+			padding: 2rem 1rem;
+			margin-bottom: 2rem;
+			background-color: #e9ecef;
+			border-radius: .3rem;
+		}
+		a.list-group-item.active 
+		{
+			background-color: #09A2A2;
+			border: #09A2A2;
+			color: black;
+		}
+		li.list-group-item.active 
+		{
+			background-color: lightgrey;
+			border: lightgrey;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-3 text-center">Cessna <small class="text-muted">172SP</small></h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="display-5">
+					Checklist
+				</div>
+				<div class="list-group" id="list-tab">
+					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-home">Home</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-profile">Profile</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-messages">Messages</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-settings">Settings</a>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="display-5">
+					Items
+				</div>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane show active" id="list-home">
+						<ul class="list-group">
+							<li class="list-group-item">An item</li>
+							<li class="list-group-item">A second item</li>
+							<li class="list-group-item">A third item</li>
+							<li class="list-group-item">A fourth item</li>
+							<li class="list-group-item">And a fifth one</li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-profile">
+					</div>
+					<div class="tab-pane" id="list-messages">
+					</div>
+					<div class="tab-pane" id="list-settings">
+					</div>
+				</div>
+			</div>
+		</div>    
+	</div>    
+	<script>
+		$(document).ready(function() {
+			$('a.list-group-item').click(function() {
+				$('li').removeClass("active");
+			});
+			$('li').click(function() {
+				$('li.active').removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
