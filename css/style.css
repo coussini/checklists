@@ -12,11 +12,28 @@ a.list-group-item.active
 {
 	background-color: #09A2A2;
 	border: #09A2A2;
-	color: black;
 }
 li.list-group-item.active 
 {
 	background-color: lightgrey;
 	border: lightgrey;
 	color: black;
+}
+li.list-group-item.sous-titre 
+{
+	background-color: black;
+	border: black;
+	color: white;
+}
+li.list-group-item.important 
+{
+	color: #0d6efd;
+}
+li.list-group-item.lumiere 
+{
+	color: green;
+}
+.lumiere
+{
+	color:	green;
 }
