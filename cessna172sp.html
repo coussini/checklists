@@ -57,22 +57,27 @@
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane show active" id="list-flight-plan">
 						<ul class="list-group">
-							<li class="list-group-item">Générer la carte sur simbrief</li>
-							<li class="list-group-item">À la page 2 du document pdf, copier le « routing »</li>
-							<li class="list-group-item">Dans little navmap, choisir l’option nouveau plan de vol à partir de la description de l’itinéraire</li>
-							<li class="list-group-item">Enlever les références de piste et les slash</li>
+							<li class="list-group-item sous-titre">SIMBRIEF (Desktop)</li>
+							<li class="list-group-item">Créé un vol; Générer le plan de vol OFP;</li>
+							<li class="list-group-item">À la page 2 du document PDF preview, copier le « routing »</li>
+							<li class="list-group-item sous-titre">LITTLE NAVMAP (Desktop)</li>
+							<li class="list-group-item">Choisir l’option nouveau plan de vol à partir de la description de l’itinéraire</li>
+							<li class="list-group-item">Enlever les références de pistes (genre "/24r")</li>
 							<li class="list-group-item">Cliquez sur lire la description de l’itinéraire</li>
 							<li class="list-group-item">Cliquez sur créer un plan de vol</li>
-							<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les start ou les procédure d’approche selon le cas.</li>
-							<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter l’altitude sécuritairer à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+							<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
+							<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+							<li class="list-group-item important">Ouvrir une session Web sur l'IPAD</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-pre-start">
-							<li class="list-group-item important">ENTERING FUEL DEPENDING FLIGHT PLAN</li>
+						<li class="list-group-item sous-titre">SIMBRIEF (IPAD)</li>
+							<li class="list-group-item important">ENTERING FUEL DEPENDING PREVIEW PDF</li>
+							<li class="list-group-item sous-titre">PRE-START</li>
 							<li class="list-group-item">PARK BREAK<kbd class="m-3">SET</kbd></li>
 							<li class="list-group-item">THROTTLE <kbd>1/4</kbd></li>
 							<li class="list-group-item">MIXTURE <kbd>CUT OFF</kbd></li>
-							<li class="list-group-item">MASTER Switches <kbd>ON</kbd></li>
+							<li class="list-group-item">MASTER SWITCHES <kbd>ON</kbd></li>
 							<li class="list-group-item lumiere">BEACON <kbd class="lumiere">ON</kbd></li>	
 							<li class="list-group-item lumiere">NAV LIGHTS (Night only) <kbd class="lumiere">ON</kbd></li>	
 
@@ -90,11 +95,11 @@
  							<li class="list-group-item">MIXTURE <kbd>FULL</kbd></li>
 					</div>
  					<div class="tab-pane" id="list-cockpit-prepar">
- 						<li class="list-group-item">AVIONICS SWITCHES <kbd>ON </kbd></li>
- 						<li class="list-group-item important"><i class="fas fa-circle-notch fa-spin"></i><span class="fst-italic">&nbsp;&nbsp;("WAITING FOR AVITAB ")</span></li>
- 						<li class="list-group-item">FIND AIRPORT ALTIMETER INFO <kbd>AVITAB </kbd></li>
+ 						<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD)</li>
+ 						<li class="list-group-item">FIND DEPARTURE AIRPORT ALTIMETER INFO</li>
+ 						<li class="list-group-item sous-titre">COCKPIT PREPARATION</li>
  						<li class="list-group-item">ALTIMETER <kbd>SET </kbd></li>
- 						<li class="list-group-item">ILS FREQUENCY <kbd>SET </kbd></li>
+ 						<li class="list-group-item">AVIONICS SWITCHES <kbd>ON </kbd></li>
 					</div>
  					<div class="tab-pane" id="list-enter-garmin-rnav">
  						<li class="list-group-item important">"Cyhu/24r dct megtu naskk cyul/06r"</li>
@@ -137,7 +142,9 @@
 						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
  					</div>
  					<div class="tab-pane" id="list-before-taxi">
- 						<li class="list-group-item">FltPlan Go OR Little NavMap AIRPORT DIAGRAM <kbd>AVAILABLE</kbd></li>
+ 						<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD)</li>
+ 						<li class="list-group-item">SHOW AIRPORT DIAGRAM TAXIWAY</li>
+ 						<li class="list-group-item sous-titre">BEFORE TAXI</li>
  						<li class="list-group-item lumiere">TAXI LIGHTS <kbd class="lumiere">ON </kbd></li>
  						<li class="list-group-item">THROTTLE <kbd>1000 RPM </kbd></li>
  					</div>
@@ -148,6 +155,7 @@
 						<li class="list-group-item lumiere">LANDING LIGHTS <kbd class="lumiere">ON</kbd></li>	
  						<li class="list-group-item sous-titre">ON THE RUNWAY</li>
  						<li class="list-group-item important">SET HEADING BUG > DEPARTURE RUNWAY</li>
+ 						<li class="list-group-item">CDI (GARMIN 530) <kbd>GPS MODE </kbd></li>
  					</div>
  					<div class="tab-pane" id="list-take-off">
  						<li class="list-group-item lumiere">TAXI LIGHTS <kbd class="lumiere">OFF </kbd></li>
@@ -156,17 +164,18 @@
 						<li class="list-group-item">HDG (AUTOPILOT) <kbd>ON </kbd></li>
 						<li class="list-group-item">VS (AUTOPILOT) <kbd>+5 </kbd></li>
 						<li class="list-group-item sous-titre">WHEN REACH 800 FEET</li>
-						<li class="list-group-item">NAV (AUTOPILOT) Press 2 times <kbd>ON (gpss7) </kbd></li>
+						<li class="list-group-item">NAV (AUTOPILOT) <kbd>ON (GPSS) </kbd></li>
  						<li class="list-group-item sous-titre">ABOVE 3000 FEET OR IN CRUISE</li>
  						<li class="list-group-item">MIXTURE <kbd>LEAN </kbd></li>
  						<li class="list-group-item">THROTTLE <kbd>2100 à 2700 RPM </kbd></li>
  					</div>
  					<div class="tab-pane" id="list-landing">
- 						<li class="list-group-item important">ACTIVATE APPROACH IN GARMIN BEFORE REACH LAST WAYPOINT</li>
- 						<li class="list-group-item sous-titre">15 NM FROM AIRPORT</li>
- 						<li class="list-group-item">FIND ALTITUDE APPROACH INFO <kbd>FltPlan Go </kbd></li>
- 						<li class="list-group-item">FIND AIRPORT ALTIMETER INFO <kbd>AVITAB </kbd></li>
+ 						<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD) / 15 NM FROM AIRPORT</li>
+						<li class="list-group-item">FIND IAF ALTITUDE (Voie Aérienne ou Procédure)</li>
+ 						<li class="list-group-item">FIND ARRIVAL AIRPORT ALTIMETER INFO</li>
+						<li class="list-group-item sous-titre">LANDING</li>
  						<li class="list-group-item">ALTIMETER <kbd>SET </kbd></li>
+ 						<li class="list-group-item important">ACTIVATE APPROACH IN GARMIN FLIGHT PLAN BEFORE REACH LAST WAYPOINT</li>
  						<li class="list-group-item lumiere">TAXI LIGHTS <kbd class="lumiere">ON </kbd></li>
  						<li class="list-group-item lumiere">LANDING LIGHTS <kbd class="lumiere">ON </kbd></li>
  						<li class="list-group-item sous-titre">STRAIGHT LINE TO RUNWAY</li>
@@ -175,7 +184,7 @@
  						<li class="list-group-item">ALT (AUTOPILOT) <kbd>ALT GS (Check) </kbd></li>
  						<li class="list-group-item">MIXTURE <kbd>FULL </kbd></li>
  						<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
- 						<li class="list-group-item sous-titre">OUT FROM RUNWAY</li>
+ 						<li class="list-group-item sous-titre">THRU TAXIWAY</li>
  						<li class="list-group-item lumiere">LANDING LIGHTS <kbd class="lumiere">OFF </kbd></li>
 						<li class="list-group-item lumiere">STROBE LIGHTS <kbd class="lumiere">OFF</kbd></li>	
  						<li class="list-group-item">FLAPS <kbd>UP </kbd></li>

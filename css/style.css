@@ -29,9 +29,14 @@ li.list-group-item.important
 {
 	color: #0d6efd;
 }
+.important 
+{
+	color: #0d6efd;
+}
 li.list-group-item.lumiere 
 {
-	color: orange;
+	color:	orange;
+	font-weight: bold;
 }
 .lumiere
 {
