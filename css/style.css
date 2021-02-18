@@ -37,3 +37,17 @@ li.list-group-item.lumiere
 {
 	font-weight: bold;
 }
+a.boite-noire
+{
+	border-left-style: solid;
+	border-left-width: 20px;
+	border-left-color: black;
+}
+a.boite-noire.active 
+{
+	background-color: #09A2A2;
+	border: #09A2A2;
+	border-left-style: solid;
+	border-left-width: 20px;
+	border-left-color: black;
+}
