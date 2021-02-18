@@ -38,13 +38,14 @@
 				<div class="list-group" id="list-tab">
 					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-flight-plan">Flight plan</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-start-engine">Start engine</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar">Cockpit Preparation</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-enter-garmin-rnav">Insert Garmin 530 RNAV ou ILS</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-enter-garmin-managing">Managing Garmin Flight Plan</a>
+					<a class="list-group-item list-group-item-action fw-bold fst-italic" data-bs-toggle="list" href="#list-enter-garmin-rnav">Insert Garmin 530 RNAV ou ILS</a>
+					<a class="list-group-item list-group-item-action fw-bold fst-italic" data-bs-toggle="list" href="#list-enter-garmin-managing">Managing Garmin Flight Plan</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-landing">Landing</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi (after landing)</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
@@ -67,7 +68,6 @@
 							<li class="list-group-item">Cliquez sur créer un plan de vol</li>
 							<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
 							<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
-							<li class="list-group-item important">Ouvrir une session Web sur l'IPAD</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-pre-start">
@@ -82,7 +82,7 @@
 							<li class="list-group-item lumiere">NAV LIGHTS (Night only) <kbd class="lumiere">ON</kbd></li>	
 
 					</div>
- 					<div class="tab-pane" id="list-start-engine">
+ 					<div class="tab-pane" id="list-engine-start">
  							<li class="list-group-item sous-titre">ENGINE NOT WARM</li>
 							<li class="list-group-item">FULL PUMP <kbd>ON</kbd></li>							
 							<li class="list-group-item">MIXTURE 5 SECONDS <kbd>FULL</kbd></li>							
@@ -169,22 +169,24 @@
  						<li class="list-group-item">MIXTURE <kbd>LEAN </kbd></li>
  						<li class="list-group-item">THROTTLE <kbd>2100 à 2700 RPM </kbd></li>
  					</div>
- 					<div class="tab-pane" id="list-landing">
+ 					<div class="tab-pane" id="list-approach">
  						<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD) / 15 NM FROM AIRPORT</li>
 						<li class="list-group-item">FIND IAF ALTITUDE (Voie Aérienne ou Procédure)</li>
  						<li class="list-group-item">FIND ARRIVAL AIRPORT ALTIMETER INFO</li>
-						<li class="list-group-item sous-titre">LANDING</li>
+						<li class="list-group-item sous-titre">LAST WAYPOINT BEFORE APPROACH</li>
  						<li class="list-group-item">ALTIMETER <kbd>SET </kbd></li>
  						<li class="list-group-item">FPL (GARMIN 530) <kbd>MENU / ACTIVATE LEG APPROACH </kbd></li>
  						<li class="list-group-item lumiere">TAXI LIGHTS <kbd class="lumiere">ON </kbd></li>
  						<li class="list-group-item lumiere">LANDING LIGHTS <kbd class="lumiere">ON </kbd></li>
+ 					</div>
+ 					<div class="tab-pane" id="list-landing">
  						<li class="list-group-item sous-titre">STRAIGHT LINE TO RUNWAY</li>
  						<li class="list-group-item important">SET HEADING BUG > ARRIVAL RUNWAY</li>
  						<li class="list-group-item">APR (AUTOPILOT) <kbd>ON </kbd></li>
  						<li class="list-group-item">ALT (AUTOPILOT) <kbd>ALT GS (Check) </kbd></li>
  						<li class="list-group-item">MIXTURE <kbd>FULL </kbd></li>
  						<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
- 						<li class="list-group-item sous-titre">THRU TAXIWAY</li>
+ 						<li class="list-group-item sous-titre">EXIT RUNWAY</li>
  						<li class="list-group-item lumiere">LANDING LIGHTS <kbd class="lumiere">OFF </kbd></li>
 						<li class="list-group-item lumiere">STROBE LIGHTS <kbd class="lumiere">OFF</kbd></li>	
  						<li class="list-group-item">FLAPS <kbd>UP </kbd></li>

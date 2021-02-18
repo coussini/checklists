@@ -25,20 +25,15 @@ li.list-group-item.sous-titre
 	border: black;
 	color: white;
 }
-li.list-group-item.important 
+li.list-group-item.important, .important 
 {
 	color: #0d6efd;
 }
-.important 
+li.list-group-item.lumiere, .lumiere 
 {
-	color: #0d6efd;
+	color:	orange;
 }
 li.list-group-item.lumiere 
 {
-	color:	orange;
 	font-weight: bold;
-}
-.lumiere
-{
-	color:	orange;
 }
