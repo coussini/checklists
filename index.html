@@ -12,11 +12,21 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>
-        $(document).ready( function() {
-            $( "#nav-placeholder" ).load( "navbar.html" );
-            console.log('Done');
-        });		
+		$(document).ready( function() {
+			$( "#nav-placeholder" ).load( "navbar.html" );
+			console.log('Done');
+		});		
 	</script>	
+	<style type="text/css">
+		
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+	</style>
 </head>
 <body>
 	<!--Navigation bar-->
@@ -28,17 +38,31 @@
 			<h1 class="display-3 text-center">Checklists pour X-Plane 11</h1>
 		</div>
 	</div>
-
 	<div class="container">
-		<div class="card" style="width: 18rem;">
-  <img src="images/cessna.jpg" class="card-img-top" alt="zaza">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+		<div class="row">
+			<!-- begin on aircraft -->
+			<div class="col-4">
+				<div class="card">
+					<img src="images/cessna.jpg" class="card-img-top" alt="zaza">
+					<div class="card-body">
+						<h5 class="card-title">Cessna 172 SP</h5>
+						<a href="cessna172sp.html" class="btn btn-primary">Go to section</a>
+					</div>
+				</div>
+			</div>
+			<!-- end on aircraft -->
+			<!-- begin on aircraft -->
+			<div class="col-4">
+				<div class="card">
+					<img src="images/diamond62.jpeg" class="card-img-top" alt="zaza">
+					<div class="card-body">
+						<h5 class="card-title">Diamond Da62</h5>
+						<a href="diamondda62.html" class="btn btn-primary">Go to section</a>
+					</div>
+				</div>
+			</div>
+			<!-- end on aircraft -->
+		</div>
 	</div>
-
 </body>
 </html>

@@ -14,7 +14,6 @@
 	<script>
         $(document).ready( function() {
             $( "#nav-placeholder" ).load( "loading/navbar.html" );
-            $( "#list-flight-plan" ).load( "loading/flight-plan.html" );
         });		
 	</script>	
 </head>
@@ -25,7 +24,7 @@
 	<!--end of Navigation bar-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<h1 class="display-3 text-center">Cessna <small class="text-muted">172SP</small></h1>
+			<h1 class="display-3 text-center">Diamond <small class="text-muted">DA62</small></h1>
 		</div>
 	</div>
 	<!--Copier le modèle vierge ici-->	
@@ -56,6 +55,20 @@
 					Items
 				</div>
 				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane show active" id="list-flight-plan">
+						<ul class="list-group">
+							<li class="list-group-item sous-titre">SIMBRIEF (Desktop)</li>
+							<li class="list-group-item">Créé un vol; Générer le plan de vol OFP;</li>
+							<li class="list-group-item">À la page 2 du document PDF preview, copier le « routing »</li>
+							<li class="list-group-item sous-titre">LITTLE NAVMAP (Desktop)</li>
+							<li class="list-group-item">Choisir l’option nouveau plan de vol à partir de la description de l’itinéraire</li>
+							<li class="list-group-item">Enlever les références de pistes (genre "/24r")</li>
+							<li class="list-group-item">Cliquez sur lire la description de l’itinéraire</li>
+							<li class="list-group-item">Cliquez sur créer un plan de vol</li>
+							<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
+							<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+						</ul>
+					</div>
 					<div class="tab-pane" id="list-pre-start">
 							<li class="list-group-item sous-titre">SIMBRIEF (IPAD)</li>
 							<li class="list-group-item important">ENTERING FUEL DEPENDING PREVIEW PDF</li>
@@ -186,8 +199,6 @@
 						<li class="list-group-item">MASTER Switches <kbd>OFF</kbd></li>
 						<li class="list-group-item lumiere">BEACON <kbd class="lumiere">OFF</kbd></li>	
  					</div>
-					<div class="tab-pane show active" id="list-flight-plan">
-					</div>
 				</div>
 			</div>
 		</div>    
