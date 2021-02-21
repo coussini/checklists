@@ -12,10 +12,9 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>
-		$(document).ready( function() {
-			$( "#nav-placeholder" ).load( "navbar.html" );
-      $( "#list-flight-plan" ).load( "loading/flight-plan.html" );
-		});		
+        $(document).ready( function() {
+            $( "#nav-placeholder" ).load( "navbar.html" );
+        });		
 	</script>	
 </head>
 <body>
@@ -36,8 +35,7 @@
 					Checklist
 				</div>
 				<div class="list-group" id="list-tab">
-					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-flight-plan"><div><i class="fas fa-plane fa-fw"></i> Flight Plan</div></a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
+					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar">Cockpit Preparation</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-enter-garmin-rnav"><div><i class="fas fa-calculator fa-fw"></i> Insert Garmin 530 RNAV ou ILS</div></a>
@@ -56,10 +54,11 @@
 					Items
 				</div>
 				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane show active" id="list-flight-plan">
-					</div>
-					<div class="tab-pane" id="list-pre-start">
+					<div class="tab-pane active show" id="list-pre-start">
 						<ul class="list-group">
+							<li class="list-group-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-flight-plan">
+  Flight Plan
+</button></li>
 							<li class="list-group-item sous-titre">SIMBRIEF (IPAD)</li>
 							<li class="list-group-item important">ENTERING FUEL DEPENDING PREVIEW PDF</li>
 							<li class="list-group-item sous-titre">PRE-START</li>
@@ -214,6 +213,40 @@
 			</div>
 		</div>    
 	</div>    
+						<div class="modal"  id="modal-flight-plan" tabindex="-1">
+							<div class="modal-dialog">
+								
+						<ul class="list-group">
+							<li class="list-group-item important">"Cyhu/24r dct megtu naskk cyul/06r"</li>
+							<li class="list-group-item">Appuyez longuement sur <kbd>CLR</kbd></li>
+							<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
+							<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
+							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « delete flight plan » + <kbd>ENT</kbd></li>
+							<li class="list-group-item">Si cyhu n’est pas inscrit, appuyez longuement sur <kbd>CLR</kbd> puis faire <kbd>FPL</kbd></li>
+							<li class="list-group-item">Assurez vous que cyhu est en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
+							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir une ligne vierge en bas</li>
+							<li class="list-group-item sous-titre">Saisir megtu (waypoint)</li>
+							<li class="list-group-item">Tournez le petit bouton <kbd>CRSR</kbd> pour choisir la premiere</li>
+							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour faire la lettre suivante</li>
+							<li class="list-group-item">Lorsque le mot megtu est inscrit + <kbd>ENT</kbd> + <kbd>ENT</kbd></li>
+							<li class="list-group-item sous-titre">Pour détruire une destination (waypoint)</li>
+							<li class="list-group-item">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour etre en surbrillance</li>
+							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir un waypoint</li>
+							<li class="list-group-item">Appuyez sur <kbd>CLR</kbd> + <kbd>ENT</kbd></li>
+							<li class="list-group-item sous-titre">Saisir l’aéroport de destination cyul de la même façon que megtu</li>
+							<li class="list-group-item">Assurez vous que cyul est en surbrillance</li>
+							<li class="list-group-item">Appuyez sur <kbd>PROC</kbd></li>
+							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
+							<li class="list-group-item sous-titre important">RNAV</li>
+							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
+							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
+							<li class="list-group-item sous-titre important">ILS</li>
+							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
+							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
+						</ul>
+					</div>
+							</div>
+
 	<script>
 		$(document).ready(function() {
 			$('a.list-group-item').click(function() {
