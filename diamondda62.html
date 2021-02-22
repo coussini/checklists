@@ -6,15 +6,15 @@
 	<meta name="Content-Language" content="fr">
 	<meta name="Author" content="Coussini">
 	<meta name="Viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">	
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>
-        $(document).ready( function() {
-            $( "#nav-placeholder" ).load( "navbar.html" );
-        });		
+		$(document).ready( function() {
+			$( "#nav-placeholder" ).load( "navbar.html" );
+		});		
 	</script>	
 </head>
 <body>
@@ -38,8 +38,6 @@
 					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar">Cockpit Preparation</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-enter-garmin-rnav"><div><i class="fas fa-calculator fa-fw"></i> Insert Garmin 530 RNAV ou ILS</div></a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-enter-garmin-managing"><div><i class="fas fa-calculator fa-fw"></i> Managing Garmin Flight Plan</div></a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
@@ -56,9 +54,7 @@
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane active show" id="list-pre-start">
 						<ul class="list-group">
-							<li class="list-group-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-flight-plan">
-  Flight Plan
-</button></li>
+							<li class="list-group-item"></span>CREATE FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
 							<li class="list-group-item sous-titre">SIMBRIEF (IPAD)</li>
 							<li class="list-group-item important">ENTERING FUEL DEPENDING PREVIEW PDF</li>
 							<li class="list-group-item sous-titre">PRE-START</li>
@@ -91,50 +87,8 @@
 							<li class="list-group-item sous-titre">COCKPIT PREPARATION</li>
 							<li class="list-group-item">ALTIMETER <kbd>SET </kbd></li>
 							<li class="list-group-item">AVIONICS SWITCHES <kbd>ON </kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-enter-garmin-rnav">
-						<ul class="list-group">
-							<li class="list-group-item important">"Cyhu/24r dct megtu naskk cyul/06r"</li>
-							<li class="list-group-item">Appuyez longuement sur <kbd>CLR</kbd></li>
-							<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-							<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « delete flight plan » + <kbd>ENT</kbd></li>
-							<li class="list-group-item">Si cyhu n’est pas inscrit, appuyez longuement sur <kbd>CLR</kbd> puis faire <kbd>FPL</kbd></li>
-							<li class="list-group-item">Assurez vous que cyhu est en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
-							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir une ligne vierge en bas</li>
-							<li class="list-group-item sous-titre">Saisir megtu (waypoint)</li>
-							<li class="list-group-item">Tournez le petit bouton <kbd>CRSR</kbd> pour choisir la premiere</li>
-							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour faire la lettre suivante</li>
-							<li class="list-group-item">Lorsque le mot megtu est inscrit + <kbd>ENT</kbd> + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre">Pour détruire une destination (waypoint)</li>
-							<li class="list-group-item">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour etre en surbrillance</li>
-							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir un waypoint</li>
-							<li class="list-group-item">Appuyez sur <kbd>CLR</kbd> + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre">Saisir l’aéroport de destination cyul de la même façon que megtu</li>
-							<li class="list-group-item">Assurez vous que cyul est en surbrillance</li>
-							<li class="list-group-item">Appuyez sur <kbd>PROC</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre important">RNAV</li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre important">ILS</li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-enter-garmin-managing">
-						<ul class="list-group">
-							<li class="list-group-item sous-titre">SAUVEGARDE DU PLAN DE VOL</li>
-							<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-							<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « save flight plan » + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre">CHARGER UN PLAN DE VOL</li>
-							<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-							<li class="list-group-item">Assurez vous le plan de vol ne soit pas en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
-							<li class="list-group-item">Utilisez le petit bouton <kbd>CRSR</kbd> afin d’afficher la liste des plans de vol sauvegardés</li>
-							<li class="list-group-item">Appuyez sur le bouton <kbd>CRSR</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
+							<li class="list-group-item"></span>INSERTING GARMIN G530 DATA</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-rnav"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item"></span>SAVING OR LOADING GARMIN G530 FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-managing"><i class="fas fa-file-import"></i></button></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-before-taxi">
@@ -213,40 +167,103 @@
 			</div>
 		</div>    
 	</div>    
-						<div class="modal"  id="modal-flight-plan" tabindex="-1">
-							<div class="modal-dialog">
-								
-						<ul class="list-group">
-							<li class="list-group-item important">"Cyhu/24r dct megtu naskk cyul/06r"</li>
-							<li class="list-group-item">Appuyez longuement sur <kbd>CLR</kbd></li>
-							<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-							<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « delete flight plan » + <kbd>ENT</kbd></li>
-							<li class="list-group-item">Si cyhu n’est pas inscrit, appuyez longuement sur <kbd>CLR</kbd> puis faire <kbd>FPL</kbd></li>
-							<li class="list-group-item">Assurez vous que cyhu est en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
-							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir une ligne vierge en bas</li>
-							<li class="list-group-item sous-titre">Saisir megtu (waypoint)</li>
-							<li class="list-group-item">Tournez le petit bouton <kbd>CRSR</kbd> pour choisir la premiere</li>
-							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour faire la lettre suivante</li>
-							<li class="list-group-item">Lorsque le mot megtu est inscrit + <kbd>ENT</kbd> + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre">Pour détruire une destination (waypoint)</li>
-							<li class="list-group-item">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour etre en surbrillance</li>
-							<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir un waypoint</li>
-							<li class="list-group-item">Appuyez sur <kbd>CLR</kbd> + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre">Saisir l’aéroport de destination cyul de la même façon que megtu</li>
-							<li class="list-group-item">Assurez vous que cyul est en surbrillance</li>
-							<li class="list-group-item">Appuyez sur <kbd>PROC</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre important">RNAV</li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
-							<li class="list-group-item sous-titre important">ILS</li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
-							<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
-						</ul>
-					</div>
-							</div>
-
+	<!-- 	modal flight plan here -->						
+	<div class="modal" id="modal-flight-plan" tabindex="-1">
+		<div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Inserting Flight Plan</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item sous-titre">SIMBRIEF (Desktop)</li>
+						<li class="list-group-item">Créé un vol; Générer le plan de vol OFP;</li>
+						<li class="list-group-item">À la page 2 du document PDF preview, copier le « routing »</li>
+						<li class="list-group-item sous-titre">LITTLE NAVMAP (Desktop)</li>
+						<li class="list-group-item">Choisir l’option nouveau plan de vol à partir de la description de l’itinéraire</li>
+						<li class="list-group-item">Enlever les références de pistes (genre "/24r")</li>
+						<li class="list-group-item">Cliquez sur lire la description de l’itinéraire</li>
+						<li class="list-group-item">Cliquez sur créer un plan de vol</li>
+						<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
+						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal insert Garmion 530 RNAV or ILS here -->						
+	<div class="modal" id="modal-enter-garmin-rnav" tabindex="-1">
+		<div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">INSERTING GARMIN G530 DATA</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item important">"Cyhu/24r dct megtu naskk cyul/06r"</li>
+						<li class="list-group-item">Appuyez longuement sur <kbd>CLR</kbd></li>
+						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
+						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « delete flight plan » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Si cyhu n’est pas inscrit, appuyez longuement sur <kbd>CLR</kbd> puis faire <kbd>FPL</kbd></li>
+						<li class="list-group-item">Assurez vous que cyhu est en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
+						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir une ligne vierge en bas</li>
+						<li class="list-group-item sous-titre">Saisir megtu (waypoint)</li>
+						<li class="list-group-item">Tournez le petit bouton <kbd>CRSR</kbd> pour choisir la premiere</li>
+						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour faire la lettre suivante</li>
+						<li class="list-group-item">Lorsque le mot megtu est inscrit + <kbd>ENT</kbd> + <kbd>ENT</kbd></li>
+						<li class="list-group-item sous-titre">Pour détruire une destination (waypoint)</li>
+						<li class="list-group-item">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour etre en surbrillance</li>
+						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir un waypoint</li>
+						<li class="list-group-item">Appuyez sur <kbd>CLR</kbd> + <kbd>ENT</kbd></li>
+						<li class="list-group-item sous-titre">Saisir l’aéroport de destination cyul de la même façon que megtu</li>
+						<li class="list-group-item">Assurez vous que cyul est en surbrillance</li>
+						<li class="list-group-item">Appuyez sur <kbd>PROC</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
+						<li class="list-group-item sous-titre important">RNAV</li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
+						<li class="list-group-item sous-titre important">ILS</li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal flight plan here -->						
+	<div class="modal" id="modal-enter-garmin-managing" tabindex="-1">
+		<div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">SAVING OR LOADING G530 GARMIN FLIGHT PLAN</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item sous-titre">SAUVEGARDE DU PLAN DE VOL</li>
+						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
+						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « save flight plan » + <kbd>ENT</kbd></li>
+						<li class="list-group-item sous-titre">CHARGER UN PLAN DE VOL</li>
+						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
+						<li class="list-group-item">Assurez vous le plan de vol ne soit pas en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
+						<li class="list-group-item">Utilisez le petit bouton <kbd>CRSR</kbd> afin d’afficher la liste des plans de vol sauvegardés</li>
+						<li class="list-group-item">Appuyez sur le bouton <kbd>CRSR</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
 	<script>
 		$(document).ready(function() {
 			$('a.list-group-item').click(function() {

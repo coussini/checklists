@@ -51,3 +51,10 @@ a.boite-noire.active
 	border-left-width: 20px;
 	border-left-color: black;
 }
+.btn
+{
+	margin-left: 10px;
+}
+.btn-primary:not(:disabled):not(.disabled):focus{
+  box-shadow: 0 0 5px red;
+}
