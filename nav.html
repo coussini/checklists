@@ -26,9 +26,11 @@
 <script type="text/javascript">
 	$(function(){
     var zaza = location.pathname.split('/');
-    console.log(zaza);
     var current = zaza[zaza.length-1];
-    console.log("current length= "+current.length);
+    if(current.length == 0)
+    {
+    	current = "index.html";
+    }
     $('#navbarText li a').each(function(){
         var $this = $(this);
         // if the current path is like this link, make it active
