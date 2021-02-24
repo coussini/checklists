@@ -86,8 +86,8 @@
 							<li class="list-group-item sous-titre">COCKPIT PREPARATION</li>
 							<li class="list-group-item">ALTIMETER <kbd>SET </kbd></li>
 							<li class="list-group-item">AVIONICS SWITCHES <kbd>ON </kbd></li>
-							<li class="list-group-item"><span>INSERTING GARMIN G530 DATA</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-rnav"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item"><span>SAVING OR LOADING GARMIN G530 FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-managing"><i class="fas fa-file-import"></i></button></li>
+							<li class="list-group-item"><span>INSERTING GARMIN G530 DATA</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-rnav"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item"><span>SAVING OR LOADING GARMIN G530 FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-managing"><i class="fas fa-file-import"></i></button></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-before-taxi">
@@ -194,7 +194,7 @@
 		</div>
 	</div>
 	<!-- 	modal insert Garmion 530 RNAV or ILS here -->						
-	<div class="modal" id="modal-enter-garmin-rnav" tabindex="-1">
+	<div class="modal" id="modal-enter-garmin-G530-rnav" tabindex="-1">
 		<div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -213,9 +213,9 @@
 						<li class="list-group-item sous-titre">Saisir megtu (waypoint)</li>
 						<li class="list-group-item">Tournez le petit bouton <kbd>CRSR</kbd> pour choisir la premiere</li>
 						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour faire la lettre suivante</li>
-						<li class="list-group-item">Lorsque le mot megtu est inscrit + <kbd>ENT</kbd> + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Lorsque le mot megtu est inscrit + <kbd>ENT (2 fois)</kbd></li>
 						<li class="list-group-item sous-titre">Pour détruire une destination (waypoint)</li>
-						<li class="list-group-item">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour etre en surbrillance</li>
+						<li class="list-group-item">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour être en surbrillance</li>
 						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir un waypoint</li>
 						<li class="list-group-item">Appuyez sur <kbd>CLR</kbd> + <kbd>ENT</kbd></li>
 						<li class="list-group-item sous-titre">Saisir l’aéroport de destination cyul de la même façon que megtu</li>
@@ -224,10 +224,10 @@
 						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
 						<li class="list-group-item sous-titre important">RNAV</li>
 						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT (2 fois)</kbd></li>
 						<li class="list-group-item sous-titre important">ILS</li>
 						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT</kbd>+ <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT (2 fois)</kbd></li>
 					</ul>
 	      </div>
 	      <div class="modal-footer">
@@ -237,7 +237,7 @@
 		</div>
 	</div>
 	<!-- 	modal flight plan here -->						
-	<div class="modal" id="modal-enter-garmin-managing" tabindex="-1">
+	<div class="modal" id="modal-enter-garmin-G530-managing" tabindex="-1">
 		<div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
