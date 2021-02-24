@@ -22,7 +22,11 @@ li.list-group-item.active
 li.list-group-item.sous-titre 
 {
 	background-color: black;
-	border: black;
+	color: white;
+}
+li.list-group-item.titre-secondaire 
+{
+	background-color: #974908;
 	color: white;
 }
 li.list-group-item.important, .important 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>Checklists pour X-Plane 11</title>
+	<meta charset="UTF-8">
 	<meta name="Content-Type" content="UTF-8">
 	<meta name="Content-Language" content="fr">
 	<meta name="Author" content="Coussini">
@@ -16,7 +17,7 @@
 	<!--Navigation bar-->
 	<div id="nav-placeholder">
 	</div>
-	<script type="text/javascript">
+	<script>
 		    $("#nav-placeholder").load("nav.html");
 	</script>
 	<!--end of Navigation bar-->
@@ -52,8 +53,8 @@
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane active show" id="list-pre-start">
 						<ul class="list-group">
-							<li class="list-group-item"></span>CREATE FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
-							<li class="list-group-item sous-titre">SIMBRIEF (IPAD)</li>
+							<li class="list-group-item"><span>CREATE FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
+							<li class="list-group-item titre-secondaire"><i class="fas fa-share"></i>&nbsp;OPEN SIMBRIEF (IPAD)</li>
 							<li class="list-group-item important">ENTERING FUEL DEPENDING PREVIEW PDF</li>
 							<li class="list-group-item sous-titre">PRE-START</li>
 							<li class="list-group-item">PARK BREAK<kbd class="m-3">SET</kbd></li>
@@ -80,18 +81,18 @@
 					</div>
 					<div class="tab-pane" id="list-cockpit-prepar">
 						<ul class="list-group">
-							<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD)</li>
+							<li class="list-group-item titre-secondaire"><i class="fas fa-share"></i>&nbsp;OPEN LITTLE NAVMAP (IPAD)</li>
 							<li class="list-group-item">FIND DEPARTURE AIRPORT ALTIMETER INFO</li>
 							<li class="list-group-item sous-titre">COCKPIT PREPARATION</li>
 							<li class="list-group-item">ALTIMETER <kbd>SET </kbd></li>
 							<li class="list-group-item">AVIONICS SWITCHES <kbd>ON </kbd></li>
-							<li class="list-group-item"></span>INSERTING GARMIN G530 DATA</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-rnav"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item"></span>SAVING OR LOADING GARMIN G530 FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-managing"><i class="fas fa-file-import"></i></button></li>
+							<li class="list-group-item"><span>INSERTING GARMIN G530 DATA</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-rnav"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item"><span>SAVING OR LOADING GARMIN G530 FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-managing"><i class="fas fa-file-import"></i></button></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-before-taxi">
 						<ul class="list-group">
-							<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD)</li>
+							<li class="list-group-item titre-secondaire"><i class="fas fa-share"></i>&nbsp;SELECT LITTLE NAVMAP (IPAD)</li>
 							<li class="list-group-item">SHOW AIRPORT DIAGRAM TAXIWAY</li>
 							<li class="list-group-item sous-titre">BEFORE TAXI</li>
 							<li class="list-group-item lumiere">TAXI LIGHTS <kbd class="lumiere">ON </kbd></li>
@@ -125,7 +126,7 @@
 					</div>
 					<div class="tab-pane" id="list-approach">
 						<ul class="list-group">
-							<li class="list-group-item sous-titre">LITTLE NAVMAP (IPAD) / 15 NM FROM AIRPORT</li>
+							<li class="list-group-item titre-secondaire"><i class="fas fa-share"></i>&nbsp;SELECT LITTLE NAVMAP (IPAD) / 15 NM FROM AIRPORT</li>
 							<li class="list-group-item">FIND IAF ALTITUDE (Voie Aérienne ou Procédure)</li>
 							<li class="list-group-item">FIND ARRIVAL AIRPORT ALTIMETER INFO</li>
 							<li class="list-group-item">FIND ILS FREQUENCY (As Req)</li>
@@ -183,7 +184,7 @@
 						<li class="list-group-item">Cliquez sur lire la description de l’itinéraire</li>
 						<li class="list-group-item">Cliquez sur créer un plan de vol</li>
 						<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
-						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter<span class="important">ALTITUDE SECURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
 					</ul>
 	      </div>
 	      <div class="modal-footer">
