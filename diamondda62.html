@@ -18,7 +18,7 @@
 	<div id="nav-placeholder">
 	</div>
 	<script>
-		    $("#nav-placeholder").load("nav.html");
+		$("#nav-placeholder").load("nav.html");
 	</script>
 	<!--end of Navigation bar-->
 	<div class="jumbotron jumbotron-fluid">
@@ -62,7 +62,8 @@
 							<li class="list-group-item">LUGGAGE <kbd>HALF </kbd></li>
 							<li class="list-group-item">METRIC SYSTEM <kbd>KGS </kbd></li>
 							<li class="list-group-item titre-secondaire"><i class="fas fa-share"></i>&nbsp;OPEN SIMBRIEF (IPAD)</li>
-							<li class="list-group-item important">GET FUEL QUANTITY FROM PREVIEW PDF</li>
+							<li class="list-group-item important">GET BLOCK TIME IN PAGE 3 FROM PREVIEW PDF</li>
+							<li class="list-group-item"><span>CALCULATE FUEL FOR THIS BLOCK TIME</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-calculate-fuel"><i class="fas fa-gas-pump"></i></button></li>
 							<li class="list-group-item">FUEL <kbd>USE MOUSE WHEEL TO AJUST </kbd></li>
 							<li class="list-group-item">DEICE FLUID <kbd>FILL </kbd></li>
 							<li class="list-group-item">OXYGEN <kbd>FILL </kbd></li>
@@ -218,11 +219,11 @@
 	<!-- 	modal flight plan here -->						
 	<div class="modal" id="modal-flight-plan" tabindex="-1">
 		<div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">CREATE FLIGHT PLAN</h5>
-	      </div>
-	      <div class="modal-body">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">CREATE FLIGHT PLAN</h5>
+				</div>
+				<div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item sous-titre">SIMBRIEF (Desktop)</li>
 						<li class="list-group-item">Créé un vol; Générer le plan de vol OFP;</li>
@@ -235,21 +236,60 @@
 						<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
 						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol pour l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
 					</ul>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	      </div>
-	    </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 	modal calculate fuel here -->						
+	<div class="modal" id="modal-calculate-fuel" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">CALCULATE FUEL FOR THIS FLIGHT</h5>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+							<label for="blocktime" class="form-label">BLOCK TIME</label>
+							<input type="number" id="blocktime" name="blocktime" step="any">
+						</div>
+						<div class="mb3">
+							<label for="kilograme" class="form-label"><span class="text-danger">KILOGRAMME</span></label>
+							<output id="kilograme" name="kilograme" class="text-danger"></output>
+						</div>
+						<input class="btn btn-secondary" type="button" value="Calculate Fuel Required" onclick="calculaten()">
+					</form>	
+					<script>
+						function calculaten() 
+						{
+							var blocktime = eval(document.getElementsByName("blocktime")[0].value);
+							var stimen = eval(0);
+							var gallon = (eval(11.8))*((blocktime * 1)+(stimen * 1));
+							var kilograme = (gallon*eval(261))/eval(86);
+							document.getElementById("kilograme").innerHTML = round(kilograme);
+						}
+						function round(x) {
+							return Math.round(x*100)/100;
+						}
+					</script>					      	
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- 	modal insert Garmion 530 RNAV or ILS here -->						
 	<div class="modal" id="modal-enter-garmin-G1000-rnav" tabindex="-1">
 		<div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">INSERTING GARMIN G1000 DATA</h5>
-	      </div>
-	      <div class="modal-body">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">INSERTING GARMIN G1000 DATA</h5>
+				</div>
+				<div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item important">"Cyhu/24r dct megtu naskk cyul/06r"</li>
 						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
@@ -277,21 +317,21 @@
 						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
 						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « vectors » + <kbd>ENT (3 fois)</kbd></li>
 					</ul>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	      </div>
-	    </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- 	modal flight plan here -->						
 	<div class="modal" id="modal-enter-garmin-G1000-managing" tabindex="-1">
 		<div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">SAVING OR LOADING G1000 GARMIN FLIGHT PLAN</h5>
-	      </div>
-	      <div class="modal-body">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">SAVING OR LOADING G1000 GARMIN FLIGHT PLAN</h5>
+				</div>
+				<div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item sous-titre">SAUVEGARDE DU PLAN DE VOL</li>
 						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
@@ -304,11 +344,11 @@
 						<li class="list-group-item">Appuyez sur le bouton <kbd>FMS</kbd></li>
 						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
 					</ul>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	      </div>
-	    </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script>
