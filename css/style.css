@@ -41,19 +41,19 @@ li.list-group-item.lumiere
 {
 	font-weight: bold;
 }
-a.boite-noire
+.boite-noire
 {
 	border-left-style: solid;
 	border-left-width: 20px;
 	border-left-color: black;
+	padding-left: 30px;
 }
-a.boite-noire.active 
+li.list-group-item.boite-noire.active
 {
-	background-color: #09A2A2;
-	border: #09A2A2;
 	border-left-style: solid;
 	border-left-width: 20px;
 	border-left-color: black;
+	padding-left: 30px;
 }
 .btn
 {
@@ -62,7 +62,8 @@ a.boite-noire.active
 .btn-primary:not(:disabled):not(.disabled):focus{
   box-shadow: 0 0 5px red;
 }
-img {
+img 
+{
     float: left;
     width:  100px;
     height: 100px;
