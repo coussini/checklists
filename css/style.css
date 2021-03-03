@@ -41,18 +41,11 @@ li.list-group-item.lumiere
 {
 	font-weight: bold;
 }
-.boite-noire
+.boite-noire, li.list-group-item.boite-noire.active
 {
 	border-left-style: solid;
 	border-left-width: 20px;
-	border-left-color: black;
-	padding-left: 30px;
-}
-li.list-group-item.boite-noire.active
-{
-	border-left-style: solid;
-	border-left-width: 20px;
-	border-left-color: black;
+	border-left-color: #09A2A2;;
 	padding-left: 30px;
 }
 .btn
