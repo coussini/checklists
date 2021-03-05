@@ -42,8 +42,9 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-level-change">Level Change and VPATH modes</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-level-change">Level Altitude Change (Controler Request)</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Preparing Approach</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-vnav-descent">VNAV Descent mode</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-landing">Landing</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi (after landing)</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
@@ -118,7 +119,7 @@
 							<li class="list-group-item list-group-item-info"><span>INSERTING GARMIN G1000 DATA</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G1000-rnav"><i class="fas fa-keyboard"></i></button></li>
 							<li class="list-group-item list-group-item-info"><span>SAVING OR LOADING GARMIN G1000 FLIGHT PLAN</span><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G1000-managing"><i class="fas fa-file-import"></i></button></li>
 							<li class="list-group-item">FPL <kbd>PRESS </kbd></li>
-							<li class="list-group-item  list-group-item-danger">PRESS FMS BUTTON (REMOVING EDIT MODE)</li>
+							<li class="list-group-item list-group-item-danger">PRESS FMS BUTTON (EXIT EDIT MODE)</li>
 							<li class="list-group-item">MAP <kbd>PRESS </kbd></li>
 							<li class="list-group-item boite-noire"><kbd>TRAFFIC SET </kbd></li>
 							<li class="list-group-item boite-noire"><kbd>TOPO SET </kbd></li>
@@ -173,13 +174,13 @@
 					</div>
 					<div class="tab-pane" id="list-take-off">
 						<ul class="list-group">
-							<li class="list-group-item list-group-item-warning">TAXI LIGHTS <kbd class="lumiere">OFF </kbd></li>
-							<li class="list-group-item list-group-item-warning">LANDING LIGHTS <kbd class="lumiere">OFF</kbd></li>	
 							<li class="list-group-item">GEAR <kbd>UP </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>UP </kbd></li>
 							<li class="list-group-item">AP (AUTOPILOT) <kbd>ON </kbd></li>
 							<li class="list-group-item">LEFT FULL PUMPS <kbd>OFF </kbd></li>
 							<li class="list-group-item">RIGHT FULL PUMPS <kbd>OFF </kbd></li>
+							<li class="list-group-item list-group-item-warning">LANDING LIGHTS <kbd class="lumiere">OFF</kbd></li>	
+							<li class="list-group-item list-group-item-warning">TAXI LIGHTS <kbd class="lumiere">OFF </kbd></li>
 							<li class="list-group-item sous-titre">WHEN REACH 800 FEET</li>
 							<li class="list-group-item">NAV (AUTOPILOT) <kbd>ON (GPSS) </kbd></li>
 							<li class="list-group-item">POWER <kbd>95% </kbd></li>
@@ -187,35 +188,53 @@
 					</div>
 					<div class="tab-pane" id="list-level-change">
 						<ul class="list-group">
-							<li class="list-group-item list-group-item-warning">TAXI LIGHTS <kbd class="lumiere">OFF </kbd></li>
-							<li class="list-group-item list-group-item-warning">LANDING LIGHTS <kbd class="lumiere">OFF</kbd></li>	
-							<li class="list-group-item">GEAR <kbd>UP </kbd></li>
-							<li class="list-group-item">FLAPS <kbd>UP </kbd></li>
-							<li class="list-group-item">AP (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">LEFT FULL PUMPS <kbd>OFF </kbd></li>
-							<li class="list-group-item">RIGHT FULL PUMPS <kbd>OFF </kbd></li>
-							<li class="list-group-item sous-titre">WHEN REACH 800 FEET</li>
-							<li class="list-group-item">NAV (AUTOPILOT) <kbd>ON (GPSS) </kbd></li>
-							<li class="list-group-item">POWER <kbd>95% </kbd></li>
+							<li class="list-group-item list-group-item-info">FLIGHT LEVEL CHANGE ABOVE THE CURRENT</li>
+							<li class="list-group-item boite-noire">ALTITUDE BUTTON <kbd>SET</kbd> TO NEW ALTITUDE</li>
+							<li class="list-group-item boite-noire">FLC (AUTOPILOT) <kbd>ON </kbd></li>
+							<li class="list-group-item boite-noire">NOSE UP (AUTOPILOT) <kbd>PRESS</kbd> (Until Good Rate Of Ascent)</li>
+							<li class="list-group-item boite-noire">FINE TUNING WITH POWER <kbd>INCREASE OR DECREASE</kbd> (Until Good Rate Of Ascent)</li>
+							<li class="list-group-item list-group-item-info">FLIGHT LEVEL CHANGE BELLOW THE CURRENT</li>
+							<li class="list-group-item boite-noire">ALTITUDE BUTTON <kbd>SET</kbd> TO NEW ALTITUDE</li>
+							<li class="list-group-item boite-noire">FLC (AUTOPILOT) <kbd>ON </kbd></li>
+							<li class="list-group-item boite-noire">NOSE DN (AUTOPILOT) <kbd>PRESS</kbd> (Until Good Rate Of Descent)</li>
+							<li class="list-group-item boite-noire">FINE TUNING WITH POWER <kbd>INCREASE OR DECREASE</kbd> (Until Good Rate Of Descent)</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-approach">
 						<ul class="list-group">
-							<li class="list-group-item list-group-item-info"><i class="fas fa-share"></i>&nbsp;SELECT LITTLE NAVMAP (IPAD) / 15 NM FROM AIRPORT</li>
-							<li class="list-group-item list-group-item-info">FIND IAF ALTITUDE (Voie Aérienne ou Procédure)</li>
+							<li class="list-group-item list-group-item-info"><i class="fas fa-share"></i>&nbsp;SELECT LITTLE NAVMAP (IPAD)</li>
 							<li class="list-group-item list-group-item-info">FIND ARRIVAL AIRPORT ALTIMETER INFO</li>
 							<li class="list-group-item list-group-item-info">FIND ILS FREQUENCY (As Req)</li>
 							<li class="list-group-item sous-titre">LAST WAYPOINT BEFORE APPROACH</li>
 							<li class="list-group-item">ILS FREQUENCY <kbd>SET (As Req)</kbd></li>
-							<li class="list-group-item list-group-item-danger">WHEN ILS LANDING <kbd>CDI</kbd> UNTIL LOC1</li>
-							<li class="list-group-item">ALTIMETER <kbd>SET</kbd></li>
 							<li class="list-group-item">FPL (GARMIN G1000) <kbd>MENU / ACTIVATE LEG APPROACH </kbd></li>
-							<li class="list-group-item list-group-item-warning">LANDING LIGHTS <kbd class="lumiere">ON </kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-vnav-descent">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-info">PREPARING DESCENT FOR APPROACH PROCEDURE ONLY</li>
+							<li class="list-group-item boite-noire">IN FLIGHT PLAN, FIND THE IAF OR FAF ALTITUDE</li>
+							<li class="list-group-item boite-noire">ALTITUDE BUTTON <kbd>SET</kbd> TO THIS FOUND ALTITUDE</li>
+							<li class="list-group-item boite-noire">VNV (AUTOPILOT) <kbd>ON</kbd></li>
+							<li class="list-group-item list-group-item-info">TO CHANGE THE VNAV PROFILE ANGLE</li>
+							<li class="list-group-item boite-noire">VNV PROF (BOTTOM OF MFD)<kbd> PRESS</kbd></li>
+							<li class="list-group-item boite-noire">FMS (big button) <kbd>TURN</kbd> UNTIL FPA IS HIGHLIGHT</li>
+							<li class="list-group-item boite-noire">FMS (small button) <kbd>TURN</kbd> TO CHANGE THE VALUE (-3.0) THEN PRESS <kbd>ENT</kbd></li>
+							<li class="list-group-item boite-noire">PRESS FMS BUTTON (EXIT EDIT MODE)</li>
+							<li class="list-group-item list-group-item-info">IF TIME TO TOD IS GREATER THAN 5:00</li>
+							<li class="list-group-item boite-noire">WAIT UNTIL TIME TO TOD IS LESS THAN 5:00</li>
+							<li class="list-group-item list-group-item-info">IF TIME TO TOD IS LESS THAN 5:00 AND VPATH IS NOT ACTIVE</li>
+							<li class="list-group-item boite-noire">VNV (AUTOPILOT) <kbd>ON</kbd></li>
+							<li class="list-group-item list-group-item-info">WHEN TIME TO TOD IS LESS THAN 1:00</li>
+							<li class="list-group-item boite-noire">THE VPATH BECOME ACTIVE IN FD (IN ALTITUDE TAPE)</li>
+							<li class="list-group-item boite-noire">REDUCE POWER</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-landing">
 						<ul class="list-group">
+							<li class="list-group-item list-group-item-danger"><strong>FOR ILS LANDING</strong> : NAV LOC1 IS SWITCH AUTOMATICALLY</li>
 							<li class="list-group-item sous-titre">STRAIGHT LINE TO RUNWAY</li>
+							<li class="list-group-item list-group-item-warning">LANDING LIGHTS <kbd class="lumiere">ON </kbd></li>
 							<li class="list-group-item list-group-item-info">PRESS HDG BUTTON TO SET TO ARRIVAL RUNWAY</li>
 							<li class="list-group-item">PINK LOSANGE (DESCENT) <kbd>CHECK NEAR CENTER </kbd></li>
 							<li class="list-group-item">APR (AUTOPILOT) <kbd>ON </kbd></li>
@@ -305,7 +324,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
+				</div>9
 			</div>
 		</div>
 	</div>
