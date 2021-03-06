@@ -33,15 +33,15 @@ li.list-group-item.important, .important
 {
 	color: #0d6efd;
 }
-li.list-group-item.lumiere, .lumiere 
+.list-group-item-warning
+{
+	color: black;
+}
+.lumiere 
 {
 	color:	orange;
 }
-li.list-group-item.lumiere 
-{
-	font-weight: bold;
-}
-.boite-noire, li.list-group-item.boite-noire.active
+.list-group-item-bordure, li.list-group-item.list-group-item-bordure.active
 {
 	border-left-style: solid;
 	border-left-width: 20px;
