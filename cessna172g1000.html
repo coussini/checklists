@@ -18,12 +18,12 @@
 	<div id="nav-placeholder">
 	</div>
 	<script>
-		$("#nav-placeholder").load("nav.html");
+		    $("#nav-placeholder").load("nav.html");
 	</script>
 	<!--end of Navigation bar-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<h1 class="display-3 text-center">Diamond <small class="text-muted">DA62</small></h1>
+			<h1 class="display-3 text-center">Cessna <small class="text-muted">172SP <span class="display-6">G1000</span></small></h1>
 		</div>
 	</div>
 	<!--Copier le modèle vierge ici-->	
@@ -34,11 +34,10 @@
 					Checklist
 				</div>
 				<div class="list-group" id="list-tab">
-					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-option">Options</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
+					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-g1000-left-prepar">G1000 Pilot Prepar.</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-g1000-right-prepar">G1000 Co-Pilot Prepar.</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
@@ -55,35 +54,34 @@
 					Items
 				</div>
 				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane active show" id="list-option">
+					<div class="tab-pane active show" id="list-pre-start">
 						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">CREATE FLIGHT PLAN WITH 2 PASSENGERS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
+							<li class="list-group-item titre-sans-element-primaire">CREATE FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
 							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">GET BLOCK TIME IN PAGE 3 FROM PREVIEW PDF</li>
-							<li class="list-group-item titre-sans-element-primaire">CALCULATE FUEL FOR THIS BLOCK TIME<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-calculate-fuel"><i class="fas fa-gas-pump"></i></button></li>
-							<li class="list-group-item titre-et-element-primaire">CLIC THE <strong>SERIAL NUMBER</strong> (TOP OF G1000 FOR OPTIONS)</li>
-							<li class="list-group-item element-primaire">PASSENGERS <kbd>2 ADULTS</kbd></li>
-							<li class="list-group-item element-primaire">LUGGAGE <kbd>HALF </kbd></li>
-							<li class="list-group-item element-primaire">METRIC SYSTEM <kbd>KGS </kbd></li>
-							<li class="list-group-item element-primaire">FUEL <kbd>USE MOUSE WHEEL TO AJUST </kbd></li>
-							<li class="list-group-item element-primaire">DEICE FLUID <kbd>FILL </kbd></li>
-							<li class="list-group-item element-primaire">OXYGEN <kbd>FILL </kbd></li>
-							<li class="list-group-item element-primaire">CLOSE DOORS <kbd>ALL </kbd></li>
-							<li class="list-group-item element-primaire">CHOCKS <kbd>REMOVE </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">ENTERING FUEL DEPENDING PREVIEW PDF</li>
+							<li class="list-group-item">PARK BREAK<kbd class="m-3">SET</kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>1/4</kbd></li>
+							<li class="list-group-item">MIXTURE <kbd>CUT OFF</kbd></li>
+							<li class="list-group-item">MASTER (BAT) <kbd>ON </kbd></li>
+							<li class="list-group-item element-lumiere">BEACON <kbd>ON</kbd></li>	
+							<li class="list-group-item element-lumiere">NAV LIGHTS (Night only) <kbd>ON</kbd></li>	
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-pre-start">
+					<div class="tab-pane" id="list-engine-start">
 						<ul class="list-group">
-							<li class="list-group-item">AUX POWER (GROUND POWER) <kbd>ON </kbd></li>
-							<li class="list-group-item">OVERHEAD LIGHTS (Night only) <kbd>ON </kbd></li>
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>ON </kbd></li>
-							<li class="list-group-item">PEDESTAL RED CROSS FEED <kbd>SECURE </kbd></li>
-							<li class="list-group-item">MASTER (BAT) <kbd>ON </kbd></li>
-							<li class="list-group-item">GEAR FIRE TEST (Left Gear Level) <kbd>PRESS </kbd></li>
-							<li class="list-group-item">ICE ANNUN-TEST (Top Left Cockpit) <kbd>ON</kbd></li>
-							<li class="list-group-item">ICE ANNUN-TEST (Top Left Cockpit) <kbd>OFF</kbd></li>
+							<li class="list-group-item">MASTER (ALT) <kbd>ON </kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">IF ENGINE NOT WARM</li>
+							<li class="list-group-item element-primaire">FULL PUMP <kbd>ON</kbd></li>							
+							<li class="list-group-item element-primaire">MIXTURE 5 SECONDS <kbd>FULL</kbd></li>							
+							<li class="list-group-item element-primaire">MIXTURE <kbd>CUT OFF</kbd></li>							
+							<li class="list-group-item element-primaire">FULL PUMP <kbd>OFF</kbd></li>
+							<hr>							
+							<li class="list-group-item">KEY <kbd>START</kbd></li>							
+							<li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAITING START")</li>
+							<li class="list-group-item">KEY <kbd>BOTH</kbd></li>
+							<li class="list-group-item">MIXTURE <kbd>FULL</kbd></li>
 							<li class="list-group-item">AVIONIC MASTER <kbd>ON </kbd></li>
-							<li class="list-group-item element-lumiere">NAV LIGHT <kbd>ON </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-g1000-left-prepar">
@@ -112,7 +110,6 @@
 							<li class="list-group-item">FMS <kbd>PRESS</kbd> (Exit Edit Mode)</li>
 							<li class="list-group-item titre-et-element-primaire">MAP <kbd>PRESS</kbd></li>
 							<li class="list-group-item element-primaire"><kbd class="petit">TRAFFIC SET </kbd><kbd class="petit">TOPO SET </kbd><kbd class="petit">NEXRAD SET </kbd><kbd class="petit">BACK </kbd></li>
-							<li class="list-group-item">AVIONIC MASTER <kbd>OFF </kbd></li>
 							<li class="list-group-item"><hr></li>
 							<li class="list-group-item titre-et-element-secondaire">USING RANGE BUTTON</li>
 							<li class="list-group-item element-secondaire">FOR PAN (Scroll map using Arrow button): RANGE BUTTON <kbd>PRESS</kbd></li>
@@ -120,39 +117,24 @@
 							<li class="list-group-item element-secondaire">FOR ZOOM MAP: RANGE BUTTON <kbd>TURN</kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-engine-start">
-						<ul class="list-group">
-							<li class="list-group-item">ALTERNATORS LH <kbd>ON </kbd></li>
-							<li class="list-group-item">ALTERNATORS RH <kbd>ON </kbd></li>
-							<li class="list-group-item">MASTER LEFT ENGINE <kbd>ON </kbd></li>
-							<li class="list-group-item">START LEFT <kbd>PRESS </kbd></li>
-							<li class="list-group-item">MASTER RIGHT ENGINE <kbd>ON </kbd></li>
-							<li class="list-group-item">START RIGHT <kbd>PRESS </kbd></li>
-							<li class="list-group-item">AUX POWER (GROUND POWER) <kbd>OFF </kbd></li>
-							<li class="list-group-item">AVIONIC MASTER <kbd>ON </kbd></li>
-						</ul>
-					</div>
 					<div class="tab-pane" id="list-before-taxi">
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">SELECT <strong>LITTLE NAVMAP (IPAD)</strong></li>
 							<li class="list-group-item titre-sans-element-primaire">SHOW AIRPORT DIAGRAM TAXIWAY</li>
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>CROSSFEED </kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>1000 RPM </kbd></li>
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>ON </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-line-up">
 						<ul class="list-group">
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>ON </kbd></li>
 							<li class="list-group-item">TRIM <kbd>SET </kbd></li>	
 							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
-							<li class="list-group-item">LEFT FULL PUMPS <kbd>ON </kbd></li>
-							<li class="list-group-item">RIGHT FULL PUMPS <kbd>ON </kbd></li>
 							<li class="list-group-item">ALTITUDE BUTTON <kbd>SET</kbd> TO MAX ALTITUDE</li>
 							<li class="list-group-item">NAV (AUTOPILOT) <kbd>ON </kbd></li>
 							<li class="list-group-item">FLC (AUTOPILOT) <kbd>ON </kbd></li>
 							<li class="list-group-item">NOSE DN (AUTOPILOT) <kbd>PRESS</kbd> (Until 90 KTS)</li>
-							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd></li>	
 							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
+							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd></li>	
 							<hr>
 							<li class="list-group-item titre-et-element-primaire">ON THE RUNWAY</li>
 							<li class="list-group-item element-primaire">PRESS <strong>HDG BUTTON</strong> TO SET TO DEPARTURE RUNWAY</li>
@@ -161,15 +143,15 @@
 					</div>
 					<div class="tab-pane" id="list-take-off">
 						<ul class="list-group">
-							<li class="list-group-item">GEAR <kbd>UP </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>UP </kbd></li>
 							<li class="list-group-item">AP (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">POWER <kbd>95% </kbd></li>
 							<hr>
-							<li class="list-group-item">LEFT FULL PUMPS <kbd>OFF </kbd></li>
-							<li class="list-group-item">RIGHT FULL PUMPS <kbd>OFF </kbd></li>
 							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">ABOVE 3000 FEET OR IN CRUISE</li>
+							<li class="list-group-item element-primaire">MIXTURE <kbd>LEAN </kbd></li>
+							<li class="list-group-item element-primaire">THROTTLE <kbd>2100 à 2700 RPM </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-level-change">
@@ -233,7 +215,6 @@
 							<li class="list-group-item titre-sans-element-primaire">PINK LOSANGE (DESCENT) <kbd>CHECK NEAR CENTER </kbd></li>
 							<li class="list-group-item">APR (AUTOPILOT) <kbd>ON </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
-							<li class="list-group-item">GEAR <kbd>DOWN </kbd></li>
 							<hr>
 							<li class="list-group-item titre-et-element-primaire">EXIT RUNWAY</li>
 							<li class="list-group-item element-primaire">FLAPS <kbd>UP </kbd></li>
@@ -244,12 +225,12 @@
 					<div class="tab-pane" id="list-parking">
 						<ul class="list-group">
 							<li class="list-group-item">AVIONIC MASTER <kbd>OFF </kbd></li>
-							<li class="list-group-item">MASTER LEFT ENGINE <kbd>OFF </kbd></li>
-							<li class="list-group-item">MASTER RIGHT ENGINE <kbd>OFF </kbd></li>
-							<li class="list-group-item">PEDESTAL RED CROSS FEED <kbd>UNSECURE </kbd></li>
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>OFF </kbd></li>
+							<li class="list-group-item">MIXTURE <kbd>FULL LEAN </kbd></li>
+							<li class="list-group-item">KEY <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">BEACON <kbd>OFF</kbd></li>	
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-lumiere">NAV LIGHTS <kbd>OFF </kbd></li>
+							<li class="list-group-item element-lumiere">NAV LIGHTS (Night only) <kbd>OFF </kbd></li>
+							<li class="list-group-item">MASTER (ALT) <kbd>OFF </kbd></li>
 							<li class="list-group-item">MASTER (BAT) <kbd>OFF </kbd></li>
 						</ul>
 					</div>
@@ -260,11 +241,11 @@
 	<!-- 	modal flight plan here -->						
 	<div class="modal" id="modal-flight-plan" tabindex="-1">
 		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">CREATE FLIGHT PLAN</h5>
-				</div>
-				<div class="modal-body">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">CREATE FLIGHT PLAN</h5>
+	      </div>
+	      <div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item titre-fonce">SIMBRIEF (Desktop)</li>
 						<li class="list-group-item">Créé un vol; Générer le plan de vol OFP;</li>
@@ -275,52 +256,13 @@
 						<li class="list-group-item">Cliquez sur lire la description de l’itinéraire</li>
 						<li class="list-group-item">Cliquez sur créer un plan de vol</li>
 						<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
-						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol pour l’<span class="important">ALTITUDE SÉCURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter<span class="important">ALTITUDE SECURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
 					</ul>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- 	modal calculate fuel here -->						
-	<div class="modal" id="modal-calculate-fuel" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">CALCULATE FUEL FOR THIS FLIGHT</h5>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="mb-3">
-							<label for="blocktime" class="form-label">BLOCK TIME</label>
-							<input type="number" id="blocktime" name="blocktime" step="any">
-						</div>
-						<div class="mb3">
-							<label for="kilograme" class="form-label"><span class="text-danger">KILOGRAMME</span></label>
-							<output id="kilograme" name="kilograme" class="text-danger"></output>
-						</div>
-						<input class="btn btn-secondary" type="button" value="Calculate Fuel Required" onclick="calculaten()">
-					</form>	
-					<script>
-						function calculaten() 
-						{
-							var blocktime = eval(document.getElementsByName("blocktime")[0].value);
-							var stimen = eval(0);
-							var gallon = (eval(11.8))*((blocktime * 1)+(stimen * 1));
-							var kilograme = (gallon*eval(261))/eval(86);
-							document.getElementById("kilograme").innerHTML = round(kilograme);
-						}
-						function round(x) {
-							return Math.round(x*100)/100;
-						}
-					</script>					      	
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>9
-			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
 		</div>
 	</div>
 	<!-- 	modal info primary flight display -->						
@@ -409,14 +351,6 @@
 						<li class="list-group-item titre-fonce">ILS</li>
 						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
 						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « vectors » + <kbd>ENT (3 fois)</kbd></li>
-						<li class="list-group-item titre-fonce">Pour insérer des Airways</li>
-						<li class="list-group-item">Assurez vous que l'aéroport d'arrivée est en surbrillance, ce qui permet d'insérer un ou des points avant ce dernier</li>
-						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « Load Airways » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> pour sélectionner un Airways de la liste + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> pour sélectionner d'autres Airways s'il y a lieu + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-
 					</ul>
 				</div>
 				<div class="modal-footer">
