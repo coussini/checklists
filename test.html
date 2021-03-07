@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Checklists pour X-Plane 11</title>
+	<meta charset="UTF-8">
+	<meta name="Content-Type" content="UTF-8">
+	<meta name="Content-Language" content="fr">
+	<meta name="Author" content="Coussini">
+	<meta name="Viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">	
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!--Navigation bar-->
+	<div id="nav-placeholder">
+	</div>
+	<script>
+		$("#nav-placeholder").load("nav.html");
+	</script>
+	<!--end of Navigation bar-->
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-3 text-center">Test <small class="text-muted">Styles</small></h1>
+		</div>
+	</div>
+	<!--Copier le modèle vierge ici-->	
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="display-5">
+					Checklist
+				</div>
+				<div class="list-group" id="list-tab">
+					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-option">Options</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-option">bla bla</a>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="display-5">
+					Items
+				</div>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane active show" id="list-option">
+						<ul class="list-group">
+							<li class="list-group-item titre-et-element-primaire">FLIGHT LEVEL CHANGE ABOVE THE CURRENT</li>
+							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>SET</kbd> TO NEW ALTITUDE</li>
+							<li class="list-group-item element-primaire">FLC (AUTOPILOT) <kbd>ON </kbd></li>
+							<li class="list-group-item element-primaire">NOSE UP (AUTOPILOT) <kbd>PRESS</kbd> (Until Good Rate Of Ascent)</li>
+							<li class="list-group-item">BOMBE <kbd>SET </kbd></li>
+							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
+							<li class="list-group-item">GEARS <kbd>SET </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">GET BLOCK TIME IN PAGE 3 FROM PREVIEW PDF</li>
+							<li class="list-group-item">ITEM 3 ISOLÉE</li>
+							<li class="list-group-item">ITEM 4 ISOLÉE</li>
+							<li class="list-group-item titre-et-element-primaire">INSET <kbd>PRESS </kbd></li>
+							<li class="list-group-item element-primaire"><kbd>DCLTR OPTION </kbd></li>
+							<li class="list-group-item element-primaire"><kbd>TRAFFIC SET </kbd></li>
+							<li class="list-group-item element-primaire"><kbd>TOPO SET </kbd></li>
+							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd></li>	
+							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
+							<li class="list-group-item titre-et-element-primaire">ON THE RUNWAY</li>
+							<li class="list-group-item element-primaire">PRESS HDG BUTTON TO SET DEPARTURE RUNWAY</li>
+							<li class="list-group-item element-primaire">POWER <kbd>100%</kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-secondaire">TITRE ELEMENT SECONDAIRE</li>
+							<li class="list-group-item element-secondaire">ITEM 1 SECONDAIRE</li>
+							<li class="list-group-item element-secondaire">ITEM 2 SECONDAIRE</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>    
+	</div>    
+	<script>
+		$(document).ready(function() {
+			$('a.list-group-item').click(function() {
+				$('li').removeClass("active");
+			});
+			$('li').click(function() {
+				$('li.active').removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+	</script>	
+	<!--Fin du modèle vierge -->	
+</body>
+</html>
