@@ -56,7 +56,8 @@ kbd.petit::after
 }
 .titre-et-element-primaire
 {
-	background-color: #96FFFF;
+	background-color: #09A2A2;
+	color: white;
 }
 .element-primaire, li.list-group-item.element-primaire.active
 {

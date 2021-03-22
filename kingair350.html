@@ -38,12 +38,13 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar">Cockpit Preparation</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-engine-start">After Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-level-change">Level Altitude Change (Controler Request)</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Preparing Approach</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-vnav-descent">VNAV Descent mode</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-climb-cruise">Climb and Cruise</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-descent">Before Descent</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-descent">Descent</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-landing">Landing</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi (after landing)</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
@@ -69,7 +70,7 @@
 					</div>
 					<div class="tab-pane" id="list-pre-start">
 						<ul class="list-group">
-							<li class="list-group-item">PARKING BRAKE <kbd>SET </kbd></li>
+							<li class="list-group-item list-group-item-danger">PARKING BRAKE <kbd>SET </kbd></li>
 							<li class="list-group-item">THROTTLE LEVERS <kbd>IDLE </kbd></li>
 							<li class="list-group-item">PROPELLER LEVERS <kbd>HIGH RPM </kbd></li>
 							<li class="list-group-item">CONDITION LEVERS <kbd>CUT OFF </kbd></li>
@@ -91,9 +92,10 @@
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
 							<li class="list-group-item titre-sans-element-primaire">INSERTING GARMIN G530 DATA<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-rnav"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item titre-sans-element-primaire">SAVING OR LOADING GARMIN G530 FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-managing"><i class="fas fa-file-import"></i></button></li>
+							<li class="list-group-item titre-sans-element-primaire">SAVING/LOADING GARMIN G530 FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-managing"><i class="fas fa-file-import"></i></button></li>
+							<li class="list-group-item titre-sans-element-primaire">ENTERING VNAV DATA GARMIN G530<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-vnav"><i class="fas fa-keyboard"></i></button></li>
 							<li class="list-group-item">ALTITUDE <kbd>SET </kbd></li>
-							<li class="list-group-item">BARO <kbd>SET </kbd></li>
+							<li class="list-group-item">BARO DEPARTURE<kbd>SET </kbd></li>
 							<li class="list-group-item">EXT POWER <kbd>OFF</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">OPEN THE MENU IN THE LEFT OF THE SCREEN</li>
 							<li class="list-group-item element-primaire">IN THE THIRD OPTION UNSELECT <kbd>GPU </kbd></li>
@@ -101,123 +103,149 @@
 					</div>
 					<div class="tab-pane" id="list-engine-start">
 						<ul class="list-group">
-							<li class="list-group-item">AVIONIC MASTER <kbd>OFF </kbd></li>
+							<li class="list-group-item list-group-item-danger">AVIONIC MASTER <kbd>OFF </kbd></li>
 							<li class="list-group-item titre-sans-element-primaire">OPEN WINDOWS</li>
 							<li class="list-group-item">STANDBY PUMP (BOTH) <kbd>ON </kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">RIGHT ENGINE</li>
+							<li class="list-group-item element-primaire">ENGINE START RIGHT <kbd>ON </kbd></li>
+							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>12% </kbd></li>
+							<li class="list-group-item element-primaire">CONDITION LEVER RIGHT <kbd>LOW IDLE </kbd></li>
+							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>50% </kbd></li>
+							<li class="list-group-item element-primaire">ENGINE START RIGHT <kbd>OFF </kbd></li>
+							<li class="list-group-item element-primaire">INVERTER 2 <kbd>ON </kbd></li>
+							<li class="list-group-item element-primaire">R GEN <kbd>ON/GEN RESET </kbd></li>
+							<li class="list-group-item element-primaire">CONDITION LEVER RIGHT <kbd>HIGH IDLE </kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">LEFT ENGINE</li>
+							<li class="list-group-item element-primaire">ENGINE START LEFT <kbd>ON </kbd></li>
+							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>12% </kbd></li>
+							<li class="list-group-item element-primaire">CONDITION LEVER LEFT <kbd>LOW IDLE </kbd></li>
+							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>50% </kbd></li>
+							<li class="list-group-item element-primaire">ENGINE START LEFT <kbd>OFF </kbd></li>
+							<li class="list-group-item element-primaire">INVERTER 1 <kbd>ON </kbd></li>
+							<li class="list-group-item element-primaire">L GEN <kbd>ON/GEN RESET </kbd></li>
+							<li class="list-group-item element-primaire">CONDITION LEVER (BOTH) <kbd>LOW IDLE </kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-after-engine-start">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-danger">AVIONIC MASTER <kbd>ON </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">CLOSE WINDOWS</li>
+							<li class="list-group-item">BLEED AIR VALVES <kbd>OPEN </kbd></li>
+							<li class="list-group-item">ENVR BLEED AIR NORMAL <kbd>SET </kbd></li>
+							<li class="list-group-item">AIR CONDITIONING BUTON <kbd>AUTO </kbd></li>
+							<li class="list-group-item">AFT BLOWER <kbd>SET </kbd></li>
+							<li class="list-group-item">OXYGEN LEVER <kbd>PULL </kbd></li>
+							<li class="list-group-item">CABIN ALTITUDE PRESSURE <kbd>SET CRZ ALT </kbd></li>
+							<li class="list-group-item">PITH TRIM (TOOGLE) <kbd>ON/OFF/ON </kbd></li>
+							<li class="list-group-item">RUDDER BOOST <kbd>ON </kbd></li>
+							<li class="list-group-item">AUTOFEATHER <kbd>ON </kbd></li>
+							<li class="list-group-item list-group-item-danger">CHECK IF PEDESTAL ANNON. HAS MSG</li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">AUTO PILOT PREPARATION</li>
+							<li class="list-group-item element-primaire">CRS ACT <kbd>UNTIL FMS </kbd></li>
+							<li class="list-group-item element-primaire">GARMIN 530 PRESS CDI <kbd>GPS </kbd></li>
+							<li class="list-group-item element-primaire">ARC SELECTOR <kbd>SET </kbd></li>
+							<li class="list-group-item element-primaire">YAW ENG BUTTON <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item element-primaire">NAV BUTTON <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item element-primaire list-group-item-danger">CHECK ALT <kbd>ACTIVE </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-before-taxi">
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">SELECT <strong>LITTLE NAVMAP (IPAD)</strong></li>
 							<li class="list-group-item titre-sans-element-primaire">SHOW AIRPORT DIAGRAM TAXIWAY</li>
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>CROSSFEED </kbd></li>
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>ON </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">TAXING RUNWAY <kbd>20 KNOTS </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-line-up">
 						<ul class="list-group">
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>ON </kbd></li>
-							<li class="list-group-item">TRIM <kbd>SET </kbd></li>	
+							<li class="list-group-item titre-sans-element-primaire titre-et-element-primaire">CHECKLIST PERFORMANCE TAKEOFF</li>
+							<li class="list-group-item titre-sans-element-primaire element-primaire">PRESS SET MARKERS</li>
+							<li class="list-group-item">NAV 1 SET <kbd>ILS OR VOR </kbd></li>
+							<li class="list-group-item">TRIM <kbd>SET 0 </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
-							<li class="list-group-item">LEFT FULL PUMPS <kbd>ON </kbd></li>
-							<li class="list-group-item">RIGHT FULL PUMPS <kbd>ON </kbd></li>
-							<li class="list-group-item">ALTITUDE BUTTON <kbd>SET</kbd> TO MAX ALTITUDE</li>
-							<li class="list-group-item">HDG (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">FLC (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">NOSE DN (AUTOPILOT) <kbd>PRESS</kbd> (Until 90 KTS)</li>
-							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd></li>	
+							<li class="list-group-item">ENG AUTO <kbd>ARM </kbd></li>
+							<li class="list-group-item">FUEL VENT LEFT & RIGHT <kbd>ON </kbd></li>
+							<li class="list-group-item">STALL WARN <kbd>SET</kbd></li>
+							<li class="list-group-item">PITOT LEFT & RIGHT <kbd>ON </kbd></li>
+							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF</kbd></li>	
 							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">ON THE RUNWAY</li>
-							<li class="list-group-item element-primaire">PRESS <strong>HDG BUTTON</strong> TO SET TO DEPARTURE RUNWAY</li>
-							<li class="list-group-item element-primaire">POWER <kbd>100% </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-take-off">
 						<ul class="list-group">
+							<li class="list-group-item">MAXIMUM TORQUE WITHIN LIMITS</li>
+							<li class="list-group-item">VR (ROTATE) <kbd>10-15 DEG </kbd></li>
 							<li class="list-group-item">GEAR <kbd>UP </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>UP </kbd></li>
-							<li class="list-group-item">AP (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">POWER <kbd>95% </kbd></li>
-							<hr>
-							<li class="list-group-item">LEFT FULL PUMPS <kbd>OFF </kbd></li>
-							<li class="list-group-item">RIGHT FULL PUMPS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
-							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item">NAV (AUTOPILOT) <kbd>ON </kbd></li>
+							<li class="list-group-item">SPEED <kbd>140 KIAS </kbd></li>
+							<li class="list-group-item">IAS (AUTOPILOT) <kbd>PUSH </kbd></li>
+							<li class="list-group-item">AP ENG (AUTOPILOT) <kbd>ON </kbd></li>
+							<li class="list-group-item">STANDBY PUMP (BOTH) <kbd>OFF </kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-level-change">
+					<div class="tab-pane" id="list-climb-cruise">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">FLIGHT LEVEL CHANGE ABOVE THE CURRENT</li>
-							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>SET</kbd> TO NEW ALTITUDE</li>
-							<li class="list-group-item element-primaire">FLC (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item element-primaire">NOSE UP (AUTOPILOT) <kbd>PRESS</kbd> (Until Good Rate Of Ascent)</li>
-							<li class="list-group-item element-primaire">FINE TUNING WITH POWER <kbd>INCREASE OR DECREASE</kbd> (Until Good Rate Of Ascent)</li>
+							<li class="list-group-item titre-et-element-primaire">GENERAL RULES TRANSITION LEVEL (CLIMB)</li>
+							<li class="list-group-item element-primaire">BARO <kbd>SET STANDARD</kbd></li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">FLIGHT LEVEL CHANGE BELLOW THE CURRENT</li>
-							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>SET</kbd> TO NEW ALTITUDE</li>
-							<li class="list-group-item element-primaire">FLC (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item element-primaire">NOSE DN (AUTOPILOT) <kbd>PRESS</kbd> (Until Good Rate Of Descent)</li>
-							<li class="list-group-item element-primaire">FINE TUNING WITH POWER <kbd>INCREASE OR DECREASE</kbd> (Until Good Rate Of Descent)</li>
+							<li class="list-group-item titre-et-element-primaire">CLIMB</li>
+							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
+							<li class="list-group-item element-primaire">PROPELLER LEVERS <kbd>1700 RPM</kbd></li>
+ 							<hr>
+							<li class="list-group-item titre-et-element-primaire">CLIMBING SPEEDS</li>
+							<li class="list-group-item element-primaire">170 KIAS <kbd>0 TO 10,000 </kbd></li>
+							<li class="list-group-item element-primaire">160 KIAS <kbd>10,000 TO 15,000 </kbd></li>
+							<li class="list-group-item element-primaire">150 KIAS <kbd>15,000 TO 20,000 </kbd></li>
+							<li class="list-group-item element-primaire">140 KIAS <kbd>20,000 TO 25,000 </kbd></li>
+							<li class="list-group-item element-primaire">130 KIAS <kbd>25,000 TO 30,000 </kbd></li>
+							<li class="list-group-item element-primaire">120 KIAS <kbd>30,000 TO 35,000 </kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">CRUISE</li>
+							<li class="list-group-item element-primaire">TORQUE <kbd>85</kbd></li>
+							<li class="list-group-item element-primaire">PROPELLER LEVERS <kbd>1600 RPM</kbd></li>
+							<li class="list-group-item element-primaire">AUTOFEATHER <kbd>OFF </kbd></li>
+							<li class="list-group-item element-primaire titre-sans-element-primaire">CHECK VNAV DATA (GARMIN 530)</li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-approach">
+					<div class="tab-pane" id="list-before-descent">
 						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">SELECT <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">FIND ARRIVAL AIRPORT ALTIMETER INFO</li>
-							<li class="list-group-item titre-sans-element-primaire">FIND ILS FREQUENCY (As Req)</li>
-							<li class="list-group-item">CRS BARO <kbd>SET</kbd> TO ALTIMETER</li>							
-							<li class="list-group-item">ILS FREQUENCY <kbd>SET</kbd> (As Req)</li>
+							<li class="list-group-item titre-et-element-primaire">GENERAL RULES TRANSITION LEVEL (DESCENT)</li>
+							<li class="list-group-item element-primaire titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
+							<li class="list-group-item element-primaire">BARO ARRIVAL <kbd>SET</kbd></li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">BEFORE TOP OF DESCENT</li>
-							<li class="list-group-item element-primaire">VALIDATE ALL ALTITUDE OF THE STAR OR INSTRUMENT APPROACH</kbd></li>
-							<li class="list-group-item element-primaire list-group-item-danger">ONE OF THESE ALTITUDE MUST BE BLUE IN ALL KIND OF APPROACH</kbd></li>
+							<li class="list-group-item titre-sans-element-primaire titre-et-element-primaire">CHECKLIST PERFORMANCE LANDING</li>
+							<li class="list-group-item titre-sans-element-primaire element-primaire">PRESS SET MARKERS</li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">LAST WAYPOINT BEFORE APPROACH</li>
-							<li class="list-group-item element-primaire">FPL (GARMIN G1000) <kbd>MENU / ACTIVATE LEG APPROACH </kbd></li>
+							<li class="list-group-item list-group-item-danger">SET ALTITUDE DESCENT JUST BEFORE DESCENT</li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-vnav-descent">
+					<div class="tab-pane" id="list-descent">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">PREPARING DESCENT FOR STAR PROCEDURE ONLY</li>
-							<li class="list-group-item element-primaire">IN FLIGHT PLAN, FIND THE LOWER ALTITUDE OF THIS STAR ROUTE</li>
-							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>SET</kbd> TO THIS FOUND ALTITUDE</li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">PREPARING DESCENT FOR APPROACH PROCEDURE ONLY</li>
-							<li class="list-group-item element-primaire">IN FLIGHT PLAN, FIND THE IAF OR FAF ALTITUDE</li>
-							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>SET</kbd> TO THIS FOUND ALTITUDE</li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">TO CHANGE THE VNAV PROFILE ANGLE</li>
-							<li class="list-group-item element-primaire">VNV PROF (BOTTOM OF MFD)<kbd> PRESS</kbd></li>
-							<li class="list-group-item element-primaire">FMS (big button) <kbd>TURN</kbd> UNTIL FPA IS HIGHLIGHT</li>
-							<li class="list-group-item element-primaire">FMS (small button) <kbd>TURN</kbd> TO CHANGE THE VALUE (-3.0) THEN PRESS <kbd>ENT</kbd></li>
-							<li class="list-group-item element-primaire">PRESS FMS BUTTON (EXIT EDIT MODE)</li>
-							<li class="list-group-item element-primaire">RANGE <kbd>PRESS</kbd> (Center Aircraft to Map)</li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">IF TIME TO TOD IS GREATER THAN 5:00</li>
-							<li class="list-group-item element-primaire">WAIT UNTIL TIME TO TOD IS LESS THAN 5:00</li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">IF TIME TO TOD IS LESS THAN 5:00 AND VPATH IS NOT ACTIVE</li>
-							<li class="list-group-item element-primaire">VNV (AUTOPILOT) <kbd>ON</kbd></li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">WHEN TIME TO TOD IS LESS THAN 1:00</li>
-							<li class="list-group-item element-primaire">THE VPATH BECOME ACTIVE IN FD (IN ALTITUDE TAPE)</li>
-							<li class="list-group-item element-primaire">REDUCE POWER</li>
+							<li class="list-group-item titre-et-element-primaire">DESCENT</li>
+							<li class="list-group-item element-primaire">DSC (AUTOPILOT) <kbd>ACTIVE</kbd></li>
+							<li class="list-group-item element-primaire">AUTOFEATHER <kbd>ON </kbd></li>
+ 							<hr>
+							<li class="list-group-item titre-et-element-primaire">APPROACH</li>
+							<li class="list-group-item element-primaire">CRS ACT (IN CASE ILS ONLY) <kbd>UNTIL LOC</kbd></li>
+							<li class="list-group-item element-primaire">APPR <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
+							<li class="list-group-item element-primaire">PROPELLER LEVERS <kbd>HIGH RPM</kbd></li>
+							<li class="list-group-item element-primaire">CONDITION LEVERS <kbd>HIGH IDLE</kbd></li>
+ 							<hr>
+							<li class="list-group-item titre-et-element-primaire">SPEEDS</li>
+							<li class="list-group-item element-primaire">200 KIAS <kbd>FLAPS 1 </kbd></li>
+							<li class="list-group-item element-primaire">184 KIAS <kbd>GEAR DOWN </kbd></li>
+							<li class="list-group-item element-primaire">158 KIAS <kbd>FLAPS 2 </kbd></li>
+							<li class="list-group-item element-primaire">105 KIAS <kbd>ON GLIDE SLOPE </kbd></li>
+							<li class="list-group-item element-primaire">100 KIAS <kbd>LANDING </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-landing">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">STRAIGHT LINE TO RUNWAY</li>
-							<li class="list-group-item element-primaire">FOR ILS LANDING, NAV LOC1 IS SWITCH AUTOMATICALLY</li>
-							<li class="list-group-item element-primaire">PRESS <strong>HDG BUTTON</strong> TO SET TO ARRIVAL RUNWAY</li>
-							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>ON </kbd></li>
-							<hr>
-							<li class="list-group-item titre-sans-element-primaire">PINK LOSANGE (DESCENT) <kbd>CHECK NEAR CENTER </kbd></li>
-							<li class="list-group-item">APR (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
-							<li class="list-group-item">GEAR <kbd>DOWN </kbd></li>
-							<hr>
 							<li class="list-group-item titre-et-element-primaire">EXIT RUNWAY</li>
 							<li class="list-group-item element-primaire">FLAPS <kbd>UP </kbd></li>
 							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>OFF </kbd></li>
@@ -226,11 +254,21 @@
 					</div>
 					<div class="tab-pane" id="list-parking">
 						<ul class="list-group">
-							<li class="list-group-item">AVIONIC MASTER <kbd>OFF </kbd></li>
-							<li class="list-group-item">MASTER LEFT ENGINE <kbd>OFF </kbd></li>
-							<li class="list-group-item">MASTER RIGHT ENGINE <kbd>OFF </kbd></li>
-							<li class="list-group-item">PEDESTAL RED CROSS FEED <kbd>UNSECURE </kbd></li>
-							<li class="list-group-item">PEDESTAL FUEL LEVELS <kbd>OFF </kbd></li>
+							<li class="list-group-item">PARKING BRAKE <kbd>SET </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">OPEN WINDOWS</li>
+							<li class="list-group-item list-group-item-danger">ENG AUTO <kbd>ARM </kbd></li>
+							<li class="list-group-item">BLEED AIR VALVES <kbd>OFF </kbd></li>
+							<li class="list-group-item">ENVR BLEED AIR NORMAL <kbd>OFF </kbd></li>
+							<li class="list-group-item">AIR CONDITIONING BUTON <kbd>OFF </kbd></li>
+							<li class="list-group-item">AFT BLOWER <kbd>OFF </kbd></li>
+							<li class="list-group-item list-group-item-danger">AVIONIC MASTER <kbd>OFF </kbd></li>
+							<li class="list-group-item">L GEN <kbd>OFF </kbd></li>
+							<li class="list-group-item">R GEN <kbd>OFF </kbd></li>
+							<li class="list-group-item">INVERTER 1 <kbd>OFF </kbd></li>
+							<li class="list-group-item">INVERTER 2 <kbd>OFF </kbd></li>
+							<li class="list-group-item">CONDITION LEVERS <kbd>CUT OFF </kbd></li>
+							<li class="list-group-item">PROPELLER LEVERS <kbd>FEATHER </kbd></li>
+							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>OFF </kbd></li>
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
 							<li class="list-group-item element-lumiere">NAV LIGHTS <kbd>OFF </kbd></li>
 							<li class="list-group-item">MASTER (BAT) <kbd>OFF </kbd></li>
@@ -267,117 +305,35 @@
 			</div>
 		</div>
 	</div>
-	<!-- 	modal calculate fuel here -->						
-	<div class="modal" id="modal-calculate-fuel" tabindex="-1">
+	<!-- 	modal insert Garmion 530 RNAV or ILS here -->						
+	<div class="modal" id="modal-enter-garmin-G530-rnav" tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">CALCULATE FUEL FOR THIS FLIGHT</h5>
-				</div>
-				<div class="modal-body">
-					<form>
-						<div class="mb-3">
-							<label for="blocktime" class="form-label">BLOCK TIME</label>
-							<input type="number" id="blocktime" name="blocktime" step="any">
-						</div>
-						<div class="mb3">
-							<label for="kilograme" class="form-label"><span class="text-danger">KILOGRAMME</span></label>
-							<output id="kilograme" name="kilograme" class="text-danger"></output>
-						</div>
-						<input class="btn btn-secondary" type="button" value="Calculate Fuel Required" onclick="calculaten()">
-					</form>	
-					<script>
-						function calculaten() 
-						{
-							var blocktime = eval(document.getElementsByName("blocktime")[0].value);
-							var stimen = eval(0);
-							var gallon = (eval(11.8))*((blocktime * 1)+(stimen * 1));
-							var kilograme = (gallon*eval(261))/eval(86);
-							document.getElementById("kilograme").innerHTML = round(kilograme);
-						}
-						function round(x) {
-							return Math.round(x*100)/100;
-						}
-					</script>					      	
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>9
-			</div>
-		</div>
-	</div>
-	<!-- 	modal info primary flight display -->						
-	<div class="modal" id="modal-info-pfd" tabindex="-1">
-		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">OTHER INFO PRIMARY FLIGHT DISPLAY</h5>
-				</div>
-				<div class="modal-body">
-					<ul class="list-group">
-						<li class="list-group-item titre-fonce">NAVIGATION</li>
-						<li class="list-group-item">Pour afficher les distance DME appuyez sur PFD / DME</li>
-						<li class="list-group-item">Pour permuter entre GPS (rose), VOR1 (NAV1) et VOR2 (NAV2), appuyez sur CDI</li>
-						<li class="list-group-item">Pour center la course d'un VOR, appuyez sur CRS BARO</li>
-						<li class="list-group-item titre-fonce">ALTITUDE DE TRANSITION</li>
-						<li class="list-group-item">Pour permuter en BARO & STANDARD BARO, appuyez sur PFD puis STD BARO</li>
-						<li class="list-group-item titre-fonce">URGENCE ET SÉLECTION D'AÉROPORT</li>
-						<li class="list-group-item">Pour afficher ces aéroports, appuyez sur NRST</li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner un aéroport</li>
-						<li class="list-group-item">Activez un aéroport avec le bouton <kbd>DIRECT TO</kbd></li>
-						<li class="list-group-item list-group-item-danger">Lors d'une sélection d'aéroports, ses fréquences sont syntonisées automatiquement</li>
-						<li class="list-group-item titre-fonce">TRANSPONDEUR</li>
-						<li class="list-group-item">Pour afficher les options, Appuyez sur XPDR</li>
-						<li class="list-group-item">Pour changer le code, Appuyez sur XPDR puis CODE et tapez votre code</li>
-						<li class="list-group-item">Quand on part les batteries de l'avion, il faut appuyer sur XPDR puis STBY</li>
-						<li class="list-group-item">Quand les moteurs sont en marches, il faut appuyer sur XPDR puis ON</li>
-						<li class="list-group-item">Au décollage ou en vol, il faut appuyer sur XPDR puis ALT</li>
-						<li class="list-group-item">Pour s'identifier au contrôleur, il faut appuyer sur IDENT</li>
-						<li class="list-group-item titre-fonce">CHRONOMÈTRES</li>
-						<li class="list-group-item">Pour l'afficher, appuyez sur TMR/REF</li>
-						<li class="list-group-item">Pour démarrer/arrêter/réinitialiser un chronomètre, appuyez sur <kbd>ENT</kbd></li>
-						<li class="list-group-item titre-fonce">CHRONOMÈTRES COMPTE À REBOURS</li>
-						<li class="list-group-item">Tournez le gros bouton <kbd>FMS</kbd> pour choisir UP</li>
-						<li class="list-group-item">Tournez le petit bouton <kbd>FMS</kbd> pour changer pour DN</li>
-						<li class="list-group-item">Tournez le gros bouton <kbd>FMS</kbd> pour sélectionner le temps</li>
-						<li class="list-group-item">Tournez le petit bouton <kbd>FMS</kbd> pour changer le temps</li>
-						<li class="list-group-item">Pour démarrer/arrêter/réinitialiser un chronomètre, appuyez sur <kbd>ENT</kbd></li>
-					</ul>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- 	modal insert Garmin 1000 flight plan here -->						
-	<div class="modal" id="modal-enter-garmin-G1000-rnav" tabindex="-1">
-		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">INSERTING GARMIN G1000 DATA</h5>
-				</div>
-				<div class="modal-body">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">INSERTING GARMIN G530 DATA</h5>
+	      </div>
+	      <div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item list-group-item-danger">Toujours saisir l'aéroport de départ et destination au début de la séquence de saisi</li>
 						<li class="list-group-item list-group-item-danger">Ensuite entrer la SID, la ROUTE puis la STAR</li>
 						<hr>
 						<li class="list-group-item titre-et-element-primaire">Pour détruire un waypoint ou un item</li>
-						<li class="list-group-item element-primaire">Appuyez sur le gros bouton <kbd>FMS</kbd> pour être en surbrillance</li>
-						<li class="list-group-item element-primaire">Tournez le gros bouton <kbd>FMS</kbd> pour choisir un waypoint</li>
+						<li class="list-group-item element-primaire">Appuyez sur le gros bouton <kbd>CRSR</kbd> pour être en surbrillance</li>
+						<li class="list-group-item element-primaire">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir un waypoint</li>
 						<li class="list-group-item element-primaire">Appuyez sur <kbd>CLR</kbd> + <kbd>ENT</kbd></li>
 						<hr>
 						<li class="list-group-item"><code>Cyhu/24r dct megtu naskk cyul/06r</code></li>
 						<li class="list-group-item titre-fonce">Saisir cyhu (Aéroport de départ)</li>
+						<li class="list-group-item">Appuyez longuement sur <kbd>CLR</kbd></li>
 						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
 						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « delete flight plan » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Assurez vous que cyhu est en surbrillance (sinon appuyez sur le bouton <kbd>FMS</kbd>)</li>
-						<li class="list-group-item">Tournez le gros bouton <kbd>FMS</kbd> pour choisir une ligne vierge en bas</li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « delete flight plan » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Si cyhu n’est pas inscrit, appuyez longuement sur <kbd>CLR</kbd> puis faire <kbd>FPL</kbd></li>
+						<li class="list-group-item">Assurez vous que cyhu est en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
+						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour choisir une ligne vierge en bas</li>
 						<li class="list-group-item titre-fonce">Saisir cyul (Aéroport d'arrivée)</li>
-						<li class="list-group-item">Tournez le petit bouton <kbd>FMS</kbd> pour commencer la saisie</li>
-						<li class="list-group-item"><strong>Utilisez le clavier (mode saisie rapide)</strong> et tapez la première lettre</li>
-						<li class="list-group-item"><strong>Utilisez les flèches du claviers (mode saisie rapide)</strong> pour passer à la lettre suivante</li>
+						<li class="list-group-item">Tournez le petit bouton <kbd>CRSR</kbd> pour choisir la premiere</li>
+						<li class="list-group-item">Tournez le gros bouton <kbd>CRSR</kbd> pour faire la lettre suivante</li>
 						<li class="list-group-item">Lorsque le mot cyul est inscrit + <kbd>ENT (2 fois)</kbd></li>
 						<li class="list-group-item">Assurez vous que cyul est en surbrillance, ce qui permet d'insérer un point avant ce dernier</li>
 						<li class="list-group-item titre-fonce">Saisir la route megtu ET naskk</li>
@@ -385,53 +341,75 @@
 						<li class="list-group-item titre-fonce">Procédure d'arrivée STAR</li>
 						<li class="list-group-item">Assurez vous que cyul est en surbrillance</li>
 						<li class="list-group-item">Appuyez sur <kbd>PROC</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « select approach » + <kbd>ENT</kbd></li>
 						<li class="list-group-item titre-fonce">RNAV</li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « vectors » + <kbd>ENT (3 fois)</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « rnv06r gps » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT (2 fois)</kbd></li>
 						<li class="list-group-item titre-fonce">ILS</li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « vectors » + <kbd>ENT (3 fois)</kbd></li>
-						<li class="list-group-item titre-fonce">Pour insérer des Airways</li>
-						<li class="list-group-item">Assurez vous que l'aéroport d'arrivée est en surbrillance, ce qui permet d'insérer un ou des points avant ce dernier</li>
-						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « Load Airways » + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> pour sélectionner un Airways de la liste + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> pour sélectionner d'autres Airways s'il y a lieu + <kbd>ENT</kbd></li>
-						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « ils06r » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « vectors » + <kbd>ENT (2 fois)</kbd></li>
 					</ul>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
 		</div>
 	</div>
-	<!-- 	modal managing flight plan here -->						
-	<div class="modal" id="modal-enter-garmin-G1000-managing" tabindex="-1">
+	<!-- 	modal flight plan here -->						
+	<div class="modal" id="modal-enter-garmin-G530-managing" tabindex="-1">
 		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">SAVING OR LOADING G1000 GARMIN FLIGHT PLAN</h5>
-				</div>
-				<div class="modal-body">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">SAVING OR LOADING G530 GARMIN FLIGHT PLAN</h5>
+	      </div>
+	      <div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item titre-fonce">SAUVEGARDE DU PLAN DE VOL</li>
 						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
 						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionner « Store Flight Plan » + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « save flight plan » + <kbd>ENT</kbd></li>
 						<li class="list-group-item titre-fonce">CHARGER UN PLAN DE VOL</li>
 						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-						<li class="list-group-item">Assurez vous le plan de vol ne soit pas en surbrillance (sinon appuyez sur le bouton <kbd>FMS</kbd>)</li>
-						<li class="list-group-item">Utilisez le petit bouton <kbd>FMS</kbd> afin d’afficher la liste des plans de vol sauvegardés</li>
-						<li class="list-group-item">Appuyez sur le bouton <kbd>FMS</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>FMS</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Assurez vous le plan de vol ne soit pas en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
+						<li class="list-group-item">Utilisez le petit bouton <kbd>CRSR</kbd> afin d’afficher la liste des plans de vol sauvegardés</li>
+						<li class="list-group-item">Appuyez sur le bouton <kbd>CRSR</kbd></li>
+						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
 					</ul>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal flight plan here -->						
+	<div class="modal" id="modal-enter-garmin-G530-vnav" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">ENTERING G530 GARMIN VNANV DATA</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item">Appuyez sur <kbd>VNAV</kbd></li>
+						<li class="list-group-item">Assurez d'être en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd></li>
+						<li class="list-group-item">Utilisez le gros bouton <kbd>CRSR</kbd> pour sélectionner un champs de saisie</li>
+						<li class="list-group-item">Utilisez le petit bouton <kbd>CRSR</kbd> pour saisir des données</li>
+						<li class="list-group-item titre-fonce">TARGET ALTITUDE</li>
+						<li class="list-group-item">Choisissez la valeur en pied selon un waypoint ou autres</li>
+						<li class="list-group-item titre-fonce">TARGET POSITION</li>
+						<li class="list-group-item">Choisisez la valeur en NM de la position cible</li>
+						<li class="list-group-item">Choisisez si on doit atteindre cette cible avant (Before) ou après (After)</li>
+						<li class="list-group-item">Choisisez le waypoint cible ou l'aéroport</li>
+						<li class="list-group-item titre-fonce">VS PROFILE</li>
+						<li class="list-group-item">Choisisez la valeur en f/s (idéalement 1000-1500 feet/minutes)</li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
 		</div>
 	</div>
 	<script>
