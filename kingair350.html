@@ -39,15 +39,17 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar">Cockpit Preparation</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-engine-start">After Engine Start</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-autopilot-preparation">Autopilot Preparation</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-climb-cruise">Climb and Cruise</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-descent">Before Descent</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-descent">Descent</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-landing">Landing</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi (after landing)</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-shutdown">Shutdown</a>
 				</div>
 			</div>
 			<div class="col-8">
@@ -58,6 +60,7 @@
 					<div class="tab-pane active show" id="list-option">
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">CREATE FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
+							<hr>
 							<li class="list-group-item titre-et-element-primaire">OPEN THE MENU IN THE LEFT OF THE SCREEN</li>
 							<li class="list-group-item element-primaire">IN THE FIRST OPTION SELECT <kbd>COLD & DARK </kbd></li>
 							<li class="list-group-item element-primaire">IN THE THIRD OPTION UNSELECT <kbd>ALL </kbd></li>
@@ -84,8 +87,6 @@
 							<li class="list-group-item">CABIN LIGHT <kbd>BRIGHT </kbd></li>
 							<li class="list-group-item">NO SMK & FSB <kbd>ON </kbd></li>
 							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>ON </kbd></li>
-							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON </kbd></li>
-							<li class="list-group-item element-lumiere">NAV LIGHTS <kbd>ON </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-cockpit-prepar">
@@ -97,6 +98,7 @@
 							<li class="list-group-item">ALTITUDE <kbd>SET </kbd></li>
 							<li class="list-group-item">BARO DEPARTURE <kbd>SET </kbd></li>
 							<li class="list-group-item">EXT POWER <kbd>OFF</kbd></li>
+							<hr>
 							<li class="list-group-item titre-et-element-primaire">OPEN THE MENU IN THE LEFT OF THE SCREEN</li>
 							<li class="list-group-item element-primaire">IN THE THIRD OPTION UNSELECT <kbd>GPU </kbd></li>
 						</ul>
@@ -106,23 +108,16 @@
 							<li class="list-group-item list-group-item-danger">AVIONIC MASTER <kbd>OFF </kbd></li>
 							<li class="list-group-item titre-sans-element-primaire">OPEN WINDOWS</li>
 							<li class="list-group-item">STANDBY PUMP (BOTH) <kbd>ON </kbd></li>
-							<hr>
 							<li class="list-group-item titre-et-element-primaire">RIGHT ENGINE</li>
 							<li class="list-group-item element-primaire">ENGINE START RIGHT <kbd>ON </kbd></li>
-							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>12% </kbd></li>
-							<li class="list-group-item element-primaire">CONDITION LEVER RIGHT <kbd>LOW IDLE </kbd></li>
-							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>50% </kbd></li>
-							<li class="list-group-item element-primaire">ENGINE START RIGHT <kbd>OFF </kbd></li>
+							<li class="list-group-item element-primaire">TURBINE 12% <kbd class="petit">CONDITION LEVERS RIGHT </kbd><kbd class="petit">LOW IDLE</kbd></li>
+							<li class="list-group-item element-primaire">TURBINE 50% <kbd class="petit">ENGINE START RIGHT </kbd><kbd class="petit">OFF</kbd></li>
 							<li class="list-group-item element-primaire">INVERTER 2 <kbd>ON </kbd></li>
 							<li class="list-group-item element-primaire">R GEN <kbd>ON/GEN RESET </kbd></li>
 							<li class="list-group-item element-primaire">CONDITION LEVER RIGHT <kbd>HIGH IDLE </kbd></li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">LEFT ENGINE</li>
-							<li class="list-group-item element-primaire">ENGINE START LEFT <kbd>ON </kbd></li>
-							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>12% </kbd></li>
-							<li class="list-group-item element-primaire">CONDITION LEVER LEFT <kbd>LOW IDLE </kbd></li>
-							<li class="list-group-item element-primaire">WAITING TURBINE <kbd>50% </kbd></li>
-							<li class="list-group-item element-primaire">ENGINE START LEFT <kbd>OFF </kbd></li>
+							<li class="list-group-item titre-et-element-primaire">REPEAT FOR THE LEFT ENGINE</li>
+							<li class="list-group-item element-primaire">:::::</li>
 							<li class="list-group-item element-primaire">INVERTER 1 <kbd>ON </kbd></li>
 							<li class="list-group-item element-primaire">L GEN <kbd>ON/GEN RESET </kbd></li>
 							<li class="list-group-item element-primaire">CONDITION LEVER (BOTH) <kbd>LOW IDLE </kbd></li>
@@ -142,14 +137,18 @@
 							<li class="list-group-item">RUDDER BOOST <kbd>ON </kbd></li>
 							<li class="list-group-item">AUTOFEATHER <kbd>ON </kbd></li>
 							<li class="list-group-item list-group-item-danger">CHECK IF PEDESTAL ANNON. HAS MSG</li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">AUTO PILOT PREPARATION</li>
-							<li class="list-group-item element-primaire">CRS ACT <kbd>UNTIL FMS </kbd></li>
-							<li class="list-group-item element-primaire">GARMIN 530 PRESS CDI <kbd>GPS </kbd></li>
-							<li class="list-group-item element-primaire">ARC SELECTOR <kbd>SET </kbd></li>
-							<li class="list-group-item element-primaire">YAW ENG BUTTON <kbd>ACTIVE </kbd></li>
-							<li class="list-group-item element-primaire">NAV BUTTON <kbd>ACTIVE </kbd></li>
-							<li class="list-group-item element-primaire list-group-item-danger">CHECK ALT <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item element-lumiere">NAV LIGHTS <kbd>ON </kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-autopilot-preparation">
+						<ul class="list-group">
+							<li class="list-group-item">CRS ACT <kbd>UNTIL FMS </kbd></li>
+							<li class="list-group-item">GARMIN 530 PRESS CDI <kbd>GPS </kbd></li>
+							<li class="list-group-item">ARC SELECTOR <kbd>SET </kbd></li>
+							<li class="list-group-item">YAW ENG BUTTON <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item">NAV BUTTON <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item">CLIMB BUTTON <kbd>ACTIVE </kbd></li>
+							<li class="list-group-item list-group-item-danger">CHECK ALT <kbd>ACTIVE </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-before-taxi">
@@ -164,6 +163,7 @@
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire titre-et-element-primaire">CHECKLIST PERFORMANCE TAKEOFF</li>
 							<li class="list-group-item titre-sans-element-primaire element-primaire">PRESS SET MARKERS</li>
+							<hr>
 							<li class="list-group-item">NAV 1 SET <kbd>ILS OR VOR </kbd></li>
 							<li class="list-group-item">TRIM <kbd>SET 0 </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
@@ -173,6 +173,7 @@
 							<li class="list-group-item">PITOT LEFT & RIGHT <kbd>ON </kbd></li>
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF</kbd></li>	
 							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
+							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd></li>	
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-take-off">
@@ -181,20 +182,19 @@
 							<li class="list-group-item">VR (ROTATE) <kbd>10-15 DEG </kbd></li>
 							<li class="list-group-item">GEAR <kbd>UP </kbd></li>
 							<li class="list-group-item">FLAPS <kbd>UP </kbd></li>
-							<li class="list-group-item">SPEED <kbd>140 KIAS </kbd></li>
-							<li class="list-group-item">IAS (AUTOPILOT) <kbd>PUSH </kbd></li>
+							<li class="list-group-item">MAINTAIN <kbd>140 KIAS </kbd></li>
 							<li class="list-group-item">AP ENG (AUTOPILOT) <kbd>ON </kbd></li>
+							<li class="list-group-item">PROP SYNC <kbd>ON </kbd></li>
 							<li class="list-group-item">STANDBY PUMP (BOTH) <kbd>OFF </kbd></li>
+							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
+							<li class="list-group-item">160-170 KIAS <kbd>TORQUE 80 </kbd></li>
+							<li class="list-group-item">PROPELLER LEVERS <kbd>1600 RPM</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-climb-cruise">
 						<ul class="list-group">
 							<li class="list-group-item titre-et-element-primaire">GENERAL RULES TRANSITION LEVEL (CLIMB)</li>
 							<li class="list-group-item element-primaire">BARO <kbd>SET STANDARD</kbd></li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">CLIMB</li>
-							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
-							<li class="list-group-item element-primaire">PROPELLER LEVERS <kbd>1700 RPM</kbd></li>
  							<hr>
 							<li class="list-group-item titre-et-element-primaire">CLIMBING SPEEDS</li>
 							<li class="list-group-item element-primaire">170 KIAS <kbd>0 TO 10,000 </kbd></li>
@@ -206,40 +206,38 @@
 							<hr>
 							<li class="list-group-item titre-et-element-primaire">CRUISE</li>
 							<li class="list-group-item element-primaire">TORQUE <kbd>85</kbd></li>
-							<li class="list-group-item element-primaire">PROPELLER LEVERS <kbd>1600 RPM</kbd></li>
 							<li class="list-group-item element-primaire">AUTOFEATHER <kbd>OFF </kbd></li>
-							<li class="list-group-item element-primaire titre-sans-element-primaire">CHECK VNAV DATA (GARMIN 530)</li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-before-descent">
-						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">GENERAL RULES TRANSITION LEVEL (DESCENT)</li>
-							<li class="list-group-item element-primaire titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item element-primaire">BARO ARRIVAL <kbd>SET</kbd></li>
-							<hr>
-							<li class="list-group-item titre-sans-element-primaire titre-et-element-primaire">CHECKLIST PERFORMANCE LANDING</li>
-							<li class="list-group-item titre-sans-element-primaire element-primaire">PRESS SET MARKERS</li>
-							<hr>
-							<li class="list-group-item list-group-item-danger">SET ALTITUDE DESCENT JUST BEFORE DESCENT</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-descent">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">DESCENT</li>
+							<li class="list-group-item titre-sans-element-primaire titre-et-element-primaire">CHECKLIST PERFORMANCE LANDING</li>
+							<li class="list-group-item titre-sans-element-primaire element-primaire">PRESS SET MARKERS</li>
+							<hr>
+							<li class="list-group-item titre-sans-element-primaire">CHECK VNAV DATA (GARMIN 530)</li>
+							<hr>
+							<li class="list-group-item">ESTABLISH 180 KIAS <kbd>TORQUE 15</kbd></li>
+							<li class="list-group-item list-group-item-danger">SET ALTITUDE DESCENT JUST BEFORE DESCENT</li>
 							<li class="list-group-item element-primaire">DSC (AUTOPILOT) <kbd>ACTIVE</kbd></li>
 							<li class="list-group-item element-primaire">AUTOFEATHER <kbd>ON </kbd></li>
- 							<hr>
-							<li class="list-group-item titre-et-element-primaire">APPROACH</li>
-							<li class="list-group-item element-primaire">CRS ACT (IN CASE ILS ONLY) <kbd>UNTIL LOC</kbd></li>
-							<li class="list-group-item element-primaire">APPR <kbd>ACTIVE </kbd></li>
-							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
-							<li class="list-group-item element-primaire">PROPELLER LEVERS <kbd>HIGH RPM</kbd></li>
-							<li class="list-group-item element-primaire">CONDITION LEVERS <kbd>HIGH IDLE</kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">GENERAL RULES TRANSITION LEVEL (DESCENT)</li>
+							<li class="list-group-item element-primaire titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
+							<li class="list-group-item element-primaire">BARO ARRIVAL <kbd>SET</kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-approach">
+						<ul class="list-group">
+							<li class="list-group-item">CRS ACT (IN CASE ILS ONLY) <kbd>UNTIL LOC</kbd></li>
+							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
+							<li class="list-group-item">PROPELLER LEVERS <kbd>HIGH RPM</kbd></li>
+							<li class="list-group-item">CONDITION LEVERS <kbd>HIGH IDLE</kbd></li>
+							<li class="list-group-item">APPR <kbd>ACTIVE</kbd></li>
  							<hr>
 							<li class="list-group-item titre-et-element-primaire">SPEEDS</li>
-							<li class="list-group-item element-primaire">200 KIAS <kbd>FLAPS 1 </kbd></li>
-							<li class="list-group-item element-primaire">184 KIAS <kbd>GEAR DOWN </kbd></li>
-							<li class="list-group-item element-primaire">158 KIAS <kbd>FLAPS 2 </kbd></li>
+							<li class="list-group-item element-primaire">150 KIAS <kbd>FLAPS 1 </kbd></li>
+							<li class="list-group-item element-primaire">130 KIAS <kbd>GEAR DOWN </kbd></li>
+							<li class="list-group-item element-primaire">130 KIAS <kbd>FLAPS 2 </kbd></li>
 							<li class="list-group-item element-primaire">105 KIAS <kbd>ON GLIDE SLOPE </kbd></li>
 							<li class="list-group-item element-primaire">100 KIAS <kbd>LANDING </kbd></li>
 						</ul>
@@ -261,9 +259,11 @@
 							<li class="list-group-item">ENVR BLEED AIR NORMAL <kbd>OFF </kbd></li>
 							<li class="list-group-item">AIR CONDITIONING BUTON <kbd>OFF </kbd></li>
 							<li class="list-group-item">AFT BLOWER <kbd>OFF </kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-shutdown">
+						<ul class="list-group">
 							<li class="list-group-item list-group-item-danger">AVIONIC MASTER <kbd>OFF </kbd></li>
-							<li class="list-group-item">L GEN <kbd>OFF </kbd></li>
-							<li class="list-group-item">R GEN <kbd>OFF </kbd></li>
 							<li class="list-group-item">INVERTER 1 <kbd>OFF </kbd></li>
 							<li class="list-group-item">INVERTER 2 <kbd>OFF </kbd></li>
 							<li class="list-group-item">CONDITION LEVERS <kbd>CUT OFF </kbd></li>
@@ -271,6 +271,8 @@
 							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>OFF </kbd></li>
 							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
 							<li class="list-group-item element-lumiere">NAV LIGHTS <kbd>OFF </kbd></li>
+							<li class="list-group-item">L GEN <kbd>OFF </kbd></li>
+							<li class="list-group-item">R GEN <kbd>OFF </kbd></li>
 							<li class="list-group-item">MASTER (BAT) <kbd>OFF </kbd></li>
 						</ul>
 					</div>
