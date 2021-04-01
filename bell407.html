@@ -23,7 +23,7 @@
 	<!--end of Navigation bar-->
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<h1 class="text-center text-muted">Cessna <small>172SP G530</small></h1>
+			<h1 class="text-center text-muted">Bell <small>407 G430</small></h1>
 		</div>
 	</div>
 	<!--Copier le modèle vierge ici-->	
@@ -51,13 +51,22 @@
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">CREATE FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
 							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">ENTERING FUEL DEPENDING PREVIEW PDF</li>
-							<li class="list-group-item">PARK BREAK<kbd class="m-3">SET</kbd></li>
-							<li class="list-group-item">THROTTLE <kbd>1/4</kbd></li>
-							<li class="list-group-item">MIXTURE <kbd>CUT OFF</kbd></li>
-							<li class="list-group-item">MASTER (BAT) <kbd>ON </kbd></li>
-							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>ON</kbd></li>	
-							<li class="list-group-item element-lumiere">NAV LIGHTS (Night only) <kbd>ON</kbd></li>	
+							<li class="list-group-item titre-et-element-primaire">OUTSIDE VIEW</li>
+							<li class="list-group-item titre-sans-element-primaire element-primaire">REMOVE ALL COVER</li>
+							<li class="list-group-item titre-sans-element-primaire element-primaire">ENTER FUEL DEPENDING PREVIEW PDF</li>
+							<li class="list-group-item element-primaire">OPTIONS IN THE FRONT RIGHT SIDE<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-front-option"><i class="fas fa-list-alt"></i></button></li>
+							<li class="list-group-item">HEADSET <kbd>USE</kbd></li>
+							<li class="list-group-item">POSITION LIGHT <kbd>ON</kbd></li>
+							<li class="list-group-item">ANTI COLLISION LIGHT <kbd>ON</kbd></li>
+							<li class="list-group-item">HYDRAULIC SYSTEM <kbd>ON</kbd> (CKECK)</li>
+							<li class="list-group-item">THROTTLE <kbd>OFF</kbd></li>
+							<li class="list-group-item">BATTERY <kbd>ON</kbd></li>
+							<li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAITING NR 0")</li>
+							<li class="list-group-item">HORN MUTE <kbd>PRESS</kbd></li>
+							<li class="list-group-item">BOOST XFR LEFT <kbd>ON</kbd></li>
+							<li class="list-group-item">BOOST XFR RIGHT <kbd>ON</kbd></li>
+							<li class="list-group-item">FULL VALVE <kbd>ON</kbd> (AND COVERING)</li>
+							<li class="list-group-item">COLLECTIVE <kbd>IDLE</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-engine-start">
@@ -190,6 +199,41 @@
 						<li class="list-group-item">Cliquez sur créer un plan de vol</li>
 						<li class="list-group-item">Dans la planification de vol, cliquez sur les aéroports pour ajouter les sid ou les star ou les procédures d’approche selon le cas.</li>
 						<li class="list-group-item">Cliquez sur l’icône correspondant au profil d’élévation du plan de vol afin de noter<span class="important">ALTITUDE SECURITAIRE</span> à utiliser pour ce vol (la ligne rouge de ce graphique indique le niveau à respecter)</li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal front option here -->						
+	<div class="modal" id="modal-front-option" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">OPTIONS</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item">GPU (PERMET DE RECHARGER LA BATTERIE). PEUT S'UTILISER POUR DÉMARRER</li>				
+						<li class="list-group-item">LOW SKID (PATINS BAS). EN ENLEVANT CETTE OPTION, IL Y A DES PATINS HAUTS</li>		
+						<li class="list-group-item">FRAHM DAMPER (COUVERCLE HÉLICE)</li>		
+						<li class="list-group-item">GLASS DOORS (FENETRE COMPLETE PORTE AVANT)</li>		
+						<li class="list-group-item">DOOR V/WINDOWS (PETITE FENETRE SECTIONNELLE PORTE AVANT)</li>		
+						<li class="list-group-item">FRONT L DOOR (AJOUTE UNE PORTE GAUCHE AVANT)</li>		
+						<li class="list-group-item">FRONT R DOOR (AJOUTE UNE PORTE DROITE AVANT)</li>		
+						<li class="list-group-item">BACK L DOOR (AJOUTE UNE PORTE GAUCHE ARRIÈRE)</li>		
+						<li class="list-group-item">BACK R DOOR (AJOUTE UNE PORTE DROITE ARRIÈRE)</li>		
+						<li class="list-group-item">FLOATS (POSSIBLE AVEC PATINS HAUT ET SANS PANIERS)</li>		
+						<li class="list-group-item">LEFT BASKET (PANIER GAUCHE). CONTENEUR</li>		
+						<li class="list-group-item">RIGHT BASKET (PANIER DROIT). CONTENEUR</li>		
+						<li class="list-group-item">WIRE CUTTERS (COUTEAU À FILS)</li>		
+						<li class="list-group-item">ROTOR SHADOW (OMBRE DES ROTORS)</li>		
+						<li class="list-group-item">CINEFLEX (POSSIBLE AVEC PATIN HAUT)</li>		
+						<li class="list-group-item">SLING HOOK (CROCHET VENTRAL)</li>		
+						<li class="list-group-item">REMOVING TIES & CAPS (ENLEVE LES COUVERCLES ET LES CAPUCHONS PROTECTEURS</li>		
+						<li class="list-group-item">GROUND CART (PERMET UN PUSHBACK)</li>		
 					</ul>
 	      </div>
 	      <div class="modal-footer">
