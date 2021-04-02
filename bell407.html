@@ -34,13 +34,6 @@
 				<div class="list-group" id="list-tab">
 					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar">Cockpit Preparation</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Preparing Approach</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-landing">Landing</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi (after landing)</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
 				</div>
 			</div>
@@ -51,9 +44,11 @@
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">CREATE FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
 							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF (IPAD)</strong></li>
+							<hr>
 							<li class="list-group-item titre-et-element-primaire">OUTSIDE VIEW</li>
 							<li class="list-group-item titre-sans-element-primaire element-primaire">REMOVE ALL COVER</li>
 							<li class="list-group-item titre-sans-element-primaire element-primaire">ENTER FUEL DEPENDING PREVIEW PDF</li>
+							<hr>
 							<li class="list-group-item element-primaire">OPTIONS IN THE FRONT RIGHT SIDE<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-front-option"><i class="fas fa-list-alt"></i></button></li>
 							<li class="list-group-item">HEADSET <kbd>USE</kbd></li>
 							<li class="list-group-item">POSITION LIGHT <kbd>ON</kbd></li>
@@ -63,117 +58,42 @@
 							<li class="list-group-item">BATTERY <kbd>ON</kbd></li>
 							<li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAITING NR 0")</li>
 							<li class="list-group-item">HORN MUTE <kbd>PRESS</kbd></li>
-							<li class="list-group-item">BOOST XFR LEFT <kbd>ON</kbd></li>
-							<li class="list-group-item">BOOST XFR RIGHT <kbd>ON</kbd></li>
+							<li class="list-group-item">BOOST XFR LEFT / RIGHT <kbd>ON</kbd></li>
 							<li class="list-group-item">FULL VALVE <kbd>ON</kbd> (AND COVERING)</li>
 							<li class="list-group-item">COLLECTIVE <kbd>IDLE</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-engine-start">
 						<ul class="list-group">
-							<li class="list-group-item">MASTER (ALT) <kbd>ON </kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>IDLE</kbd></li>
+							<li class="list-group-item">START BUTTON <kbd>ON</kbd> (1 SECOND)</li>
+							<li class="list-group-item titre-et-element-primaire">WHEN NG INSTRUMENT > 62%</li>
+							<li class="list-group-item element-primaire">GEN <kbd>ON</kbd></li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">IF ENGINE NOT WARM</li>
-							<li class="list-group-item element-primaire">FULL PUMP <kbd>ON</kbd></li>							
-							<li class="list-group-item element-primaire">MIXTURE 5 SECONDS <kbd>FULL</kbd></li>							
-							<li class="list-group-item element-primaire">MIXTURE <kbd>CUT OFF</kbd></li>							
-							<li class="list-group-item element-primaire">FULL PUMP <kbd>OFF</kbd></li>
-							<hr>							
-							<li class="list-group-item">KEY <kbd>START</kbd></li>							
-							<li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAITING START")</li>
-							<li class="list-group-item">KEY <kbd>BOTH</kbd></li>
-							<li class="list-group-item">MIXTURE <kbd>FULL</kbd></li>
-							<li class="list-group-item">AVIONIC MASTER <kbd>ON </kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-cockpit-prepar">
-						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">FIND DEPARTURE AIRPORT ALTIMETER INFO</li>
-							<li class="list-group-item">BARO <kbd>SET</kbd> TO ALTIMETER</li>							
-							<li class="list-group-item titre-sans-element-primaire">INSERTING GARMIN G530 DATA<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-rnav"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item titre-sans-element-primaire">SAVING OR LOADING GARMIN G530 FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-managing"><i class="fas fa-file-import"></i></button></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-before-taxi">
-						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">SELECT <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">SHOW AIRPORT DIAGRAM TAXIWAY</li>
-							<li class="list-group-item">THROTTLE <kbd>1000 RPM </kbd></li>
-							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>ON </kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-line-up">
-						<ul class="list-group">
-							<li class="list-group-item">TRIM <kbd>SET </kbd></li>	
-							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
-							<li class="list-group-item">ALTITUDE <kbd>TARGET MANUALLY</kbd> TO MAX ALTITUDE</li>
-							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
-							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd></li>	
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">ON THE RUNWAY</li>
-							<li class="list-group-item element-primaire">TURN <strong>HDG BUTTON</strong> TO SET TO DEPARTURE RUNWAY</li>
-							<li class="list-group-item element-primaire">CDI (GARMIN 530) <kbd>GPS MODE </kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-take-off">
-						<ul class="list-group">
-							<li class="list-group-item">FLAPS <kbd>UP </kbd></li>
-							<li class="list-group-item">HDG (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">VS (AUTOPILOT) <kbd>+5 </kbd></li>
-							<hr>
-							<li class="list-group-item">NAV (AUTOPILOT) <kbd>ON (GPSS) </kbd></li>
-							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>OFF</kbd></li>	
-							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">ABOVE 3000 FEET OR IN CRUISE</li>
-							<li class="list-group-item element-primaire">MIXTURE <kbd>LEAN </kbd></li>
-							<li class="list-group-item element-primaire">THROTTLE <kbd>2100 à 2700 RPM </kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-approach">
-						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">SELECT <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">FIND ARRIVAL AIRPORT ALTIMETER INFO</li>
-							<li class="list-group-item titre-sans-element-primaire">FIND ILS FREQUENCY (As Req)</li>
-							<li class="list-group-item">BARO <kbd>SET</kbd> TO ALTIMETER</li>							
-							<li class="list-group-item">ILS FREQUENCY <kbd>SET</kbd> (As Req)</li>
-							<li class="list-group-item titre-sans-element-primaire">IN FLIGHT PLAN, FIND IAF OR FAF ALTITUDE</li>
-							<li class="list-group-item">ALTITUDE <kbd>TARGET MANUALLY</kbd> TO THIS FOUND ALTITUDE</li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">LAST WAYPOINT BEFORE APPROACH</li>
-							<li class="list-group-item element-primaire">FPL (GARMIN 530) <kbd>MENU / ACTIVATE LEG APPROACH </kbd></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-landing">
-						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">STRAIGHT LINE TO RUNWAY</li>
-							<li class="list-group-item element-primaire">FOR ILS LANDING, NAV LOC1 IS SWITCH AUTOMATICALLY</li>
-							<li class="list-group-item element-primaire">TURN <strong>HDG BUTTON</strong> TO SET TO ARRIVAL RUNWAY</li>
-							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>ON </kbd></li>
-							<hr>
-							<li class="list-group-item titre-sans-element-primaire">VOR LINE (DESCENT) <kbd>CHECK NEAR CENTER </kbd></li>
-							
-							<li class="list-group-item">APR (AUTOPILOT) <kbd>ON </kbd></li>
-							<li class="list-group-item">MIXTURE <kbd>FULL </kbd></li>
-							<li class="list-group-item">FLAPS <kbd>SET </kbd></li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">EXIT RUNWAY</li>
-							<li class="list-group-item element-primaire">FLAPS <kbd>UP </kbd></li>
-							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-primaire element-lumiere">STROBE LIGHTS <kbd>OFF</kbd></li>	
+							<li class="list-group-item">FLIGHT INSTRUMENTS DG, ATT, TURN <kbd>ON </kbd></li>
+							<li class="list-group-item">AVIONIC MASTER <kbd>ON</kbd></li>
+							<li class="list-group-item">GARMIN & TRANSPONDER <kbd>ON</kbd></li>
+							<li class="list-group-item">HORIZON <kbd>PULL 4 SECONDS</kbd> (TO SET CORRECTLY)</li>
+							<li class="list-group-item">THROTTLE <kbd>FULL</kbd></li>
+							<li class="list-group-item">PITOT HEATER <kbd>ON</kbd> (ON REQUEST)</li>
+							<li class="list-group-item">INSTRUMENT LIGHT <kbd>ON</kbd></li>
+							<li class="list-group-item">LANDING LIGHT <kbd>ON</kbd></li>
+							<li class="list-group-item">SAS <kbd>ON </kbd></li>
+							<li class="list-group-item">BARO <kbd>SET </kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-parking">
 						<ul class="list-group">
-							<li class="list-group-item">AVIONIC MASTER <kbd>OFF </kbd></li>
-							<li class="list-group-item">MIXTURE <kbd>FULL LEAN </kbd></li>
-							<li class="list-group-item">KEY <kbd>OFF</kbd></li>
-							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>OFF</kbd></li>	
-							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-lumiere">NAV LIGHTS (Night only) <kbd>OFF </kbd></li>
-							<li class="list-group-item">MASTER (ALT) <kbd>OFF </kbd></li>
-							<li class="list-group-item">MASTER (BAT) <kbd>OFF </kbd></li>
+							<li class="list-group-item">COLLECTIVE <kbd>FULL DOWN</kbd></li>
+							<li class="list-group-item">CYCLIC LIGHT <kbd>OUT</kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>IDLE</kbd></li>
+							<li class="list-group-item">LEFT BOOST <kbd>OFF</kbd></li>
+							<li class="list-group-item">GEN <kbd>OFF</kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>OFF</kbd></li>
+							<li class="list-group-item">FUEL VALVE <kbd>OFF</kbd></li>
+							<li class="list-group-item">RIGHT BOOST <kbd>OFF</kbd></li>
+							<li class="list-group-item">WHEN NR < 40% <kbd>ROTOR BLAKE </kbd></li>
+							<li class="list-group-item">BATTERY <kbd>OFF </kbd></li>
 						</ul>
 					</div>
 				</div>
