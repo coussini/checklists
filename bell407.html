@@ -34,6 +34,7 @@
 				<div class="list-group" id="list-tab">
 					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
 				</div>
 			</div>
@@ -78,17 +79,29 @@
 							<li class="list-group-item">BARO <kbd>SET </kbd></li>
 						</ul>
 					</div>
+					<div class="tab-pane" id="list-approach">
+						<ul class="list-group">
+							<li class="list-group-item titre-sans-element-primaire">SPEED 70 KT</li>
+							<li class="list-group-item titre-sans-element-primaire">ALTITUDE ABOVE LANDING SPOT 500 FEET</li>
+							<li class="list-group-item titre-sans-element-primaire">RATE OF DESCENT 300 FT/MIN</li>
+							<li class="list-group-item titre-sans-element-primaire">USING CYCLIC AND PEDAL TO ADJUST LANDING</li>
+						</ul>
+					</div>
 					<div class="tab-pane" id="list-parking">
 						<ul class="list-group">
 							<li class="list-group-item">COLLECTIVE <kbd>FULL DOWN</kbd></li>
-							<li class="list-group-item">CYCLIC LIGHT <kbd>OUT</kbd></li>
 							<li class="list-group-item">THROTTLE <kbd>IDLE</kbd></li>
+							<li class="list-group-item element-lumiere">LANDING LIGHT <kbd>OFF</kbd> (LDG LTS)</li>	
+							<li class="list-group-item">AVIONIC MASTER <kbd>OFF</kbd> (AVIONICS BUS1)</li>
 							<li class="list-group-item">LEFT BOOST <kbd>OFF</kbd></li>
 							<li class="list-group-item">GEN <kbd>OFF</kbd></li>
 							<li class="list-group-item">THROTTLE <kbd>OFF</kbd></li>
 							<li class="list-group-item">FUEL VALVE <kbd>OFF</kbd></li>
 							<li class="list-group-item">RIGHT BOOST <kbd>OFF</kbd></li>
-							<li class="list-group-item">WHEN NR < 40% <kbd>ROTOR BLAKE </kbd></li>
+							<li class="list-group-item">HYDRAULIC SYSTEM <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>OFF</kbd> (ANTI COLL LT)</li>	
+							<li class="list-group-item">WHEN NR < 40% <kbd>ROTOR BRAKE </kbd></li>
+							<li class="list-group-item element-lumiere">NAV LIGHT <kbd>OFF</kbd> (POS LT)</li>
 							<li class="list-group-item">BATTERY <kbd>OFF </kbd> (MASTER BAT)</li>
 						</ul>
 					</div>
