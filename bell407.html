@@ -37,8 +37,8 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-takeoff">Before Takeoff</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking1">At Parking Part 1</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking2">At Parking Part 2</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-shutdown">Shutdown</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">At Parking</a>
 				</div>
 			</div>
 			<div class="col-8">
@@ -105,34 +105,32 @@
 							<li class="list-group-item element-primaire">PEDAL STOP <kbd>ON</kbd> (AND COVERING)</li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-parking1">
+					<div class="tab-pane" id="list-shutdown">
 						<ul class="list-group">
 							<li class="list-group-item">COLLECTIVE <kbd>FULL DOWN</kbd></li>
 							<li class="list-group-item element-lumiere">LANDING LIGHT <kbd>OFF</kbd><span class="important"> (LDG LTS)</span></li>	
-							<li class="list-group-item">THROTTLE <kbd>IDLE</kbd></li>
-							<li class="list-group-item">HORN MUTE <kbd>PRESS</kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>IDLE</kbd> -> HORN MUTE <kbd>PRESS</kbd></li>
 							<li class="list-group-item">PITOT HEATER <kbd>OFF</kbd> (BELLOW 10C)</li>
 							<li class="list-group-item">ANTI ICE <kbd>OFF</kbd> (BELLOW 10C)</li>
-							<li class="list-group-item">GARMIN & TRANSPONDER <kbd>OFF</kbd></li>
-							<li class="list-group-item">BOOST XFR LEFT <kbd>OFF</kbd></li>
+							<li class="list-group-item">BOOST XFR <span class="important">LEFT </span><kbd>OFF</kbd></li>
 							<li class="list-group-item">FLIGHT INSTRUMENTS DG, ATT, TURN <kbd>OFF</kbd></li>
 							<li class="list-group-item">AVIONIC MASTER <kbd>OFF</kbd><span class="important"> (AVIONICS BUS1)</span></li>
 							<li class="list-group-item element-lumiere">NAV LIGHT <kbd>OFF</kbd><span class="important"> (POS LT)</span></li>
 							<li class="list-group-item">GEN <kbd>OFF</kbd></li>
+							<li class="list-group-item">THROTTLE <kbd>OFF</kbd> -> HORN MUTE <kbd>PRESS</kbd></li>
+							<li class="list-group-item">FUEL VALVE <kbd>OFF</kbd></li>
+							<li class="list-group-item">BOOST XFR <span class="important">RIGHT </span><kbd>OFF</kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-parking2">
+					<div class="tab-pane" id="list-parking">
 						<ul class="list-group">
 							<li class="list-group-item">HEADSET <kbd>REMOVE</kbd></li>
-							<li class="list-group-item">THROTTLE <kbd>OFF</kbd></li>
-							<li class="list-group-item">HORN MUTE <kbd>PRESS</kbd></li>
-							<li class="list-group-item">FUEL VALVE <kbd>OFF</kbd></li>
-							<li class="list-group-item">BOOST XFR RIGHT <kbd>OFF</kbd></li>
+							<li class="list-group-item">GARMIN & TRANSPONDER <kbd>OFF</kbd></li>
 							<li class="list-group-item">WHEN NR < 40% <kbd>ROTOR BRAKE </kbd></li>
 							<li class="list-group-item">INSTRUMENT LIGHT <kbd>OFF</kbd></li>
-							<li class="list-group-item">BATTERY <kbd>OFF</kbd><span class="important"> (MASTER BAT)</span></li>
-							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>OFF</kbd><span class="important"> (ANTI COLL LT)</span></li>	
 							<li class="list-group-item">HYDRAULIC SYSTEM <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>OFF</kbd><span class="important"> (ANTI COLL LT)</span></li>	
+							<li class="list-group-item">BATTERY <kbd>OFF</kbd><span class="important"> (MASTER BAT)</span></li>
 						</ul>
 					</div>
 				</div>
