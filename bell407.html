@@ -32,8 +32,10 @@
 			<div class="col-4">
 				<h1 class="text-muted">Checklist</h1>
 				<div class="list-group" id="list-tab">
-					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
+					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-options">Options</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pre-start">Pre-start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-takeoff">Before Takeoff</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking1">At Parking Part 1</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking2">At Parking Part 2</a>
@@ -42,42 +44,55 @@
 			<div class="col-8">
 				<h1 class="text-muted">Items</h1>
 				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane active show" id="list-pre-start">
+					<div class="tab-pane active show" id="list-options">
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">CREATE FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-flight-plan"><i class="fas fa-plane"></i></button></li>
 							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF (IPAD)</strong></li>
 							<li class="list-group-item titre-sans-element-primaire">REMOVE ALL COVER (OUTSIDE VIEW / SEE OPTIONS)</li>
 							<li class="list-group-item titre-sans-element-primaire">ENTER FUEL DEPENDING PREVIEW PDF (OUTSIDE VIEW)</li>
 							<li class="list-group-item element-primaire">OPTIONS (FRONT RIGHT SIDE)<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-front-option"><i class="fas fa-list-alt"></i></button></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-pre-start">
+						<ul class="list-group">
 							<li class="list-group-item">HEADSET <kbd>USE</kbd></li>
 							<li class="list-group-item">THROTTLE <kbd>OFF</kbd></li>
 							<li class="list-group-item">COLLECTIVE <kbd>DOWN</kbd></li>
+							<li class="list-group-item">BARO <kbd>SET</kbd></li>
+							<li class="list-group-item">ALL OVERHEAD SWITCH <kbd>OFF</kbd> (Except Hydraulics)</li>
 							<li class="list-group-item element-lumiere">NAV LIGHT <kbd>ON</kbd><span class="important"> (POS LT)</span></li>
 							<li class="list-group-item element-lumiere">STROBE LIGHTS <kbd>ON</kbd><span class="important"> (ANTI COLL LT)</span></li>	
 							<li class="list-group-item">HYDRAULIC SYSTEM <kbd>ON</kbd> (CKECK)</li>
+							<li class="list-group-item">GPU <kbd>CONNECTED</kbd> (MENU)</li>
+
 							<li class="list-group-item">BATTERY <kbd>ON</kbd><span class="important"> (MASTER BAT)</span></li>
 							<li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAITING NR 0") -> HORN MUTE <kbd>PRESS</kbd></li>
+							<li class="list-group-item">INSTRUMENT LIGHT <kbd>ON</kbd></li>
 							<li class="list-group-item">BOOST XFR LEFT / RIGHT <kbd>ON</kbd></li>
 							<li class="list-group-item">FULL VALVE <kbd>ON</kbd> (AND COVERING)</li>
+							<li class="list-group-item">PEDAL STOP <kbd>ON</kbd> (AND COVERING)</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-engine-start">
 						<ul class="list-group">
 							<li class="list-group-item">THROTTLE <kbd>IDLE</kbd></li>
-							<li class="list-group-item">START BUTTON <kbd>ON</kbd> (<span class="important">START HONEY</span=>. 1 SECOND)</li>
+							<li class="list-group-item">START BUTTON <kbd>ON</kbd> (<span class="important">START HONEY</span=>. 3 SECONDS)</li>
+							<li class="list-group-item">GPU <kbd>DISCONNECTED</kbd> (MENU)</li>
 							<li class="list-group-item titre-et-element-primaire">WHEN NG INSTRUMENT > 62%</li>
 							<li class="list-group-item element-primaire">GEN <kbd>ON</kbd></li>
-							<hr>
-							<li class="list-group-item">INSTRUMENT LIGHT <kbd>ON</kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-before-takeoff">
+						<ul class="list-group">
 							<li class="list-group-item">FLIGHT INSTRUMENTS DG, ATT, TURN <kbd>ON</kbd></li>
 							<li class="list-group-item">AVIONIC MASTER <kbd>ON</kbd><span class="important"> (AVIONICS BUS1)</span></li>
-							<li class="list-group-item">PITOT HEATER <kbd>ON</kbd> (ON REQUEST)</li>
-							<li class="list-group-item">THROTTLE <kbd>FULL</kbd></li>
+							<li class="list-group-item">PITOT HEATER <kbd>ON</kbd> (BELLOW 10C)</li>
+							<li class="list-group-item">ANTI ICE <kbd>ON</kbd> (BELLOW 10C)</li>
 							<li class="list-group-item element-lumiere">LANDING LIGHT <kbd>ON</kbd><span class="important"> (LDG LTS)</span></li>	
+							<li class="list-group-item">THROTTLE <kbd>FULL</kbd></li>
 							<li class="list-group-item">GARMIN & TRANSPONDER <kbd>ON</kbd></li>
 							<li class="list-group-item">HORIZON <kbd>PULL 4 SECONDS</kbd> (TO SET CORRECTLY)</li>
 							<li class="list-group-item">SAS <kbd>ON</kbd></li>
-							<li class="list-group-item">BARO <kbd>SET</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-approach">
@@ -86,6 +101,8 @@
 							<li class="list-group-item titre-sans-element-primaire">ALTITUDE ABOVE LANDING SPOT 500 FEET</li>
 							<li class="list-group-item titre-sans-element-primaire">RATE OF DESCENT 300 FT/MIN</li>
 							<li class="list-group-item titre-sans-element-primaire">USING CYCLIC AND PEDAL TO ADJUST LANDING</li>
+							<li class="list-group-item titre-et-element-primaire">WHEN SPEED 50 KT</li>
+							<li class="list-group-item element-primaire">PEDAL STOP <kbd>ON</kbd> (AND COVERING)</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-parking1">
