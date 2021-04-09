@@ -94,3 +94,9 @@ kbd.petit::after
 {
 	color:	orange;
 }
+.defile 
+{
+  height: 75vh;
+  overflow: hidden;
+  overflow-y: scroll; 
+}
