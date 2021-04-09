@@ -33,11 +33,11 @@
 				<h1 class="text-muted">Checklist</h1>
 				<div class="list-group defile" id="list-tab">
 					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-option">Options</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/5</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/5</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar3">Cockpit Preparation 3/5</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar4">Cockpit Preparation 4/5</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar5">Cockpit Preparation 5/5</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight1">Pre-Flight Check 1</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight2">Pre-Flight Check 2</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/3</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/3</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar3">Cockpit Preparation 3/3</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pushback">Pushback</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-engine-start">Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-engine-start">After Engine Start</a>
@@ -74,7 +74,7 @@
 							<li class="list-group-item element-primaire">GROUND SERVICES / EXTERNAL POWER <kbd>ON </kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-cockpit-prepar1">
+					<div class="tab-pane" id="list-cockpit-preflight1">
 						<ul class="list-group">
 							<li class="list-group-item titre-et-element-primaire">PEDESTAL</li>
 							<li class="list-group-item element-primaire">LANDING GEAR <kbd>DOWN</kbd></li>
@@ -86,38 +86,35 @@
 							<li class="list-group-item element-primaire">WEATHER RADAR (SYS) <kbd>OFF</kbd></li>
 							<li class="list-group-item element-primaire">WEATHER RADAR (PWS) <kbd>OFF</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">OVERHEAD</li>
-							<li class="list-group-item element-primaire">EXTERIOR POWER	<kbd>ON</kbd> (DOORS CLOSE IN 12 MINUTES)</li>
 							<li class="list-group-item element-primaire">BATTERY 1 & 2	<kbd>ON</kbd></li>
-							<li class="list-group-item element-primaire">OVHD INTEG LIGHT	<kbd>BRT</kbd></li>
-							<li class="list-group-item element-primaire">DOME LIGHT	<kbd>BRT (1 clic)</kbd></li>
-							<li class="list-group-item element-primaire">ANN LT	<kbd>TEST (after 1 clic)</kbd></li>
-							<li class="list-group-item">ENGINE MASTER 1 <kbd>OFF</kbd></li>
-							<li class="list-group-item">PROPELLER LEVERS <kbd>HIGH RPM </kbd></li>
-							<li class="list-group-item">CONDITION LEVERS <kbd>CUT OFF </kbd></li>
-							<li class="list-group-item">FLIGHT CONTROL LOCK <kbd>REMOVE </kbd></li>
-							<li class="list-group-item">MASTER (BAT) <kbd>ON </kbd></li>
-							<li class="list-group-item">EXT POWER <kbd>ON</kbd></li>
-							<li class="list-group-item">EFIS POWER <kbd>ON</kbd></li>
-							<li class="list-group-item">AVIONIC MASTER <kbd>ON </kbd></li>
-							<li class="list-group-item">MASTER PANEL LIGHTS (BUTTON) <kbd>ON </kbd></li>
-							<li class="list-group-item">ALL LIGHT BUTTON <kbd>BRIGHT </kbd></li>
-							<li class="list-group-item">CABIN LIGHT <kbd>BRIGHT </kbd></li>
-							<li class="list-group-item">NO SMK & FSB <kbd>ON </kbd></li>
-							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>ON </kbd></li>
+							<li class="list-group-item element-primaire">EXTERIOR POWER	<kbd>ON</kbd> (DOORS CLOSE IN 12 MINUTES)</li>
+							<li class="list-group-item titre-et-element-primaire">INSTRUMENT PANEL (LIGHTS)</li>
+							<li class="list-group-item element-primaire">CPT PFD <kbd>BRT</kbd></li>
+							<li class="list-group-item element-primaire">CPT ND <kbd>BRT</kbd></li>
+							<li class="list-group-item element-primaire">CO-PI PFD <kbd>BRT</kbd></li>
+							<li class="list-group-item element-primaire">CO-PI ND <kbd>BRT</kbd></li>
+							<li class="list-group-item element-primaire">ECAM UPPER AND LOWER <kbd>BRT</kbd></li>
+							<li class="list-group-item element-primaire">MCDU LEFT & RIGHT <kbd>BRT</kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-cockpit-prepar">
+					<div class="tab-pane" id="list-cockpit-preflight2">
 						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item titre-sans-element-primaire">INSERTING GARMIN G530 DATA<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-rnav"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item titre-sans-element-primaire">SAVING/LOADING GARMIN G530 FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-managing"><i class="fas fa-file-import"></i></button></li>
-							<li class="list-group-item titre-sans-element-primaire">ENTERING VNAV DATA GARMIN G530<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-garmin-G530-vnav"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item">ALTITUDE <kbd>SET </kbd></li>
-							<li class="list-group-item">BARO DEPARTURE <kbd>SET </kbd></li>
-							<li class="list-group-item">EXT POWER <kbd>OFF</kbd></li>
-							<hr>
-							<li class="list-group-item titre-et-element-primaire">OPEN THE MENU IN THE LEFT OF THE SCREEN</li>
-							<li class="list-group-item element-primaire">IN THE THIRD OPTION UNSELECT <kbd>GPU </kbd></li>
+							<li class="list-group-item titre-et-element-primaire">OVERHEAD LEFT (BOTTOM TO TOP)</li>
+							<li class="list-group-item element-primaire">GND CTL <kbd>ON</kbd></li>
+							<li class="list-group-item element-primaire">ADIRS DATA <kbd>STS</kbd></li>
+							<li class="list-group-item element-primaire">ADIRS SYS <kbd>1</kbd></li>
+							<li class="list-group-item element-primaire">ADIRS 1 & 2 & 3 <kbd>BAT</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">OVERHEAD CENTER (BOTTOM TO TOP)</li>
+							<li class="list-group-item element-primaire lumiere">NAV & LOGO <kbd class="lumiere">1</kbd></li>
+							<li class="list-group-item element-primaire">OVHD INTEG LIGHT	<kbd>BRT</kbd></li>
+							<li class="list-group-item element-primaire">DOME LIGHT	<kbd>BRT</kbd> (1 clic)</li>
+							<li class="list-group-item element-primaire">ANN LT	<kbd>TEST</kbd> (and after, 1 clic)</li>
+							<li class="list-group-item element-primaire">APU FIRE <kbd>TEST</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">ECAM SYSTEM CHECK</li>
+							<li class="list-group-item element-primaire">HYD <kbd>PRESS</kbd> (CHECK HYDRAULIC LEVEL)</li>
+							<li class="list-group-item element-primaire">ENG <kbd>PRESS</kbd> (CHECK OIL LEVEL)</li>
+							<li class="list-group-item element-primaire">DOOR <kbd>PRESS</kbd> (OXYGEN LEVEL MUST BE GREEN)</li>
+							<li class="list-group-item titre-sans-element-primaire">DOING WALK AROUND CHECK</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-engine-start">
