@@ -35,8 +35,11 @@
 					<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#list-option">Options</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight1">Preflight 1</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight2">Preflight 2</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU1">MCDU Programming 1</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU2">MCDU Programming 2</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU-data-init">MCDU DATA/INIT</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU-f-pln1">MCDU F-PLN 1</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU-f-pln2">MCDU F-PLN 2</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU-f-pln3">MCDU F-PLN 3</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU-f-pln4">MCDU F-PLN 4</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/3</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/3</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar3">Cockpit Preparation 3/3</a>
@@ -80,7 +83,7 @@
 					</div>
 					<div class="tab-pane" id="list-cockpit-preflight1">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">PEDESTAL</li>
+							<li class="list-group-item titre-et-element-primaire">PEDESTAL (optionnal)</li>
 							<li class="list-group-item element-primaire">LANDING GEAR <kbd>DOWN</kbd></li>
 							<li class="list-group-item element-primaire list-group-item-danger">PARKING BRAKE <kbd>SET</kbd></li>
 							<li class="list-group-item element-primaire">ENGINE MASTER 1 & 2 <kbd>OFF</kbd></li>
@@ -117,16 +120,91 @@
 							<li class="list-group-item element-primaire">ENG <kbd>PRESS</kbd> (CHECK OIL LEVEL)</li>
 							<li class="list-group-item element-primaire">DOOR <kbd>PRESS</kbd> (OXYGEN LEVEL MUST BE GREEN)</li>
 							<li class="list-group-item titre-sans-element-primaire">DOING WALK AROUND CHECK</li>
+							<li class="list-group-item titre-sans-element-primaire">OPEN THE GROUND HANDLING MENU / CONTROL / DRIVE AWAY ALL</li>
+
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-cockpit-MCDU1">
+					<div class="tab-pane" id="list-cockpit-MCDU-data-init">
 						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">DOING WALK AROUND CHECK</li>
+							<li class="list-group-item titre-sans-element-primaire">FCU MODE SELECT <kbd>PLAN</kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">FCU ZOOM SELECT <kbd>10</kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">FCU DISPLAY SELECT <kbd>CSTR</kbd> (CONSTRAINTS)</li>
+							<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF (IPAD)</strong></li>
+							<li class="list-group-item titre-sans-element-primaire">OPEN MCDU AND <strong class="important">ENTERING USING KEYBOARD</strong></li>
+							<li class="list-group-item titre-et-element-primaire">MCDU (DATA)</li>
+							<li class="list-group-item">CURRENT PAGE <kbd>CHECK ENGINE TYPE</kbd> & <kbd>DATABASE</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">MCDU (INIT) SIMBRIEF P.1</li>
+							<li class="list-group-item">FROM/TO <kbd>DEPARTURE/ARRIVAL</kbd></li>
+							<li class="list-group-item">ALTN <kbd>ALTERNATE AIRPORT</kbd></li>
+							<li class="list-group-item">FLT NBR <kbd>FLIGHT NUMBER</kbd></li>
+							<li class="list-group-item">COST INDEX <kbd>CI</kbd></li>
+							<li class="list-group-item">CRZ FL <kbd>FL STEPS</kbd></li>
+							<li class="list-group-item">IRS INIT <kbd>PRESS</kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-cockpit-MCDU2">
+					<div class="tab-pane" id="list-cockpit-MCDU-f-pln1">
 						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire">DOING WALK AROUND CHECK</li>
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (INSERT DEPARTURE) SIMBRIEF P.2</li>
+							<li class="list-group-item">DEPARTURE AIRPORT <kbd>PRESS TWICE</kbd></li>
+							<li class="list-group-item">RUNWAY SELECT <kbd>PRESS</kbd></li>
+							<li class="list-group-item">SIDS SELECT <kbd>PRESS</kbd>	(IF REQUIRED)</li>
+							<li class="list-group-item">TRANSIT SELECT <kbd>PRESS</kbd>	(IF REQUIRED)</li>
+							<li class="list-group-item">F-PLN <kbd>PRESS</kbd></li>
+							<li class="list-group-item">INSERT <kbd>PRESS</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (INSERT WAYPOINT) SIMBRIEF P.2</li>
+							<li class="list-group-item">ARROW UP <kbd>PRESS</kbd> (UNTIL F-PLN DISCONTINUITY)</li>
+							<li class="list-group-item">ENTERING WAYPOINT AND CLIC <kbd>LEFT</kbd></li>
+							<li class="list-group-item">INSERT <kbd>PRESS</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (DELETING WAYPOINT)</li>
+							<li class="list-group-item">ARROW UP <kbd>PRESS</kbd> (UNTIL WAYPOINT TO DELETE)</li>
+							<li class="list-group-item">CLR <kbd>CLIC</kbd></li>
+							<li class="list-group-item">CLIC <kbd>LEFT</kbd> TO THE DESIRED WAYPOINT</li>
+							<li class="list-group-item">INSERT <kbd>PRESS</kbd></li>
+							<li class="list-group-item important">A GOOD PRACTICE ARE ENTERING TWO WAYPOINTS; THEN INSERT IT</li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-cockpit-MCDU-f-pln2">
+						<ul class="list-group">
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (INSERT AIRWAYS) SIMBRIEF P.2</li>
+							<li class="list-group-item"><span class="important">EXAMPLE: P600 FENIK L612 LAKEY</span></li>
+							<li class="list-group-item">ARROW UP <kbd>PRESS</kbd> (UNTIL LAST WAYPOINT)</li>
+							<li class="list-group-item">CLIC <kbd>LEFT</kbd> (NEAR THE LAST WAYPOINT)</li>
+							<li class="list-group-item">AIRWAYS <kbd>PRESS</kbd></li>
+							<li class="list-group-item">ENTERING P600 <kbd>CLIC VIA</kbd></li>
+							<li class="list-group-item">ENTERING FENIK <kbd>CLIC TO</kbd></li>
+							<li class="list-group-item">ENTERING L612 <kbd>CLIC VIA</kbd></li>
+							<li class="list-group-item">ENTERING LAKEY <kbd>CLIC TO</kbd></li>
+							<li class="list-group-item">RETURN <kbd>PRESS</kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-cockpit-MCDU-f-pln3">
+						<ul class="list-group">
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (INSERT ARRIVAL) SIMBRIEF P.2</li>
+							<li class="list-group-item">ARRIVAL AIRPORT <kbd>PRESS</kbd></li>
+							<li class="list-group-item">ARRIVAL <kbd>PRESS</kbd></li>
+							<li class="list-group-item">RUNWAY SELECT <kbd>PRESS</kbd> (SELECT RNV OR ILS RUNWAY)</li>
+							<li class="list-group-item">STAR SELECT <kbd>PRESS</kbd>	(IF REQUIRED)</li>
+							<li class="list-group-item">VIA SELECT <kbd>PRESS</kbd>	(IF REQUIRED)</li>
+							<li class="list-group-item">TRANSIT SELECT <kbd>PRESS</kbd>	(IF REQUIRED)</li>
+							<li class="list-group-item">F-PLN <kbd>PRESS</kbd></li>
+							<li class="list-group-item">INSERT <kbd>PRESS</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (REMOVING DISC & MANUAL)</li>
+							<li class="list-group-item">ARROW UP <kbd>PRESS</kbd> (UNTIL MANUAL)</li>
+							<li class="list-group-item">CLR <kbd>CLIC</kbd></li>
+							<li class="list-group-item">CLIC <kbd>LEFT</kbd> TO THE MANUAL WAYPOINT</li>
+							<li class="list-group-item">INSERT <kbd>PRESS</kbd></li>
+							<li class="list-group-item">ARROW UP <kbd>PRESS</kbd> (UNTIL F-PLN DISCONTINUITY)</li>
+							<li class="list-group-item">CLR <kbd>CLIC</kbd></li>
+							<li class="list-group-item">CLIC <kbd>LEFT</kbd> TO THE DISCONTINUITY</li>
+							<li class="list-group-item">INSERT <kbd>PRESS</kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-cockpit-MCDU-f-pln4">
+						<ul class="list-group">
+							<li class="list-group-item titre-et-element-primaire">MCDU (F-PLN) (VERIFYING ROUTE)</li>
+							<li class="list-group-item">ARROW UP <kbd>PRESS</kbd></li>
+							<li class="list-group-item">CHECK ON THE NAVIGATION DISPLAY IF ROUTE OK</li>
+							<li class="list-group-item">CHECK ALL CONSTRAINTS ALTITUDE WITHIN MAPS</li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-engine-start">
