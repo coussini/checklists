@@ -44,8 +44,8 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start">Before Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pushback-engine-start">Pushback & Engine Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-start">After Start</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-taxi">Taxi</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-line-up">Line Up</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-lineup">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-after-take-off">After Take Off</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-climb">Climb</a>
@@ -282,13 +282,29 @@
 							<li class="list-group-item">TRIM <kbd>SET FOR TAKOFF</kbd></li>
 							<li class="list-group-item">APU BLEED <kbd>OFF</kbd></li>
 							<li class="list-group-item">APU MASTER <kbd>OFF</kbd></li>
-							<li class="list-group-item element-lumiere">RUNWAY TURN <kbd>ON</kbd></li>
-							<li class="list-group-item element-lumiere">NOSE LIGHT <kbd>TAXI</kbd></li>
-							<li class="list-group-item titre-sans-element-primaire">CALL FOLOW ME CAR</li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-taxi">
+					<div class="tab-pane" id="list-before-taxi">
 						<ul class="list-group">
+							<li class="list-group-item titre-sans-element-primaire">CALL FOLOW ME CAR</li>
+							<li class="list-group-item element-lumiere">RUNWAY TURN <kbd>ON</kbd></li>
+							<li class="list-group-item element-lumiere">NOSE LIGHT <kbd>TAXI</kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">TAXING RUNWAY <kbd>20 KNOTS </kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-lineup">
+						<ul class="list-group">
+							<li class="list-group-item titre-et-element-primaire">ECAM F/CTL MENU</li>
+							<li class="list-group-item element-primaire">FLIGHT CONTROL <kbd>CHECK</kbd></li>
+							<li class="list-group-item">AUTO BRAKE <kbd>MAX</kbd></li>
+							<li class="list-group-item">TEST T.O CONFIG <kbd>PUSH</kbd></li>
+							<li class="list-group-item">CALL FWD (OVERHEAD) <kbd>PUSH</kbd> (CLEAR CONFIGURATION STATUS ECAM)</li>
+							<li class="list-group-item">RADAR <kbd>ON</kbd></li>
+							<li class="list-group-item">WINDSHIELD <kbd>ON</kbd></li>
+							<li class="list-group-item">TCAS <kbd>TA/RA</kbd></li>
+							<li class="list-group-item element-lumiere">STROBE <kbd>AUTO</kbd></li>
+							<li class="list-group-item element-lumiere">LAND <kbd>ON</kbd></li>
+							<li class="list-group-item element-lumiere">NOSE <kbd>T.O.</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-autopilot-preparation">
