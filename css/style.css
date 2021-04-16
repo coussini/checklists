@@ -100,3 +100,7 @@ kbd.petit::after
   overflow: hidden;
   overflow-y: scroll; 
 }
+.pfd-airspeed
+{
+	color: #28B463;
+}
