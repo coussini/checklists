@@ -255,26 +255,28 @@
 					</div>
 					<div class="tab-pane" id="list-climb-cruise">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">CRUISING</li>
-							<li class="list-group-item element-primaire list-group-item-danger">TCAS <kbd>N</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">GENERAL RULES (PASSING 10000 FT)</li>
 							<li class="list-group-item element-primaire element-lumiere">LAND <kbd>OFF</kbd> (1 clic)</li>
 							<li class="list-group-item element-primaire">SEATBELTS <kbd>OFF</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">QNH FLASHING (PASSING TRANSITION ALT)</li>
 							<li class="list-group-item element-primaire">BARO <kbd>PUSH</kbd> TO STD</li>
+							<li class="list-group-item titre-et-element-primaire">CRUISING</li>
+							<li class="list-group-item element-primaire list-group-item-danger">TCAS <kbd>N</kbd></li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">MCDU (PROG) / REPORT / "T/D" (60 NM before T/D)</li>
-							<li class="list-group-item titre-sans-element-primaire">IN AVITAB, SEARCH FOR THE ARRIVAL AIRPORT ATIS FREQ</li>
-							<li class="list-group-item">ATIS FREQ ON RADIO  <kbd>SET</kbd></li>
-							<li class="list-group-item">VHF1 BUTTON <kbd>ON</kbd> (WHITE)</li>
-							<li class="list-group-item titre-fonce">IF ATIS NOT AVAILABLE BEFORE T/D</li>
-							<li class="list-group-item">IN AVITAB, USE THE WEATHER SECTION</li>
-							<hr>
-							<li class="list-group-item">CHECK & REVIEW <kbd>APPROACH CHARTS</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">60 NM before T/D</li>
+							<li class="list-group-item element-primaire list-group-item-danger">CRUISE PAGE <kbd>PROG</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-prog"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire titre-sans-element-primaire">IN AVITAB, SEARCH FOR THE ARRIVAL AIRPORT ATIS FREQ</li>
+							<li class="list-group-item element-primaire titre-sans-element-primaire">IF ATIS NOT AVAILABLE, USE AVITAB WEATHER DATA</li>
+							<li class="list-group-item element-primaire">CHECK & REVIEW <kbd>APPROACH CHARTS</kbd></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU (APPR PAGE) <kbd>PERF</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-perf"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire list-group-item-danger">ALTITUDE ARRIVAL <kbd>SET</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-descent">
 						<ul class="list-group">
+							<li class="list-group-item list-group-item-danger">Dans TolissCallouts</li>
+							<li class="list-group-item list-group-item-danger">Utiliser toliss_airbus/performance/DestTrans (18000)</li>
+							<li class="list-group-item list-group-item-danger">Utiliser toliss_airbus/init/cruise_alt CONTRE l'altitude courante pour DIRE qu'on doit mettre le "TCAS à N"</li>
 							<li class="list-group-item titre-et-element-primaire">AT 5 NM FROM "T/D"</li>
 							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>PUSH</kbd> (One Dot)</li>
 							<li class="list-group-item element-primaire list-group-item-danger">TCAS <kbd>BLW</kbd></li>
@@ -285,11 +287,9 @@
 							<li class="list-group-item element-primaire">AUTO/BRAKE <kbd>LOW or MED</kbd></li>
 							<li class="list-group-item element-primaire">FCU "LS" <kbd>ON</kbd> (AS REQUIRED)</li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">PASSING TRANSITION ALT</li>
-							<li class="list-group-item">VHF1 BUTTON <kbd>ON</kbd> (WHITE)</li>
-							<li class="list-group-item titre-fonce">IF ATIS NOT AVAILABLE</li>
-							<li class="list-group-item">IN AVITAB, USE THE WEATHER SECTION</li>
-							<li class="list-group-item">BARO ARRIVAL <kbd>SET</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">STD FLASHING (PASSING TRANSITION ALT)</li>
+							<li class="list-group-item element-primaire titre-sans-element-primaire">IF ATIS NOT AVAILABLE, USE AVITAB WEATHER DATA</li>
+							<li class="list-group-item element-primaire">BARO ARRIVAL <kbd>SET</kbd></li>
 							<hr>
 
 						</ul>
@@ -353,20 +353,29 @@
 							<li class="list-group-item element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
 							<li class="list-group-item">SEATBELTS <kbd>OFF</kbd></li>
 							<li class="list-group-item">FUEL PUMPS (6) <kbd>OFF</kbd></li>
+							<li class="list-group-item">ADIRS DATA <kbd>TEST</kbd></li>
+							<li class="list-group-item">ADIRS SYS <kbd>OFF</kbd></li>
+							<li class="list-group-item">IR1 & IR2 & IR3 <kbd>OFF</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-securing">
 						<ul class="list-group">
-							<li class="list-group-item">ADIRS DATA <kbd>TEST</kbd></li>
-							<li class="list-group-item">ADIRS SYS <kbd>OFF</kbd></li>
-							<li class="list-group-item">IR1 & IR2 & IR3 <kbd>OFF</kbd></li>
-							<li class="list-group-item">APU BLEED <kbd>OFF</kbd></li>
-							<li class="list-group-item">APU MASTER <kbd>OFF</kbd></li>
-							<li class="list-group-item">APU START <kbd>OFF</kbd></li>
-							<li class="list-group-item element-lumiere">NAV & LOGO <kbd>OFF</kbd></li>
-							<li class="list-group-item">NO SMOKING <kbd>OFF</kbd></li>
-							<li class="list-group-item">EMER EXIT LT <kbd>OFF</kbd></li>
-							<li class="list-group-item">BATTERY 1 & 2	<kbd>OFF</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">OPEN THE GROUND HANDLING MENU</li>
+							<li class="list-group-item element-primaire">SELECT FUEL & SERVICES DEPENDING THE AIRCRAFT SITUATION</li>
+							<li class="list-group-item titre-et-element-primaire">ISCS MENU</li>
+							<li class="list-group-item element-primaire">GROUND SERVICES / DOOR 1L <kbd>OPEN</kbd></li>
+							<li class="list-group-item element-primaire">GROUND SERVICES / DOOR 1R/2R <kbd>OPEN</kbd> Wait until catering available in GHD menu</li>
+							<li class="list-group-item element-primaire">GROUND SERVICES / FWD CARGO <kbd>OPEN</kbd></li>
+							<li class="list-group-item element-primaire">GROUND SERVICES / AFT CARGO <kbd>OPEN</kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire"> WHEN PASSENGER ARE GONES</li>
+							<li class="list-group-item element-primaire element-lumiere">NAV & LOGO <kbd>OFF</kbd></li>
+							<li class="list-group-item element-primaire">NO SMOKING <kbd>OFF</kbd></li>
+							<li class="list-group-item element-primaire">EMER EXIT LT <kbd>OFF</kbd></li>
+							<li class="list-group-item element-primaire">APU BLEED <kbd>OFF</kbd></li>
+							<li class="list-group-item element-primaire">APU MASTER <kbd>OFF</kbd></li>
+							<li class="list-group-item element-primaire">APU START <kbd>OFF</kbd></li>
+							<li class="list-group-item element-primaire">BATTERY 1 & 2	<kbd>OFF</kbd></li>
 						</ul>
 					</div>
 				</div>
@@ -689,7 +698,10 @@
 	      <div class="modal-body">
 					<ul class="list-group">
 						<li class="list-group-item">Cliquez sur le bouton <kbd>PROG</kbd></li>
+						<li class="list-group-item titre-et-element-primaire">BEFORE TOP OF DESCENT</li>
 						<li class="list-group-item">Tapez LFBO32L et cliquez sur le bouton de droit vis-à-vis "TO"</li>
+						<li class="list-group-item">Cliquez sur le bouton à gauche de REPORT</li>
+						<li class="list-group-item titre-sans-element-primaire">Surveillez le DIST du T/D pour qu'il soit vers 60 NM</li>
 					</ul>
 	      </div>
 	      <div class="modal-footer">
@@ -710,12 +722,24 @@
 						<li class="list-group-item titre-sans-element-primaire">Ouvrir le menu  <strong>TOLISS ISCS (LOADING PERFO)</strong></li>
 						<hr>
 						<li class="list-group-item">Cliquez sur le bouton <kbd>PERF</kbd></li>
+						<li class="list-group-item titre-et-element-primaire">TAKE OFF PAGE</li>
 						<li class="list-group-item">Tapez la donnée du V1 puis cliquez le bouton à gauche de V1</li>
 						<li class="list-group-item">Tapez la donnée du V2 puis cliquez le bouton à gauche de V2</li>
 						<li class="list-group-item">Tapez la donnée du V3 puis cliquez le bouton à gauche de V3</li>
 						<li class="list-group-item">Tapez 18000 (North Americ.) ou 6000 (Europe) puis cliquez le bouton à gauche de TRANS ALT</li>
 						<li class="list-group-item">Tapez 1/UP0.5 (En guise d'exemple) puis cliquez le bouton à droite de FLAPS/THS</li>
 						<li class="list-group-item">Tapez la donnée de FLEX TEMP puis cliquez le bouton à droite de FLEX TO TEMP</li>
+						<hr>
+						<li class="list-group-item titre-et-element-primaire">APPR PAGE</li>
+						<li class="list-group-item"><code>EXEMPLE DE RAPPORT MÉTÉO: 262100Z 27007KT CAVOK 08/03
+Q1023 NOSIG</code></li>
+						<li class="list-group-item">Cliquez sur le bouton à droite de NEXT PHASE jusqu'à voir la page APPR</li>
+						<li class="list-group-item">Tapez la donnée du 1023 puis cliquez sur le bouton à gauche de QNH</li>
+						<li class="list-group-item">Tapez 08 pour la donnée de TEMP puis cliquez sur le bouton à gauche de TEMP</li>
+						<li class="list-group-item">Tapez 270/07 (27007KT) pour la donnée de MAG/WIND puis cliquez sur le bouton à gauche de MAG WIND</li>
+						<li class="list-group-item">Tapez 18000 (North Americ.) ou 6000 (Europe) puis cliquez le bouton à gauche de TRANS ALT</li>
+						<li class="list-group-item">Sur la carte ILS ou RNAV, trouver le Decision Height (ILS DA(H)) ou (LNAV MDA(H))</li>
+						<li class="list-group-item">Tapez par exemple 1040 puis cliquez le bouton à gauche de TRANS ALT</li>
 					</ul>
 	      </div>
 	      <div class="modal-footer">
