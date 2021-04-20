@@ -36,7 +36,6 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar1">Cockpit Preparation 1/2</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-prepar2">Cockpit Preparation 2/2</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight1">Preflight 1/2</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-MCDU-sec-rad-init-perf">MCDU F-PLN 4</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-cockpit-preflight2">Preflight 2/2</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-start">Before Start</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-pushback-engine-start">Pushback & Engine Start</a>
@@ -45,10 +44,10 @@
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-lineup">Line Up</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-take-off">Take Off</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-climb-cruise">Climb & Cruise</a>
-					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-descent">Before Descent</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-descent">Descent</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-approach">Approach</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-landing">Landing</a>
+					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-out-the-runway">Out the Runway</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-before-taxi">Before Taxi (after landing)</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-parking">Parking</a>
 					<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#list-securing">Securing Aircraft</a>
@@ -107,11 +106,12 @@
 							<li class="list-group-item element-primaire list-group-item-danger">ADIRS SYS <kbd>1</kbd></li>
 							<li class="list-group-item element-primaire">IR1 & IR2 & IR3 <kbd>NAV</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">OVERHEAD CENTER (BOTTOM TO TOP)</li>
-							<li class="list-group-item element-primaire element-lumiere">NAV & LOGO <kbd>1 </kbd></li>
+							<li class="list-group-item element-primaire element-lumiere">NAV & LOGO <kbd>1</kbd></li>
 							<li class="list-group-item element-primaire">OVHD INTEG LIGHT	<kbd>BRT</kbd></li>
 							<li class="list-group-item element-primaire">DOME LIGHT	<kbd>BRT</kbd> (1 clic)</li>
 							<li class="list-group-item element-primaire">ANN LT	<kbd>TEST</kbd> (and after, 1 clic)</li>
 							<li class="list-group-item element-primaire">APU FIRE <kbd>TEST</kbd></li>
+							<li class="list-group-item element-primaire">RADIO PANELS (3x) <kbd>ON</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">ECAM SYSTEM CHECK</li>
 							<li class="list-group-item element-primaire">HYD <kbd>PRESS</kbd> (CHECK HYDRAULIC LEVEL)</li>
 							<li class="list-group-item element-primaire">ENG <kbd>PRESS</kbd> (CHECK OIL LEVEL)</li>
@@ -121,48 +121,29 @@
 					</div>
 					<div class="tab-pane" id="list-cockpit-preflight1">
 						<ul class="list-group">
-							<li class="list-group-item">FCU MODE SELECT <kbd>PLAN</kbd></li>
-							<li class="list-group-item">FCU ZOOM SELECT <kbd>10</kbd></li>
-							<li class="list-group-item">FCU DISPLAY SELECT <kbd>CSTR</kbd> (CONSTRAINTS)</li>
-							<hr>
 							<li class="list-group-item titre-et-element-primaire">INSERTING FLIGHT PLAN USING MCDU (FMC)</li>
 							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>DATA</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-data"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> (A)<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-inita"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>A</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-inita"><i class="fas fa-keyboard"></i></button></li>
 							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> DEPARTURE<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-departure"><i class="fas fa-keyboard"></i></button></li>
 							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> WAYPOINTS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-waypoints"><i class="fas fa-keyboard"></i></button></li>
 							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> AIRWAYS<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-airways"><i class="fas fa-keyboard"></i></button></li>
-							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> ARRIVAL<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-arrival"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> ARRIVAL<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-arrival"><i class="fas fa-keyboard"></i></button> <span class="tresimportant">(BYPASS FOR ANY LONG TRIP)</span></li>
 							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>F-PLN</kbd> VALIDATION<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-fpln-validation"><i class="fas fa-keyboard"></i></button></li>
 							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>SEC F-PLN</kbd> COPY PRIMARY F-PLN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-secfpln"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>RAD NAV</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-radnav"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>INIT</kbd> <kbd>B</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-initb"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>PROG</kbd> <kbd>B</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-prog"><i class="fas fa-keyboard"></i></button></li>
+							<li class="list-group-item element-primaire">INSERTING MCDU <kbd>PERF</kbd> <kbd>B</kbd><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-perf"><i class="fas fa-keyboard"></i></button></li>
 							<hr>
-							<li class="list-group-item titre-sans-element-primaire">SAVING/LOADING MCDU FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-enter-mcdu-managing"><i class="fas fa-file-import"></i></button></li>
-						</ul>
-					</div>
-					<div class="tab-pane" id="list-cockpit-MCDU-sec-rad-init-perf">
-						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">MCDU (SEC F-PLN) (TO BE COMPLETED)</li>
-							<li class="list-group-item titre-et-element-primaire">MCDU (RAD NAV)</li>
-							<li class="list-group-item">CHECK THAT ALL FREQ ARE CORRECT WITHIN MAPS</li>
-							<li class="list-group-item titre-et-element-primaire">MCDU (INIT) INIT B</span></li>
-							<li class="list-group-item important">N.B: PRESS LEFT KEY IF NOT INIT B PAGE</li>
-							<li class="list-group-item titre-sans-element-primaire">ISCS MENU (LOADING PERFO)</li>
-							<li class="list-group-item">ZFW/ZFWCG <kbd>PRESS</kbd> (FROM AIRCRAFT LOADING PAYLOD INFO)</li>
-							<li class="list-group-item">BLOCK FUEL <kbd>PRESS</kbd> (FROM AIRCRAFT BLOCK FUEL INFO)</li>
-							<li class="list-group-item titre-et-element-primaire">MCDU (PERF)</li>
-							<li class="list-group-item titre-sans-element-primaire">ISCS MENU (LOADING PERFO)</li>
-							<li class="list-group-item important">IN TO PERFORMANCE, SELECT S/F CONFIG</li>
-							<li class="list-group-item">V1 <kbd>PRESS</kbd> (FROM TO PERFORMANCE INFO)</li>
-							<li class="list-group-item">VR <kbd>PRESS</kbd> (FROM TO PERFORMANCE INFO)</li>
-							<li class="list-group-item">V2 <kbd>PRESS</kbd> (FROM TO PERFORMANCE INFO)</li>
-							<li class="list-group-item">TRANS ALT <kbd>PRESS</kbd> (18000 NA; 6000 EU FROM TO PERFORMANCE INFO)</li>
-							<li class="list-group-item">FLAPS/THS <kbd>PRESS</kbd> FROM S/F CONFIG & THS INFO</li>
-							<li class="list-group-item">FLEX TO TEMP <kbd>PRESS</kbd> FROM FLEX TEMP INFO</li>
+							<li class="list-group-item titre-et-element-primaire">MANAGIN FLIGHT PLAN</li>
+							<li class="list-group-item element-primaire">SAVING AND LOADING FMS FLIGHT PLAN<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-managing-flight-plan"><i class="fas fa-keyboard"></i></button></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-cockpit-preflight2">
 						<ul class="list-group">
 							<li class="list-group-item">SEATBELTS <kbd>AUTO</kbd></li>
 							<li class="list-group-item">NO SMOKING <kbd>AUTO</kbd></li>
+							<li class="list-group-item">EMER EXIT LT <kbd>ARM</kbd> (1 clic)</li>
 							<li class="list-group-item">FUEL PUMPS (6) <kbd>ON</kbd></li>
 							<li class="list-group-item">APU MASTER <kbd>ON</kbd></li>
 							<li class="list-group-item"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAPS OPEN (ECAM APU)")</li>
@@ -181,8 +162,12 @@
 					<div class="tab-pane" id="list-before-start">
 						<ul class="list-group">
 							<li class="list-group-item titre-sans-element-primaire">CHECK THAT ALL DOORS ARE CLOSE</li>
-							<li class="list-group-item element-lumiere">BEACON <kbd>ON </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">IN AVITAB, SEARCH FOR THE DEPARTURE AIRPORT ATIS FREQ</li>
+							<li class="list-group-item">ATIS FREQ ON RADIO  <kbd>SET</kbd></li>
 							<li class="list-group-item">BARO DEPARTURE <kbd>SET</kbd></li>
+							<li class="list-group-item">VHF1 BUTTON <kbd>OFF</kbd> (NO WHITE)</li>
+							<hr>
+							<li class="list-group-item element-lumiere">BEACON <kbd>ON</kbd></li>
 							<li class="list-group-item">ALTITUDE <kbd>SET</kbd></li>
 							<li class="list-group-item">FCU MODE SELECT <kbd>ARC</kbd></li>
 							<li class="list-group-item">FCU ZOOM SELECT <kbd>20</kbd></li>
@@ -227,7 +212,7 @@
 							<li class="list-group-item element-lumiere">RUNWAY TURN <kbd>ON</kbd></li>
 							<li class="list-group-item element-lumiere">NOSE LIGHT <kbd>TAXI</kbd></li>
 							<li class="list-group-item titre-sans-element-primaire">CALL FOLOW ME CAR</li>
-							<li class="list-group-item titre-sans-element-primaire">TAXING RUNWAY <kbd>20 KNOTS </kbd></li>
+							<li class="list-group-item titre-sans-element-primaire">TAXING RUNWAY <kbd>20 KNOTS</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-lineup">
@@ -258,11 +243,11 @@
 							<li class="list-group-item element-primaire">LANDING GEAR <kbd>UP</kbd></li>
 							<li class="list-group-item element-primaire">GROUND SPOILER <kbd>DISARMED</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">FOLLOW FLIGHT DIRECTOR</li>
-							<li class="list-group-item element-primaire">PFD "LVR CLB"</span> <kbd>THROTTLE LEVERS CLB</kbd></li>
+							<li class="list-group-item element-primaire">PFD "LVR CLB" <kbd>THROTTLE LEVERS CLB</kbd></li>
 							<li class="list-group-item element-primaire"><kbd class="pfd-airspeed">-F</kbd> FLAPS <kbd>UP</kbd></li>
 							<li class="list-group-item element-primaire"><kbd class="pfd-airspeed">-S</kbd> FLAPS <kbd>RETRACT</kbd></li>
 							<hr>
-							<li class="list-group-item">AP1 <kbd>ON</kbd></li>
+							<li class="list-group-item">FCU AP1 <kbd>ON</kbd></li>
 							<li class="list-group-item">ECAM CRUISE (TAT) -> 10°C (CLOUDY) <kbd>ENG ICE ON</kbd></li>
 							<li class="list-group-item element-lumiere">RUNWAY TURN <kbd>OFF</kbd></li>
 							<li class="list-group-item element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
@@ -270,80 +255,118 @@
 					</div>
 					<div class="tab-pane" id="list-climb-cruise">
 						<ul class="list-group">
+							<li class="list-group-item titre-et-element-primaire">CRUISING</li>
+							<li class="list-group-item element-primaire list-group-item-danger">TCAS <kbd>N</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">GENERAL RULES (PASSING 10000 FT)</li>
 							<li class="list-group-item element-primaire element-lumiere">LAND <kbd>OFF</kbd> (1 clic)</li>
 							<li class="list-group-item element-primaire">SEATBELTS <kbd>OFF</kbd></li>
 							<li class="list-group-item titre-et-element-primaire">QNH FLASHING (PASSING TRANSITION ALT)</li>
 							<li class="list-group-item element-primaire">BARO <kbd>PUSH</kbd> TO STD</li>
-							<li class="list-group-item titre-et-element-primaire">MCDU (PROG / REPORT / "T/D"</li>
-							<li class="list-group-item element-primaire">60 NM BEFORE TOD <kbd>METAR CHECK </kbd></li>
-							<li class="list-group-item element-primaire">60 NM BEFORE TOD <kbd>FIND APPROACH CHART</kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">MCDU (PROG) / REPORT / "T/D" (60 NM before T/D)</li>
+							<li class="list-group-item titre-sans-element-primaire">IN AVITAB, SEARCH FOR THE ARRIVAL AIRPORT ATIS FREQ</li>
+							<li class="list-group-item">ATIS FREQ ON RADIO  <kbd>SET</kbd></li>
+							<li class="list-group-item">VHF1 BUTTON <kbd>ON</kbd> (WHITE)</li>
+							<li class="list-group-item titre-fonce">IF ATIS NOT AVAILABLE BEFORE T/D</li>
+							<li class="list-group-item">IN AVITAB, USE THE WEATHER SECTION</li>
+							<hr>
+							<li class="list-group-item">CHECK & REVIEW <kbd>APPROACH CHARTS</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-descent">
 						<ul class="list-group">
-							<li class="list-group-item titre-sans-element-primaire titre-et-element-primaire">CHECKLIST PERFORMANCE LANDING</li>
-							<li class="list-group-item titre-sans-element-primaire element-primaire">PRESS SET MARKERS</li>
+							<li class="list-group-item titre-et-element-primaire">AT 5 NM FROM "T/D"</li>
+							<li class="list-group-item element-primaire">ALTITUDE BUTTON <kbd>PUSH</kbd> (One Dot)</li>
+							<li class="list-group-item element-primaire list-group-item-danger">TCAS <kbd>BLW</kbd></li>
 							<hr>
-							<li class="list-group-item titre-sans-element-primaire">CHECK VNAV DATA (GARMIN 530)</li>
+							<li class="list-group-item titre-et-element-primaire">GENERAL RULES (PASSING 10000 FT)</li>
+							<li class="list-group-item element-primaire element-lumiere">LAND <kbd>ON</kbd> (3 clic)</li>
+							<li class="list-group-item element-primaire">SEATBELTS <kbd>ON</kbd></li>
+							<li class="list-group-item element-primaire">AUTO/BRAKE <kbd>LOW or MED</kbd></li>
+							<li class="list-group-item element-primaire">FCU "LS" <kbd>ON</kbd> (AS REQUIRED)</li>
 							<hr>
-							<li class="list-group-item">ESTABLISH 180 KIAS <kbd>TORQUE 15</kbd></li>
-							<li class="list-group-item list-group-item-danger">SET ALTITUDE DESCENT JUST BEFORE DESCENT</li>
-							<li class="list-group-item element-primaire">DSC (AUTOPILOT) <kbd>ACTIVE</kbd></li>
-							<li class="list-group-item element-primaire list-group-item-danger">AUTOFEATHER <kbd>ON </kbd></li>
+							<li class="list-group-item titre-et-element-primaire">PASSING TRANSITION ALT</li>
+							<li class="list-group-item">VHF1 BUTTON <kbd>ON</kbd> (WHITE)</li>
+							<li class="list-group-item titre-fonce">IF ATIS NOT AVAILABLE</li>
+							<li class="list-group-item">IN AVITAB, USE THE WEATHER SECTION</li>
+							<li class="list-group-item">BARO ARRIVAL <kbd>SET</kbd></li>
 							<hr>
-							<li class="list-group-item titre-et-element-primaire">GENERAL RULES TRANSITION LEVEL (DESCENT)</li>
-							<li class="list-group-item element-primaire titre-sans-element-primaire">OPEN <strong>LITTLE NAVMAP (IPAD)</strong></li>
-							<li class="list-group-item element-primaire">BARO ARRIVAL <kbd>SET</kbd></li>
+
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-approach">
 						<ul class="list-group">
-							<li class="list-group-item">CRS ACT (IN CASE ILS ONLY) <kbd>UNTIL LOC</kbd></li>
-							<li class="list-group-item element-lumiere">LANDING LIGHTS <kbd>ON</kbd></li>	
-							<li class="list-group-item">PROPELLER LEVERS <kbd>HIGH RPM</kbd></li>
-							<li class="list-group-item">CONDITION LEVERS <kbd>HIGH IDLE</kbd></li>
-							<li class="list-group-item">APPR <kbd>ACTIVE</kbd></li>
- 							<hr>
-							<li class="list-group-item titre-et-element-primaire">SPEEDS</li>
-							<li class="list-group-item element-primaire">GREEN DOT <kbd>FLAPS 1 </kbd></li>
-							<li class="list-group-item element-primaire">S-SPEED <kbd>GEAR DOWN </kbd></li>
-							<li class="list-group-item element-primaire">S-SPEED <kbd>FLAPS 2 </kbd></li>
-							<li class="list-group-item element-primaire">F-SPEED <kbd>FLAPS 3 </kbd></li>
+							<li class="list-group-item titre-et-element-primaire">AFTER DECEL WAYPOINT</li>
+							<li class="list-group-item element-primaire">GROUND SPOILER <kbd>SET</kbd> (IF FASTER THAN 230 KNOTS)</li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">GREEN DOT (PFD)</li>
+							<li class="list-group-item element-primaire">FLAPS <kbd>1</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">RUNWAY IN LINE</li>
+							<li class="list-group-item element-primaire">FCU APPR <kbd>ON</kbd></li>
+							<li class="list-group-item element-primaire">FCU AP2 <kbd>ON</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">S-SPEED (PFD)</li>
+							<li class="list-group-item element-primaire">FLAPS <kbd>2</kbd></li>
+							<li class="list-group-item element-primaire">LANDING GEAR <kbd>DOWN</kbd></li>
+							<li class="list-group-item element-primaire">GROUND SPOILER <kbd>ARMED</kbd></li>
+							<li class="list-group-item element-primaire element-lumiere">NOSE LIGHT <kbd>T.O</kbd></li>
+							<li class="list-group-item titre-et-element-primaire">F-SPEED (PFD)</li>
+							<li class="list-group-item element-primaire">FLAPS <kbd>3</kbd></li>
+							<li class="list-group-item element-primaire">FLAPS <kbd>FULL</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-landing">
 						<ul class="list-group">
-							<li class="list-group-item titre-et-element-primaire">EXIT RUNWAY</li>
-							<li class="list-group-item element-primaire">FLAPS <kbd>UP </kbd></li>
-							<li class="list-group-item element-primaire element-lumiere">LANDING LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-primaire element-lumiere">STROBE LIGHTS <kbd>OFF</kbd></li>	
+							<li class="list-group-item titre-et-element-primaire">PASSING 400 FEET</li>
+							<li class="list-group-item element-primaire">AUTOPILOT <kbd>DISCONNECT</kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">"RETARD RETARD"</li>
+							<li class="list-group-item element-primaire">THROTTLE LEVERS <kbd>IDLE</kbd></li>
+							<li class="list-group-item element-primaire">REVERSE <kbd>FULL</kbd></li>
+							<li class="list-group-item element-primaire">BRAKES <kbd>AS REQUIRED</kbd></li>
+							<hr>
+							<li class="list-group-item titre-et-element-primaire">"AT 70 KTS"</li>
+							<li class="list-group-item element-primaire">REVERSE <kbd>IDLE</kbd></li>
+						</ul>
+					</div>
+					<div class="tab-pane" id="list-out-the-runway">
+						<ul class="list-group">
+							<li class="list-group-item">WEATHER RADAR (SYS) & (PWS) <kbd>OFF</kbd></li>
+							<li class="list-group-item">GROUND SPOILER <kbd>DISARMED</kbd></li>
+							<li class="list-group-item">FLAPS <kbd>UP</kbd></li>
+							<li class="list-group-item">TCAS <kbd>N</kbd></li>
+							<li class="list-group-item element-lumiere">STROBE <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">LAND <kbd>OFF</kbd></li>
+							<li class="list-group-item list-group-item-danger">APU MASTER <kbd>ON</kbd></li>
+							<li class="list-group-item list-group-item-danger"><i class="fas fa-circle-notch fa-spin"></i>&nbsp;&nbsp;("WAIT UNTIL FLAPS OPEN (ECAM APU)")</li>
+							<li class="list-group-item list-group-item-danger">APU START <kbd>ON</kbd></li>
 						</ul>
 					</div>
 					<div class="tab-pane" id="list-parking">
 						<ul class="list-group">
-							<li class="list-group-item">PARKING BRAKE <kbd>SET </kbd></li>
-							<li class="list-group-item titre-sans-element-primaire">OPEN WINDOWS</li>
-							<li class="list-group-item list-group-item-danger">ENG AUTO <kbd>OFF </kbd></li>
-							<li class="list-group-item">BLEED AIR VALVES <kbd>OFF </kbd></li>
-							<li class="list-group-item">ENVR BLEED AIR NORMAL <kbd>OFF </kbd></li>
-							<li class="list-group-item">AIR CONDITIONING BUTON <kbd>OFF </kbd></li>
-							<li class="list-group-item">AFT BLOWER <kbd>OFF </kbd></li>
+							<li class="list-group-item list-group-item-danger">PARKING BRAKE <kbd>SET</kbd></li>
+							<li class="list-group-item">APU BLEED <kbd>ON</kbd></li>
+							<li class="list-group-item">ENGINE 1 <kbd>OFF</kbd></li>
+							<li class="list-group-item">ENGINE 2 <kbd>OFF</kbd></li>
+							<li class="list-group-item">TCAS <kbd>STBY</kbd></li>
+							<li class="list-group-item element-lumiere">BEACON <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">RUNWAY TURN <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">NOSE LIGHT <kbd>OFF</kbd></li>
+							<li class="list-group-item">SEATBELTS <kbd>OFF</kbd></li>
+							<li class="list-group-item">FUEL PUMPS (6) <kbd>OFF</kbd></li>
 						</ul>
 					</div>
-					<div class="tab-pane" id="list-shutdown">
+					<div class="tab-pane" id="list-securing">
 						<ul class="list-group">
-							<li class="list-group-item list-group-item-danger">AVIONIC MASTER <kbd>OFF </kbd></li>
-							<li class="list-group-item">INVERTER 1 <kbd>OFF </kbd></li>
-							<li class="list-group-item">INVERTER 2 <kbd>OFF </kbd></li>
-							<li class="list-group-item">CONDITION LEVERS <kbd>CUT OFF </kbd></li>
-							<li class="list-group-item">PROPELLER LEVERS <kbd>FEATHER </kbd></li>
-							<li class="list-group-item element-lumiere">BEACON LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-lumiere">TAXI LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item element-lumiere">NAV LIGHTS <kbd>OFF </kbd></li>
-							<li class="list-group-item">L GEN <kbd>OFF </kbd></li>
-							<li class="list-group-item">R GEN <kbd>OFF </kbd></li>
-							<li class="list-group-item">TURBINE < 15% <kbd class="petit">MASTER (BAT) </kbd><kbd class="petit">OFF</kbd></li>
+							<li class="list-group-item">ADIRS DATA <kbd>TEST</kbd></li>
+							<li class="list-group-item">ADIRS SYS <kbd>OFF</kbd></li>
+							<li class="list-group-item">IR1 & IR2 & IR3 <kbd>OFF</kbd></li>
+							<li class="list-group-item">APU BLEED <kbd>OFF</kbd></li>
+							<li class="list-group-item">APU MASTER <kbd>OFF</kbd></li>
+							<li class="list-group-item">APU START <kbd>OFF</kbd></li>
+							<li class="list-group-item element-lumiere">NAV & LOGO <kbd>OFF</kbd></li>
+							<li class="list-group-item">NO SMOKING <kbd>OFF</kbd></li>
+							<li class="list-group-item">EMER EXIT LT <kbd>OFF</kbd></li>
+							<li class="list-group-item">BATTERY 1 & 2	<kbd>OFF</kbd></li>
 						</ul>
 					</div>
 				</div>
@@ -386,7 +409,7 @@
 	      </div>
 	      <div class="modal-body">
 					<ul class="list-group">
-						<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF HELPER</strong></li>
+						<li class="list-group-item titre-sans-element-primaire">Ouvrir <strong>SIMBRIEF HELPER</strong></li>
 						<li class="list-group-item list-group-item-danger">Cliquer sur la fenêtre du MCDU du commandant</li>
 						<hr>
 						<li class="list-group-item">Cliquez sur le bouton <kbd>DATA</kbd></li>
@@ -410,7 +433,6 @@
 	      </div>
 	      <div class="modal-body">
 					<ul class="list-group">
-						<li class="list-group-item titre-sans-element-primaire">OPEN <strong>SIMBRIEF HELPER</strong></li>
 						<li class="list-group-item list-group-item-danger">En laissant la souris sur la zone DE LA FENÊTRE du MCDU affiché, on peut saisir des données à l'aide du clavier</li>
 						<hr>
 						<li class="list-group-item">Cliquez sur le bouton <kbd>INIT</kbd></li>
@@ -550,7 +572,7 @@
 						<li class="list-group-item">Sélectionnez l'approche RNV32L dans la liste des APPR puis cliquez sur le bouton à sa gauche</li>
 						<li class="list-group-item">Sélectionnez la stars SECH6T dans la liste des STARS puis cliquez sur le bouton à sa gauche</li>
 						<li class="list-group-item">Sélectionnez le vias NO VIA dans la liste des VIAS puis cliquez sur le bouton à sa gauche</li>
-						<li class="list-group-item">Sélectionnez le trans NONE dans la liste des VIAS puis cliquez sur le bouton à sa gauche  (aucune transition, sinon choisir une transition)</li>
+						<li class="list-group-item">Sélectionnez le trans NONE dans la liste des TRANS puis cliquez sur le bouton à sa gauche  (aucune transition, sinon choisir une transition)</li>
 						<li class="list-group-item">cliquez sur le bouton à gauche de F-PLN (pour insérer les informations dans un mode temporaire)</li>
 						<li class="list-group-item">cliquez sur le bouton à droite de INSERT* (pour insérer les informations dans le MCDU)</li>
 					</ul>
@@ -573,6 +595,10 @@
 						<li class="list-group-item list-group-item-danger">L'utilisation de la touche <kbd><i class="fas fa-long-arrow-alt-up"></i></kbd> ou <kbd><i class="fas fa-long-arrow-alt-down"></i></kbd> permet la sélection d'élément d'une liste</li>
 						<hr>
 						<li class="list-group-item"><code>EXEMPLE DE ROUTE: LFRS/03 LUGE3N LUGEN UM616 TUPAR UM184 CNA UN863 SECHE SECH6T LFBO/32L</code></li>
+						<hr>
+						<li class="list-group-item">FCU MODE SELECT <kbd>PLAN</kbd></li>
+						<li class="list-group-item">FCU ZOOM SELECT <kbd>10</kbd></li>
+						<li class="list-group-item">FCU DISPLAY SELECT <kbd>CSTR</kbd> (CONSTRAINTS)</li>
 						<hr>
 						<li class="list-group-item">Cliquez sur le bouton <kbd>F-PLN</kbd> (pour accéder au haut du plan de vol)</li>
 						<li class="list-group-item">Utilisez la touche <kbd><i class="fas fa-long-arrow-alt-down"></i></kbd> pour afficher le tout premier point de la route</li>
@@ -610,25 +636,16 @@
 	    </div>
 		</div>
 	</div>
-	<!-- 	modal flight plan here -->						
-	<div class="modal" id="modal-enter-garmin-G530-managing" tabindex="-1">
-		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	<!-- 	modal MCDU radio navigation page here -->						
+	<div class="modal" id="modal-enter-mcdu-radnav" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title">SAVING OR LOADING G530 GARMIN FLIGHT PLAN</h5>
+	        <h5 class="modal-title">INSERTING MCDU (RAD NAV)</h5>
 	      </div>
 	      <div class="modal-body">
 					<ul class="list-group">
-						<li class="list-group-item titre-fonce">SAUVEGARDE DU PLAN DE VOL</li>
-						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-						<li class="list-group-item">Appuyez sur <kbd>MENU</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionner « save flight plan » + <kbd>ENT</kbd></li>
-						<li class="list-group-item titre-fonce">CHARGER UN PLAN DE VOL</li>
-						<li class="list-group-item">Appuyez sur <kbd>FPL</kbd></li>
-						<li class="list-group-item">Assurez vous le plan de vol ne soit pas en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd>)</li>
-						<li class="list-group-item">Utilisez le petit bouton <kbd>CRSR</kbd> afin d’afficher la liste des plans de vol sauvegardés</li>
-						<li class="list-group-item">Appuyez sur le bouton <kbd>CRSR</kbd></li>
-						<li class="list-group-item">Utilisez un bouton <kbd>CRSR</kbd> et sélectionnez le plan de vol désiré + <kbd>ENT</kbd></li>
+						<li class="list-group-item">Vérifier que les fréquences sont telles que prévues</li>
 					</ul>
 	      </div>
 	      <div class="modal-footer">
@@ -637,27 +654,93 @@
 	    </div>
 		</div>
 	</div>
-	<!-- 	modal flight plan here -->						
-	<div class="modal" id="modal-enter-garmin-G530-vnav" tabindex="-1">
-		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+	<!-- 	modal insert MCDU (INIT B) data -->						
+	<div class="modal" id="modal-enter-mcdu-initb" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title">ENTERING G530 GARMIN VNANV DATA</h5>
+	        <h5 class="modal-title">INSERTING MCDU (INIT) B</h5>
 	      </div>
 	      <div class="modal-body">
 					<ul class="list-group">
-						<li class="list-group-item">Appuyez sur <kbd>VNAV</kbd></li>
-						<li class="list-group-item">Assurez d'être en surbrillance (sinon appuyez sur le bouton <kbd>CRSR</kbd></li>
-						<li class="list-group-item">Utilisez le gros bouton <kbd>CRSR</kbd> pour sélectionner un champs de saisie</li>
-						<li class="list-group-item">Utilisez le petit bouton <kbd>CRSR</kbd> pour saisir des données</li>
-						<li class="list-group-item titre-fonce">TARGET ALTITUDE</li>
-						<li class="list-group-item">Choisissez la valeur en pied selon un waypoint ou autres</li>
-						<li class="list-group-item titre-fonce">TARGET POSITION</li>
-						<li class="list-group-item">Choisisez la valeur en NM de la position cible</li>
-						<li class="list-group-item">Choisisez si on doit atteindre cette cible avant (Before) ou après (After)</li>
-						<li class="list-group-item">Choisisez le waypoint cible ou l'aéroport</li>
-						<li class="list-group-item titre-fonce">VS PROFILE</li>
-						<li class="list-group-item">Choisisez la valeur en f/s (idéalement 1000-1500 feet/minutes)</li>
+						<li class="list-group-item titre-sans-element-primaire">Ouvrir le menu  <strong>TOLISS ISCS (LOADING PERFO)</strong></li>
+						<hr>
+						<li class="list-group-item">Cliquez sur le bouton <kbd>INIT</kbd></li>
+						<li class="list-group-item">Cliquez sur le bouton <kbd><i class="fas fa-long-arrow-alt-left"></i></kbd> pour avoir accès à la page B</li>
+						<li class="list-group-item">Tapez la donnée du ZFW (en fraction) suivie du ZFWCG (format ZFW/ZFWCG)</li>
+						<li class="list-group-item">Cliquez sur le bouton droit de ZFW/ZFWCG</li>
+						<li class="list-group-item">Tapez la donnée du BLOCK FUEL (en fraction) </li>
+						<li class="list-group-item">Cliquez sur le bouton droit de BLOCK</li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal insert MCDU (PROG) data -->						
+	<div class="modal" id="modal-enter-mcdu-prog" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">INSERTING MCDU (PROG)</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item">Cliquez sur le bouton <kbd>PROG</kbd></li>
+						<li class="list-group-item">Tapez LFBO32L et cliquez sur le bouton de droit vis-à-vis "TO"</li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal insert MCDU (PERF) data -->						
+	<div class="modal" id="modal-enter-mcdu-perf" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">INSERTING MCDU (PERF)</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item titre-sans-element-primaire">Ouvrir le menu  <strong>TOLISS ISCS (LOADING PERFO)</strong></li>
+						<hr>
+						<li class="list-group-item">Cliquez sur le bouton <kbd>PERF</kbd></li>
+						<li class="list-group-item">Tapez la donnée du V1 puis cliquez le bouton à gauche de V1</li>
+						<li class="list-group-item">Tapez la donnée du V2 puis cliquez le bouton à gauche de V2</li>
+						<li class="list-group-item">Tapez la donnée du V3 puis cliquez le bouton à gauche de V3</li>
+						<li class="list-group-item">Tapez 18000 (North Americ.) ou 6000 (Europe) puis cliquez le bouton à gauche de TRANS ALT</li>
+						<li class="list-group-item">Tapez 1/UP0.5 (En guise d'exemple) puis cliquez le bouton à droite de FLAPS/THS</li>
+						<li class="list-group-item">Tapez la donnée de FLEX TEMP puis cliquez le bouton à droite de FLEX TO TEMP</li>
+					</ul>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+		</div>
+	</div>
+	<!-- 	modal managing flight plan here -->						
+	<div class="modal" id="modal-managing-flight-plan" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">MANAGING FMS FLIGHT PLAN</h5>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item titre-et-element-primaire">SAUVEGARDE PLAN DE VOL</li>
+						<li class="list-group-item element-primaire">cliquez sur le bouton à droite de SAVE (Pour accéder aux options de sauvegarde)</li>
+						<li class="list-group-item element-primaire">Tapez par exemple CYULCYYZTEST et cliquez sur le bouton à gauche de NAME FOR ACTIVE PLAN</li>
+						<li class="list-group-item element-primaire">cliquez sur le bouton à droite de EXECUTE</li>
+						<hr>
+						<li class="list-group-item titre-et-element-primaire">CHARGEMENT D'UN PLAN DE VOL</li>
+						<li class="list-group-item element-primaire">cliquez sur le bouton à gauche de XP-PLAN LOAD (Pour accéder à la liste des sauvegardes)</li>
+						<li class="list-group-item element-primaire">cliquez sur le bouton à gauche de la sauvegarde choisi</li>
 					</ul>
 	      </div>
 	      <div class="modal-footer">

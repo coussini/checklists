@@ -36,6 +36,10 @@ li.list-group-item.active
 {
 	color: #0d6efd;
 }
+.tresimportant
+{
+	color: red;
+}
 kbd.petit
 {
 	font-size: 12px;
